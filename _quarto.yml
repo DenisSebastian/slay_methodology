@@ -1,0 +1,43 @@
+project:
+  type: book
+
+book:
+  title: "NERF Book"
+  subtitle: "Resumen Metodológicc de NERF para Slay"
+  author: "Denis Berroeta (<denisberroeta@gmail.cl>)"
+  date: "2023-05-28"
+  #number-sections: 3
+  page-footer: 
+    left: "Copyright 2023, [Denis Berroeta](<denis.berroeta@gmail.com>)" 
+  chapters:
+    - index.qmd
+    - intro.qmd
+    - taichi.qmd
+    - methods.qmd
+    - references.qmd
+    - ref_digital.qmd
+        
+  appendices:
+    - concepts.qmd
+    - contacts.qmd
+
+bibliography: references.bib
+
+format:
+  html:
+    theme: cosmo
+    html-math-method: katex
+    css: styles/style.css
+    fig-align: "center"
+    fig-cap-location: "margin"
+    tab-cap-location: "left"
+    mailto: "<denisberroeta@gmail.cl>"
+  
+execute:
+  warning: false
+  
+editor: source
+always_allow_html: true
+
+
+

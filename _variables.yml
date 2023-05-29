@@ -1,0 +1,50 @@
+version: 1
+
+email:
+  author: <denisberroeta@gmail.com>
+
+author:
+  name: "[Denis Berroeta](https://cit.uai.cl/denis-berroeta/)"
+  cargo: "Investiador Principal"
+  email: <denisberroeta@gmail.com>
+  
+
+
+engine:
+  jupyter: "[Jupyter](https://jupyter.org)"
+  knitr: "[Knitr](<https://yihui.name/knitr>)"
+  R: "[R Project](https://www.r-project.org)"
+  python: "[Python](https://docs.python.org/es/3/tutorial/)"
+  
+software:
+  rstudio: "[RStudio](https://posit.co/products/open-source/rstudio/)"
+  colmap: "[COLMAP](https://colmap.github.io)"
+  
+
+organization:
+  github: "[Github](https://github.com/)"
+  
+
+
+
+## access
+nerf:
+  name: "Neural Radiance Fields"
+  name_l: "[NeRF](https://www.matthewtancik.com/nerf)"
+  page: "[Project Page](https://www.matthewtancik.com/nerf)"
+  paper: "[NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis](https://arxiv.org/abs/2003.08934)"
+  github: "[Github Repository](https://github.com/bmild/nerf)"
+  data: "[Data Repository](https://drive.google.com/drive/folders/128yBriW1IG_3NJ5Rp7APSTZsJqdJdfc1?usp=sharing"
+  video_yt: "[Video](https://www.youtube.com/watch?v=JuH79E8rdKc)"
+
+instant_nerf:
+  name: "[Instant NGP](https://nvlabs.github.io/instant-ngp/)"
+  page: "[Project Page](https://nvlabs.github.io/instant-ngp/)"
+  github: "[Github Repository](https://www.youtube.com/watch?v=-1Dz9Izq8Vs)"
+
+evergine:
+  name: "**Evergine**"
+  page: "[Page Official](https://evergine.com)"
+  youtube: "[Youtube Channel](https://www.youtube.com/@Evergine)"
+  linkedin: "[LinkedIn Page](https://www.linkedin.com/showcase/evergine/)"
+  github: "[Github Repository](https://github.com/EvergineTeam)"

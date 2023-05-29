@@ -1,0 +1,17 @@
+# Introduction
+
+## Origen
+
+El método de {{< var nerf.name_l >}} {{< var nerf.name >}} es una técnica de inteligencia artificial que permite generar vistas sintéticas de escenas complejas en 3D, a partir de una serie de imágenes de referencia. Para ello, utiliza una red neuronal que modela la radiación de luz a través de la escena, y que puede ser entrenada a partir de un conjunto de datos de imágenes y posiciones de cámara. En esencia, esta técnica crea un modelo 3D de la escena, que puede ser renderizado desde cualquier punto de vista. El método NerF ha demostrado ser altamente efectivo en la síntesis de vistas realistas de escenas complejas, como paisajes naturales o interiores detallados.
+
+
+
+La metodología de inteligencia artificial denominada {{< var nerf.name_l >}} surge del trabajo de investigación de @mildenhall2020nerf, donde presenta un método que consigue resultados de vanguardia (en ese momento) para sintetizar nuevas vistas de escenas complejas optimizando una función de escena volumétrica continua subyacente utilizando un conjunto disperso de vistas de entrada.
+
+
+{{< video videos/trex.mp4 >}}
+
+## Estado Actual
+
+
+## Aplicaciones Futuras

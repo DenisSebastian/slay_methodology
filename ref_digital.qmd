@@ -1,0 +1,59 @@
+
+# Referencias Digitales {.unnumbered}
+
+## Instant NeRF
+
+
+[Instant Neural Graphics Primitives with a Multiresolution Hash Encoding](https://nvlabs.github.io/instant-ngp/)
+
+[Getting Started with NVIDIA Instant NeRFs](https://developer.nvidia.com/blog/getting-started-with-nvidia-instant-nerfs/)
+
+
+[NVIDIA Research Turns 2D Photos Into 3D Scenes in the Blink of an AI](https://blogs.nvidia.com/blog/2022/03/25/instant-nerf-research-3d-ai/)
+
+
+## Paper whit Code
+
+[NeRF Search](https://paperswithcode.com/method/nerf)
+
+
+## Dot CSV - Canal Youtube
+
+::: {.callout-note collapse="true"}
+### 1. [¿Es NeRF el Futuro de los Gráficos en Tiempo Real?](https://www.youtube.com/watch?v=IKFmxP2HLXs)
+
+{{< video https://www.youtube.com/embed/IKFmxP2HLXs >}}
+
+:::
+
+::: {.callout-note collapse="true"}
+
+### 2. [¡Me he CAPTURADO en 3D... ¡DENTRO de una Red Neuronal!](https://www.youtube.com/watch?v=tVcrxfK5RE0)
+{{< video https://www.youtube.com/embed/tVcrxfK5RE0 >}}
+
+:::
+
+
+::: {.callout-note collapse="true"}
+
+### 3. [¡Me he CAPTURADO EN 3D con Inteligencia Artificial ...en SEGUNDOS!](https://www.youtube.com/watch?v=Ubw2ymYvBVQ)
+
+{{< video https://www.youtube.com/embed/Ubw2ymYvBVQ >}}
+
+:::
+
+::: {.callout-note collapse="true"}
+### 4. [¡Esta TECNOLOGÍA será la REVOLUCIÓN de los Gráficos 3D!](https://www.youtube.com/watch?v=-1Dz9Izq8Vs)
+
+{{< video https://www.youtube.com/embed/-1Dz9Izq8Vs >}}
+:::
+
+
+## Taichi-Lang
+
+[Taichi NeRF (Part 1): Develop and Deploy Instant NGP without writing CUDA](https://docs.taichi-lang.org/blog/taichi-instant-ngp)
+
+
+## Jittor: JNeRF
+
+[github JNeRF](https://github.com/Jittor/JNeRF)

@@ -1,0 +1,13 @@
+.Rproj.user
+.Rhistory
+.RData
+.Ruserdata
+
+data
+data/*
+video
+videos/*
+images
+images/*
+
+/.quarto/

@@ -1,0 +1,23 @@
+---
+title: "Conceptos"
+subtitle: "Definiciones Generales"
+---
+
+
+NeRF:
+: NeRF (Neural Radiance Field) Un campo neural de radiancia es una red simple totalmente conectada (los pesos son ~5MB) entrenada para reproducir vistas de entrada de una sola escena utilizando una pérdida de renderizado. La red mapea directamente desde la ubicación espacial y la dirección de visión (entrada 5D) al color y la opacidad (salida 4D), actuando como el "volumen" para que podamos utilizar el renderizado de volumen para renderizar de forma diferenciada nuevas vistas.
+
+
+COLMAP:
+: {{< var software.colmap >}} es un programa de estructura a partir del movimiento (SfM) y estereoscopía multivista (MVS) con una interfaz gráfica y de línea de comandos. Ofrece una amplia gama de funciones para la reconstrucción de colecciones de imágenes ordenadas y desordenadas. El software está licenciado bajo la nueva licencia BSD. Creditos: @schoenberger2016sfm, @schoenberger2016mvs 
+
+
+Fotogrametría:
+: Es....
+
+
+Instant NeRF:
+: C....
+
+
+CUDA:

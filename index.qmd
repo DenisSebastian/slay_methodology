@@ -1,0 +1,11 @@
+# Preface {.unnumbered}
+
+Este libro digital tiene como obejtivo general ser un resumen metodológico de la historia y estado del arte de la metodología {{< var nerf.name_l >}} ({{< var nerf.name >}}), como también los experimentos realizados bajo el proyecto Slay.
+
+
+El proyecto Slay .... experiencia en un concierto
+
+La tecnología {{< var nerf.name_l >}} ({{< var nerf.name >}} es la clave para hacer esto realidad. Puede reconstruir la representación tridimensional de una escena a partir de imágenes captadas desde múltiples ángulos y generar imágenes de la escena desde cualquier punto de vista y posición (nueva síntesis de puntos de vista).
+
+
+

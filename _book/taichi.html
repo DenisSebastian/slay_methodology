@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.335">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+
+<title>NERF Book - 2&nbsp; Nerf Experiment</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+}
+.hanging div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}
+</style>
+
+
+<script src="site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="site_libs/quarto-nav/headroom.min.js"></script>
+<script src="site_libs/clipboard/clipboard.min.js"></script>
+<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="site_libs/quarto-search/fuse.min.js"></script>
+<script src="site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="./">
+<link href="./methods.html" rel="next">
+<link href="./intro.html" rel="prev">
+<script src="site_libs/quarto-html/quarto.js"></script>
+<script src="site_libs/quarto-html/popper.min.js"></script>
+<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="site_libs/quarto-html/anchor.min.js"></script>
+<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script id="quarto-search-options" type="application/json">{
+  "location": "sidebar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "start",
+  "type": "textbox",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
+
+<link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body class="nav-sidebar floating">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+  <nav class="quarto-secondary-nav" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+    <div class="container-fluid d-flex justify-content-between">
+      <h1 class="quarto-secondary-nav-title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Nerf Experiment</span></h1>
+      <button type="button" class="quarto-btn-toggle btn" aria-label="Show secondary navigation">
+        <i class="bi bi-chevron-right"></i>
+      </button>
+    </div>
+  </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
+<!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+    <div class="sidebar-title mb-0 py-0">
+      <a href="./">NERF Book</a> 
+    </div>
+      </div>
+      <div class="mt-2 flex-shrink-0 align-items-center">
+        <div class="sidebar-search">
+        <div id="quarto-search" class="" title="Search"></div>
+        </div>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./index.html" class="sidebar-item-text sidebar-link">Preface</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./intro.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./taichi.html" class="sidebar-item-text sidebar-link active"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Nerf Experiment</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./methods.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Métodos</span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./references.html" class="sidebar-item-text sidebar-link">Referencias Bibliográficas</a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./ref_digital.html" class="sidebar-item-text sidebar-link">Referencias Digitales</a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">Appendices</a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./concepts.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Conceptos</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./contacts.html" class="sidebar-item-text sidebar-link"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Directorio de Contactos</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#introducción" id="toc-introducción" class="nav-link active" data-scroll-target="#introducción"><span class="toc-section-number">2.1</span>  Introducción</a></li>
+  <li><a href="#part-i-what-is-a-neural-radiance-field-nerf" id="toc-part-i-what-is-a-neural-radiance-field-nerf" class="nav-link" data-scroll-target="#part-i-what-is-a-neural-radiance-field-nerf"><span class="toc-section-number">2.2</span>  Part I: What is a Neural Radiance Field (NeRF)</a>
+  <ul class="collapse">
+  <li><a href="#volume-rendering" id="toc-volume-rendering" class="nav-link" data-scroll-target="#volume-rendering"><span class="toc-section-number">2.2.1</span>  Volume Rendering</a></li>
+  </ul></li>
+  <li><a href="#entrenaiento-de-nerf" id="toc-entrenaiento-de-nerf" class="nav-link" data-scroll-target="#entrenaiento-de-nerf"><span class="toc-section-number">2.3</span>  Entrenaiento de NeRF</a></li>
+  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias"><span class="toc-section-number">2.4</span>  Referencias</a></li>
+  </ul>
+</nav>
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title d-none d-lg-block"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Nerf Experiment</span></h1>
+<p class="subtitle lead">Develop and Deploy Instant NGP without writing CUDA</p>
+</div>
+
+
+
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
+
+</header>
+
+<section id="introducción" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="introducción"><span class="header-section-number">2.1</span> Introducción</h2>
+<p>Imagina esto: cuando hojea un álbum de fotos y ve imágenes de viajes familiares pasados, ¿desea volver a visitar esos lugares y revivir esos cálidos momentos? Cuando navega por un museo en línea, ¿desea ajustar libremente su perspectiva, observar de cerca los detalles de los objetos expuestos y disfrutar de una interacción plena con las reliquias culturales? Cuando los médicos se enfrentan a pacientes, ¿pueden mejorar significativamente la precisión y la eficacia del diagnóstico sintetizando una perspectiva tridimensional de la zona afectada a partir de imágenes y proporcionando estimaciones del tamaño y el volumen de la lesión?</p>
+<p>La tecnología <a href="https://www.matthewtancik.com/nerf">NeRF</a> (Neural Radiance Fields) es la clave para hacer esto realidad. Puede reconstruir la representación tridimensional de una escena a partir de imágenes captadas desde múltiples ángulos y generar imágenes de la escena desde cualquier punto de vista y posición (nueva síntesis de puntos de vista).</p>
+<p>El siguiente vídeo muestra cómo se utiliza la tecnología NeRF para lograr la itinerancia 3D capturando algunas imágenes estáticas de las oficinas de Taichi con un teléfono móvil.</p>
+<p>En los últimos dos años, la tecnología NeRF se ha convertido en un campo candente de la visión por ordenador. Desde el revolucionario trabajo de <span class="citation" data-cites="mildenhall2020nerf">Mildenhall et al. (<a href="references.html#ref-mildenhall2020nerf" role="doc-biblioref">2020</a>)</span>, <a href="https://arxiv.org/abs/2003.08934">NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis</a>, el campo de los NeRF ha generado muchos estudios posteriores, especialmente el reciente trabajo mejorado <a href="https://nvlabs.github.io/instant-ngp/">Instant NGP</a>, que fue incluido en la lista de los <a href="https://time.com/collection/best-inventions-2022/6225489/nvidia-instant-nerf/">mejores inventos de 2022 de la revista Time</a>.</p>
+<p>En comparación con investigaciones anteriores, los avances significativos logrados por los mencionados trabajos NeRF e Instant NGP son:</p>
+<p>NeRF puede obtener una representación de alta precisión de la escena, y las imágenes renderizadas desde nuevos ángulos son muy realistas.</p>
+<p>Basándose en el trabajo de NeRF, Instant NGP acorta significativamente el tiempo de entrenamiento y renderizado, reduciendo el tiempo de entrenamiento a menos de un minuto, y haciendo que el renderizado en tiempo real sea fácilmente alcanzable. Estas mejoras hacen que la tecnología de NeRF sea realmente factible de aplicar.</p>
+<p>No solo los investigadores en el campo del aprendizaje profundo, sino también los profesionales de muchas otras industrias están siguiendo de cerca los avances de NeRF, pensando en las posibilidades de aplicar NeRF en sus campos.</p>
+<p>El objetivo principal de este artículo es doble:</p>
+<ol type="1">
+<li><p>Queremos presentar cómo Taichi y PyTorch pueden combinarse para crear un flujo de trabajo de desarrollo Instant NGP totalmente basado en Python. Sin una sola línea de código CUDA, Taichi calculará automáticamente las derivadas de tu núcleo y conseguirá un rendimiento similar al de CUDA. Esto te permite dedicar más tiempo a las iteraciones de ideas de investigación que a la tediosa programación CUDA y al ajuste del rendimiento.</p></li>
+<li><p>Los dispositivos móviles serán un escenario esencial para la implementación de NeRF en el futuro. Introducimos el uso del marco Taichi AOT (compilación anticipada), que puede desplegar el modelo NeRF entrenado en dispositivos móviles sin preocuparse por la compatibilidad de plataformas. La siguiente animación muestra nuestros esfuerzos utilizando el marco AOT de Taichi para portar el modelo Lego del papel <a href="https://nvlabs.github.io/instant-ngp/">Instant NGP</a> a un iPad para la inferencia y renderización en tiempo real:</p></li>
+</ol>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="videos/nerf-ipad.gif" class="img-fluid figure-img" width="300"></p>
+</figure>
+</div>
+<p>Primero repasaremos brevemente los principios de NeRF y las mejoras de Instant NGP, y después presentaremos la combinación de Taichi e Instant NGP.</p>
+</section>
+<section id="part-i-what-is-a-neural-radiance-field-nerf" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="part-i-what-is-a-neural-radiance-field-nerf"><span class="header-section-number">2.2</span> Part I: What is a Neural Radiance Field (NeRF)</h2>
+<p>En términos sencillos, un campo de radiancia neuronal es la codificación de toda una escena 3D en los parámetros de una red neuronal. Para representar una escena desde cualquier punto de vista nuevo, la red neuronal tiene que aprender el color RGB y la densidad de volumen <span class="math inline">\sigma</span> (es decir, si el punto está “ocupado” o no) de cada punto del espacio. La densidad de volumen en un punto es independiente del punto de vista, pero el color cambia con el punto de vista (por ejemplo, el objeto visto desde un ángulo diferente cambia), por lo que la red neuronal en realidad necesita aprender el color (r, g, b) y la densidad de volumen <span class="math inline">\sigma</span> de un punto (<span class="math inline">x, y, z</span>) bajo diferentes ángulos de cámara (<span class="math inline">\theta, \phi</span>) (es decir, latitud y longitud).</p>
+<p>Por lo tanto, la entrada al campo de radiancia neuronal es un vector de cinco dimensiones (<span class="math inline">x, y, z, \theta, \phi</span>), y la salida es un vector de cuatro dimensiones (<span class="math inline">r, g, b, \sigma</span>):</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pipeline_website-03.svg" class="img-fluid figure-img" width="400"></p>
+</figure>
+</div>
+<p>Asumiendo que tenemos tal campo de radiancia neural, enviando los correspondientes <span class="math inline">x, y, z, \theta, \phi</span>) de cada punto en el espacio más allá en el renderizado de volumen resultará en una imagen 2D vista desde el punto de vista actual (<span class="math inline">\theta, \phi</span>).</p>
+<blockquote class="blockquote">
+<p>El concepto de densidad de volumen (volume rendering) se utiliza a menudo en la computación gráfica para representar medios como nubes y humo. Representa la probabilidad de que un punto bloquee un rayo de luz cuando lo atraviesa. La densidad de volumen mide la contribución de un punto al color final del rayo.</p>
+</blockquote>
+<section id="volume-rendering" class="level3" data-number="2.2.1">
+<h3 data-number="2.2.1" class="anchored" data-anchor-id="volume-rendering"><span class="header-section-number">2.2.1</span> Volume Rendering</h3>
+<p>El paso central de NeRF es un proceso denominado renderizado de volumen. El renderizado de volumen puede “aplanar” el campo neuronal en una imagen 2D, que luego se comparará con una imagen de referencia para generar pérdidas. Este proceso es diferenciable, por lo que puede utilizarse para entrenar la red.</p>
+<p>Antes de introducir el renderizado de volumen, entendamos primero los principios básicos de la imagen de cámara. En la computación gráfica, para ahorrar recursos computacionales, se supone que el color de un punto de la escena tras ser alcanzado por un rayo emitido desde la cámara es el color del píxel en la intersección del rayo y la pantalla:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="videos/shadertoy.gif" class="img-fluid figure-img" width="500"></p>
+</figure>
+</div>
+<p>Sin embargo, al renderizar medios atmosféricos similares al humo, los rayos atraviesan el medio en lugar de detenerse únicamente en su superficie. Además, durante la propagación de los rayos, una cierta proporción de éstos será absorbida por el medio (sin tener en cuenta la dispersión y la autoemisión). La parte del medio que absorbe los rayos contribuye al color final de los rayos. Cuanto mayor sea la densidad de volumen, más rayos serán absorbidos y más intenso será el color de esta parte del medio. Por tanto, el color final de los rayos es la integral de los colores de los puntos a lo largo de la trayectoria.</p>
+<p><img src="images/volume_ray.png" class="img-fluid" data-fig-align="center" width="500"> Suponiendo que la cámara está en <span class="math inline">o</span> y la dirección del rayo es <span class="math inline">d</span>, la ecuación del rayo es <span class="math inline">r(t)=o+t*d</span>, y su color de píxel predicho <span class="math inline">c(r)</span> es:</p>
+<p><span class="math display">C(r)=\int_{t_n}^{t_f}T(t)\sigma(t)c(r(t), d), dt</span> En la fórmula, <span class="math inline">T(t)</span> representa la proporción de luz transmitida al punto <span class="math inline">t</span>, y <span class="math inline">\sigma(t)dt</span> representa la proporción de luz bloqueada por una pequeña vecindad cercana al punto <span class="math inline">t</span>. El producto de ambos es la proporción de luz que llega a <span class="math inline">t</span> y es bloqueada en <span class="math inline">t</span>, multiplicada por el color <span class="math inline">c(r(t), d)</span> de ese punto, que es la contribución de este punto al color final del rayo. El intervalo integral <span class="math inline">[t_n, t_f]</span> representa el punto de intersección más cercano <span class="math inline">t_{near}</span> y el punto de intersección más lejano <span class="math inline">t_{far}</span> del rayo con el medio.</p>
+<p>En los cálculos reales, necesitamos utilizar sumas discretas para aproximar el valor de la integral. Es decir, muestreamos ciertos puntos discretos a lo largo del rayo y ponderamos sus colores sumándolos. No vamos a entrar en detalles sobre este proceso de discretización, pero puedes consultar explicaciones como la del enlace de la imagen anterior.</p>
+</section>
+</section>
+<section id="entrenaiento-de-nerf" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="entrenaiento-de-nerf"><span class="header-section-number">2.3</span> Entrenaiento de NeRF</h2>
+<p>Una vez conocidos los campos neuronales de radiancia y el renderizado de volúmenes, veamos más en detalle el proceso de entrenamiento de NeRF. Todo el proceso se divide en cinco pasos, como se muestra en la siguiente figura:</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/nerf_steps.png" class="img-fluid figure-img" width="800"></p>
+</figure>
+</div>
+<ol type="1">
+<li><dl>
+<dt><strong>Camera parameters</strong>:</dt>
+<dd>
+Tras preparar un conjunto de imágenes 2D capturadas, el primer paso es calcular los parámetros de pose de la cámara para cada imagen. Para ello se pueden utilizar herramientas como <a href="https://colmap.github.io">COLMAP</a>. COLMAP compara los puntos comunes de la escena que aparecen en diferentes imágenes para calcular la pose de la cámara. Además, suponemos que toda la escena se encuentra dentro de una caja cúbica con un rango de <span class="math inline">[-1,1]^3</span>.
+</dd>
+</dl></li>
+<li><dl>
+<dt><strong>3D point sampling</strong>:</dt>
+<dd>
+Para una imagen real, se emite un rayo desde la cámara, que atraviesa la imagen y entra en la escena. El valor del píxel <span class="math inline">I(p)</span> del punto de intersección <span class="math inline">p</span> entre el rayo y la imagen es el color de referencia. Tomamos muestras discretas de varios puntos a lo largo de este rayo. Las coordenadas espaciales (<span class="math inline">x, y, z</span>) de estos puntos de muestra y la pose de la cámara (<span class="math inline">\theta, \phi</span>) calculada en el primer paso se combinan como entrada de la red neuronal.
+</dd>
+</dl></li>
+<li><dl>
+<dt><strong>NeRF model</strong>:</dt>
+<dd>
+Predecir el color y la densidad de cada punto de muestra en el rayo a través de la red neuronal.
+</dd>
+</dl></li>
+<li><dl>
+<dt><strong>Rendering</strong>:</dt>
+<dd>
+Mediante el renderizado de volúmenes, podemos utilizar el color y la densidad de los puntos de muestra obtenidos por la red neuronal en el paso anterior para calcular la suma discreta, aproximando el valor del píxel <span class="math inline">\hat{I}(p)</span> correspondiente al rayo.
+</dd>
+</dl></li>
+<li><dl>
+<dt><strong>Photometric loss</strong>:</dt>
+<dd>
+Comparando <span class="math inline">\hat{I}(p)</span> con el verdadero valor de color <span class="math inline">I(p)</span> del rayo y calculando el error y el gradiente, se puede entrenar la red neuronal.
+</dd>
+</dl></li>
+</ol>
+</section>
+<section id="referencias" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="referencias"><span class="header-section-number">2.4</span> Referencias</h2>
+<p><a href="https://docs.taichi-lang.org/blog/taichi-instant-ngp">Develop and Deploy Instant NGP without writing CUDA</a></p>
+
+
+<div id="refs" class="references csl-bib-body hanging-indent" role="doc-bibliography" style="display: none">
+<div id="ref-mildenhall2020nerf" class="csl-entry" role="doc-biblioentry">
+Mildenhall, Ben, Pratul P. Srinivasan, Matthew Tancik, Jonathan T. Barron, Ravi Ramamoorthi, and Ren Ng. 2020. <span>“NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis.”</span> In <em>ECCV</em>.
+</div>
+</div>
+</section>
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+<nav class="page-navigation">
+  <div class="nav-page nav-page-previous">
+      <a href="./intro.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span>
+      </a>          
+  </div>
+  <div class="nav-page nav-page-next">
+      <a href="./methods.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Métodos</span></span> <i class="bi bi-arrow-right-short"></i>
+      </a>
+  </div>
+</nav>
+</div> <!-- /content -->
+<footer class="footer">
+  <div class="nav-footer">
+    <div class="nav-footer-left">Copyright 2023, <a href="denis.berroeta@gmail.com">Denis Berroeta</a></div>   
+  </div>
+</footer>
+
+
+
+</body></html>
