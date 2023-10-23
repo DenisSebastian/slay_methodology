@@ -48,3 +48,21 @@ evergine:
   youtube: "[Youtube Channel](https://www.youtube.com/@Evergine)"
   linkedin: "[LinkedIn Page](https://www.linkedin.com/showcase/evergine/)"
   github: "[Github Repository](https://github.com/EvergineTeam)"
+  
+  
+3d_gauss_sp:
+  name: "**3D Gaussian Splatting**"
+  page: "[3D Gaussian Splatting](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/)"
+  paper: "[Paper: 3D Gaussian Splatting](https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/3d_gaussian_splatting_low.pdf)"
+  github: "[Github gaussian-splatting](https://github.com/graphdeco-inria/gaussian-splatting)"
+
+  
+4d_gauss_sp:
+  name: "**4D Gaussian Splatting**"
+  page: "[4D Gaussian Splatting](https://guanjunwu.github.io/4dgs/)"
+  paper: "[Paper: 4D Gaussian Splatting](https://arxiv.org/pdf/2310.08528.pdf)"
+  github: "[Github 4DGaussians](https://github.com/hustvl/4DGaussians)"
+  
+  
+  
+  

@@ -1,0 +1,39 @@
+---
+subtitle: "for Real-Time Radiance Field Rendering"
+---
+
+# Gasussian Splatting 4D 
+
+## Abstract
+
+Representing and rendering dynamic scenes has been an important but challenging task. Especially, to accurately model complex motions, high efficiency is usually hard to maintain. We introduce the 4D Gaussian Splatting (4D-GS) to achieve real-time dynamic scene rendering while also enjoying high training and storage efficiency. An efficient deformation field is constructed to model both Gaussian motions and shape deformations. Different adjacent Gaussians are connected via a HexPlane to produce more accurate position and shape deformations. Our 4D-GS method achieves real-time rendering under high resolutions, 70 FPS at a 800*800 resolution on an RTX 3090 GPU, while maintaining comparable or higher quality than previous state-of-the-art methods
+
+{{< video https://guanjunwu.github.io/4dgs/static/videos/teaser_beef.mp4 >}}
+
+
+## Explanation
+
+[Web Page](https://guanjunwu.github.io/4dgs/)
+
+
+![](images/pipeline_4d_gs.bmp)
+
+
+{{< var 4d_gauss_sp.paper >}}    
+
+
+## Experimentation
+
+### Code
+
+{{< var 4d_gauss_sp.github >}}      
+
+
+### Postprocess
+
+Renderización volumétrica a malla
+Cube Maching
+
+no
+
+## References

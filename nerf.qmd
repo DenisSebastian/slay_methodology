@@ -4,15 +4,17 @@ subtitle: "Métodos"
 
 # NeRF
 
+## Abstract
 
-## Introducción NeRF Clásico
+## Explanation
+
 
 El método NerF (Neural Radiance Fields) es una técnica de inteligencia artificial que permite generar vistas sintéticas de escenas complejas en 3D. Para ello, utiliza una red neuronal que modela la radiación de luz a través de la escena y que puede ser entrenada con un conjunto de datos de imágenes y posiciones de cámara. En esencia, esta técnica crea un modelo 3D de la escena, que puede ser renderizado desde cualquier punto de vista. El método NerF ha demostrado ser altamente efectivo en la síntesis de vistas realistas de escenas complejas, como paisajes naturales o interiores detallados. Si quieres profundizar en el tema, puedes revisar el paper "NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis" @mildenhall2020nerf .
 
 
 En el trabajo de  @mildenhall2020nerf sintetizaron las vistas consultando las coordenadas 5D a lo largo de los rayos de la cámara y utilizaron técnicas clásicas de renderizado de volúmenes para proyectar los colores y densidades de salida en una imagen. Dado que el renderizado de volúmenes es naturalmente diferenciable, la única entrada necesaria para optimizar esta representación es un conjunto de imágenes con poses de cámara conocidas. Describieron cómo optimizar eficazmente los campos de radiancia neuronales para representar nuevas vistas fotorrealistas de escenas con geometría y apariencia complicadas, y demostraron resultados que superan trabajos anteriores sobre representación neuronal y síntesis de vistas. Fuente: {{< var nerf.page >}} 
 
-## Explanation
+
 
 
 
@@ -53,6 +55,14 @@ Una vez que se ha entrenado la red neuronal, se puede utilizar para generar vist
 El método NerF ha demostrado ser altamente efectivo en la síntesis de vistas realistas de escenas complejas, como paisajes naturales o interiores detallados.
 
 
+
 ## Experimentation
+
+## Postprocess
+
+Los software de edición de modelado 3D normalmente trabajan con renderizado de malla y este tipo de modelos retornan resultados denominados rendereización volumétrica, entonces al hoy (22-10-2023) es posible de realizar con técnicas de _Cube Maching_ pero perdiendo mucha calidad.
+
+
+
 
 ## References

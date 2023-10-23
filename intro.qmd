@@ -11,7 +11,13 @@ La metodología de inteligencia artificial denominada {{< var nerf.name_l >}} su
 
 {{< video videos/trex.mp4 >}}
 
-## Estado Actual
+## Presente
+
+Instant_ngp.qmd
+
+3D Gaussian Splatting.qmd
 
 
-## Aplicaciones Futuras
+## Futuro
+
+4D Gaussian Splatting

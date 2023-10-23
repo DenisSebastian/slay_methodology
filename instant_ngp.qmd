@@ -3,11 +3,7 @@ subtitle: "Develop and Deploy Instant NGP without writing CUDA"
 ---
 # Instant NGP
 
-## Abstract
-
-## Explanation
-
-## Experimentation
+## Introducción
 
 Imagina esto: cuando hojea un álbum de fotos y ve imágenes de viajes familiares pasados, ¿desea volver a visitar esos lugares y revivir esos cálidos momentos? Cuando navega por un museo en línea, ¿desea ajustar libremente su perspectiva, observar de cerca los detalles de los objetos expuestos y disfrutar de una interacción plena con las reliquias culturales? Cuando los médicos se enfrentan a pacientes, ¿pueden mejorar significativamente la precisión y la eficacia del diagnóstico sintetizando una perspectiva tridimensional de la zona afectada a partir de imágenes y proporcionando estimaciones del tamaño y el volumen de la lesión?
 
@@ -39,7 +35,7 @@ El objetivo principal de este artículo es doble:
 Primero repasaremos brevemente los principios de NeRF y las mejoras de Instant NGP, y después presentaremos la combinación de Taichi e Instant NGP.
 
 
-### Part I: What is a Neural Radiance Field (NeRF)
+## Part I: What is a Neural Radiance Field (NeRF)
 
 
 En términos sencillos, un campo de radiancia neuronal es la codificación de toda una escena 3D en los parámetros de una red neuronal. Para representar una escena desde cualquier punto de vista nuevo, la red neuronal tiene que aprender el color RGB y la densidad de volumen $\sigma$ (es decir, si el punto está "ocupado" o no) de cada punto del espacio. La densidad de volumen en un punto es independiente del punto de vista, pero el color cambia con el punto de vista (por ejemplo, el objeto visto desde un ángulo diferente cambia), por lo que la red neuronal en realidad necesita aprender el color (r, g, b) y la densidad de volumen $\sigma$ de un punto ($x, y, z$) bajo diferentes ángulos de cámara ($\theta, \phi$) (es decir, latitud y longitud).
@@ -67,6 +63,8 @@ Antes de introducir el renderizado de volumen, entendamos primero los principios
 Sin embargo, al renderizar medios atmosféricos similares al humo, los rayos atraviesan el medio en lugar de detenerse únicamente en su superficie. Además, durante la propagación de los rayos, una cierta proporción de éstos será absorbida por el medio (sin tener en cuenta la dispersión y la autoemisión). La parte del medio que absorbe los rayos contribuye al color final de los rayos. Cuanto mayor sea la densidad de volumen, más rayos serán absorbidos y más intenso será el color de esta parte del medio. Por tanto, el color final de los rayos es la integral de los colores de los puntos a lo largo de la trayectoria.
 
 ![](images/volume_ray.png){fig-align="center" width="500"}
+
+
 Suponiendo que la cámara está en $o$ y la dirección del rayo es $d$, la ecuación del rayo es $r(t)=o+t*d$, y su color de píxel predicho $c(r)$ es:
 
 $$C(r)=\int_{t_n}^{t_f}T(t)\sigma(t)c(r(t), d), dt$$
@@ -99,6 +97,6 @@ Una vez conocidos los campos neuronales de radiancia y el renderizado de volúme
 
 
 
-## References
+## Referencias
 
 [Develop and Deploy Instant NGP without writing CUDA](https://docs.taichi-lang.org/blog/taichi-instant-ngp)

@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Slay Book - Appendix A — Conceptos</title>
+<title>Slay Book - 2&nbsp; NeRF</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -49,8 +49,8 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./contacts.html" rel="next">
-<link href="./ref_digital.html" rel="prev">
+<link href="./instant_ngp.html" rel="next">
+<link href="./intro.html" rel="prev">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -81,6 +81,22 @@ div.csl-indent {
   }
 }</script>
 
+  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
+  <script>document.addEventListener("DOMContentLoaded", function () {
+ var mathElements = document.getElementsByClassName("math");
+ var macros = [];
+ for (var i = 0; i < mathElements.length; i++) {
+  var texText = mathElements[i].firstChild;
+  if (mathElements[i].tagName == "SPAN") {
+   katex.render(texText.data, mathElements[i], {
+    displayMode: mathElements[i].classList.contains('display'),
+    throwOnError: false,
+    macros: macros,
+    fleqn: false
+   });
+}}});
+  </script>
+  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
 
 <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -94,7 +110,7 @@ div.csl-indent {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./concepts.html">Appendices</a></li><li class="breadcrumb-item"><a href="./concepts.html"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Conceptos</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./nerf.html"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">NeRF</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -133,7 +149,7 @@ div.csl-indent {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./nerf.html" class="sidebar-item-text sidebar-link">
+  <a href="./nerf.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">NeRF</span></span></a>
   </div>
 </li>
@@ -178,7 +194,7 @@ div.csl-indent {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./concepts.html" class="sidebar-item-text sidebar-link active">
+  <a href="./concepts.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">A</span>&nbsp; <span class="chapter-title">Conceptos</span></span></a>
   </div>
 </li>
@@ -196,15 +212,30 @@ div.csl-indent {
 <div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of contents</h2>
+   
+  <ul>
+  <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract"><span class="header-section-number">2.1</span> Abstract</a></li>
+  <li><a href="#explanation" id="toc-explanation" class="nav-link" data-scroll-target="#explanation"><span class="header-section-number">2.2</span> Explanation</a>
+  <ul class="collapse">
+  <li><a href="#entrada" id="toc-entrada" class="nav-link" data-scroll-target="#entrada"><span class="header-section-number">2.2.1</span> Entrada</a></li>
+  <li><a href="#entrenamiento" id="toc-entrenamiento" class="nav-link" data-scroll-target="#entrenamiento"><span class="header-section-number">2.2.2</span> Entrenamiento</a></li>
+  <li><a href="#renderizado" id="toc-renderizado" class="nav-link" data-scroll-target="#renderizado"><span class="header-section-number">2.2.3</span> Renderizado</a></li>
+  </ul></li>
+  <li><a href="#experimentation" id="toc-experimentation" class="nav-link" data-scroll-target="#experimentation"><span class="header-section-number">2.3</span> Experimentation</a></li>
+  <li><a href="#postprocess" id="toc-postprocess" class="nav-link" data-scroll-target="#postprocess"><span class="header-section-number">2.4</span> Postprocess</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">2.5</span> References</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Appendix A — Conceptos</h1>
-<p class="subtitle lead">Definiciones Generales</p>
+<h1 class="title"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">NeRF</span></h1>
+<p class="subtitle lead">Métodos</p>
 </div>
 
 
@@ -219,42 +250,58 @@ div.csl-indent {
 
 </header>
 
-<dl>
-<dt>NeRF:</dt>
-<dd>
-NeRF (Neural Radiance Field) Un campo neural de radiancia es una red simple totalmente conectada (los pesos son ~5MB) entrenada para reproducir vistas de entrada de una sola escena utilizando una pérdida de renderizado. La red mapea directamente desde la ubicación espacial y la dirección de visión (entrada 5D) al color y la opacidad (salida 4D), actuando como el “volumen” para que podamos utilizar el renderizado de volumen para renderizar de forma diferenciada nuevas vistas.
-</dd>
-<dt>COLMAP:</dt>
-<dd>
-<a href="https://colmap.github.io">COLMAP</a> es un programa de estructura a partir del movimiento (SfM) y estereoscopía multivista (MVS) con una interfaz gráfica y de línea de comandos. Ofrece una amplia gama de funciones para la reconstrucción de colecciones de imágenes ordenadas y desordenadas. El software está licenciado bajo la nueva licencia BSD. Creditos: <span class="citation" data-cites="schoenberger2016sfm">Schönberger and Frahm (<a href="references.html#ref-schoenberger2016sfm" role="doc-biblioref">2016</a>)</span>, <span class="citation" data-cites="schoenberger2016mvs">Schönberger et al. (<a href="references.html#ref-schoenberger2016mvs" role="doc-biblioref">2016</a>)</span>
-</dd>
-<dt>Fotogrametría:</dt>
-<dd>
-Es….
-</dd>
-<dt>Instant NeRF:</dt>
-<dd>
-C….
-</dd>
-<dt>CUDA:</dt>
-<dd>
-Cube Maching…
-</dd>
-<dt>Cube Maching:</dt>
-<dd>
-…
-</dd>
-</dl>
+<section id="abstract" class="level2" data-number="2.1">
+<h2 data-number="2.1" class="anchored" data-anchor-id="abstract"><span class="header-section-number">2.1</span> Abstract</h2>
+</section>
+<section id="explanation" class="level2" data-number="2.2">
+<h2 data-number="2.2" class="anchored" data-anchor-id="explanation"><span class="header-section-number">2.2</span> Explanation</h2>
+<p>El método NerF (Neural Radiance Fields) es una técnica de inteligencia artificial que permite generar vistas sintéticas de escenas complejas en 3D. Para ello, utiliza una red neuronal que modela la radiación de luz a través de la escena y que puede ser entrenada con un conjunto de datos de imágenes y posiciones de cámara. En esencia, esta técnica crea un modelo 3D de la escena, que puede ser renderizado desde cualquier punto de vista. El método NerF ha demostrado ser altamente efectivo en la síntesis de vistas realistas de escenas complejas, como paisajes naturales o interiores detallados. Si quieres profundizar en el tema, puedes revisar el paper “NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis” <span class="citation" data-cites="mildenhall2020nerf">Mildenhall et al. (<a href="references.html#ref-mildenhall2020nerf" role="doc-biblioref">2020</a>)</span> .</p>
+<p>En el trabajo de <span class="citation" data-cites="mildenhall2020nerf">Mildenhall et al. (<a href="references.html#ref-mildenhall2020nerf" role="doc-biblioref">2020</a>)</span> sintetizaron las vistas consultando las coordenadas 5D a lo largo de los rayos de la cámara y utilizaron técnicas clásicas de renderizado de volúmenes para proyectar los colores y densidades de salida en una imagen. Dado que el renderizado de volúmenes es naturalmente diferenciable, la única entrada necesaria para optimizar esta representación es un conjunto de imágenes con poses de cámara conocidas. Describieron cómo optimizar eficazmente los campos de radiancia neuronales para representar nuevas vistas fotorrealistas de escenas con geometría y apariencia complicadas, y demostraron resultados que superan trabajos anteriores sobre representación neuronal y síntesis de vistas. Fuente: <a href="https://www.matthewtancik.com/nerf">Project Page</a></p>
+<section id="entrada" class="level3" data-number="2.2.1">
+<h3 data-number="2.2.1" class="anchored" data-anchor-id="entrada"><span class="header-section-number">2.2.1</span> Entrada</h3>
+<p>En primer lugar, se deben tener en cuenta las imágenes de referencia de la escena, junto con la información de la posición de cámara correspondiente a cada imagen. A partir de estos datos, se entrena una red neuronal para que pueda predecir la radiación de luz en cualquier punto de la escena.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pipeline_website-03.svg" class="img-fluid figure-img" width="400"></p>
+</figure>
+</div>
+<p>Se sintetiza las vistas consultando las coordenadas continua 5D (ubicación espacial (<span class="math inline">x</span>, <span class="math inline">y</span>, <span class="math inline">z</span>) y dirección de visión (<span class="math inline">\theta</span>, <span class="math inline">\phi</span>)) a lo largo de los rayos de la cámara y utilizaron técnicas clásicas de renderizado de volúmenes para proyectar los colores y densidades de salida en una imagen.</p>
+</section>
+<section id="entrenamiento" class="level3" data-number="2.2.2">
+<h3 data-number="2.2.2" class="anchored" data-anchor-id="entrenamiento"><span class="header-section-number">2.2.2</span> Entrenamiento</h3>
+<p>En esta etapa utiliza una red neuronal que modela la radiación de luz a través de la escena, y que puede ser entrenada a partir de un conjunto de datos de imágenes y posiciones de cámara. En esencia, esta técnica crea un modelo 3D de la escena</p>
+<p>Para ello, se divide la escena en pequeños fragmentos, y se ajusta un modelo de radiación de luz a cada uno de ellos. Este modelo permite predecir la radiación de luz que se observaría en cualquier punto de la escena, a partir de una posición de cámara dada.</p>
+<p><img src="images/pipeline_website-01.png" class="img-fluid"></p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/pipeline_website-02.svg" class="img-fluid figure-img" width="400"></p>
+</figure>
+</div>
+<p>La salida es la densidad de volumen y la radiación emitida dependiente de la vista en esa ubicación espacial.</p>
+</section>
+<section id="renderizado" class="level3" data-number="2.2.3">
+<h3 data-number="2.2.3" class="anchored" data-anchor-id="renderizado"><span class="header-section-number">2.2.3</span> Renderizado</h3>
+<p>Una vez que se ha entrenado la red neuronal, se puede utilizar para generar vistas sintéticas de la escena. Para ello, se selecciona una posición de cámara arbitraria, y se utiliza la red neuronal para predecir la radiación de luz en cada punto de la escena, a partir de esta posición de cámara. A continuación, se renderiza la vista sintética correspondiente a la posición de cámara seleccionada, utilizando la información de radiación de luz predicha por la red neuronal.</p>
+<p>El método NerF ha demostrado ser altamente efectivo en la síntesis de vistas realistas de escenas complejas, como paisajes naturales o interiores detallados.</p>
+</section>
+</section>
+<section id="experimentation" class="level2" data-number="2.3">
+<h2 data-number="2.3" class="anchored" data-anchor-id="experimentation"><span class="header-section-number">2.3</span> Experimentation</h2>
+</section>
+<section id="postprocess" class="level2" data-number="2.4">
+<h2 data-number="2.4" class="anchored" data-anchor-id="postprocess"><span class="header-section-number">2.4</span> Postprocess</h2>
+<p>Los software de edición de modelado 3D normalmente trabajan con renderizado de malla y este tipo de modelos retornan resultados denominados rendereización volumétrica, entonces al hoy (22-10-2023) es posible de realizar con técnicas de <em>Cube Maching</em> pero perdiendo mucha calidad.</p>
+</section>
+<section id="references" class="level2" data-number="2.5">
+<h2 data-number="2.5" class="anchored" data-anchor-id="references"><span class="header-section-number">2.5</span> References</h2>
 
 
 <div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
-<div id="ref-schoenberger2016sfm" class="csl-entry" role="listitem">
-Schönberger, Johannes Lutz, and Jan-Michael Frahm. 2016. <span>“Structure-from-Motion Revisited.”</span> In <em>Conference on Computer Vision and Pattern Recognition (CVPR)</em>.
-</div>
-<div id="ref-schoenberger2016mvs" class="csl-entry" role="listitem">
-Schönberger, Johannes Lutz, Enliang Zheng, Marc Pollefeys, and Jan-Michael Frahm. 2016. <span>“Pixelwise View Selection for Unstructured Multi-View Stereo.”</span> In <em>European Conference on Computer Vision (ECCV)</em>.
+<div id="ref-mildenhall2020nerf" class="csl-entry" role="listitem">
+Mildenhall, Ben, Pratul P. Srinivasan, Matthew Tancik, Jonathan T. Barron, Ravi Ramamoorthi, and Ren Ng. 2020. <span>“NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis.”</span> In <em>ECCV</em>.
 </div>
 </div>
+</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -492,13 +539,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./ref_digital.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">Referencias Digitales</span>
+      <a href="./intro.html" class="pagination-link">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./contacts.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">B</span>&nbsp; <span class="chapter-title">Directorio de Contactos</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./instant_ngp.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Instant NGP</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
