@@ -32,7 +32,7 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./intro.html" rel="next">
+<link href="./slay_project.html" rel="next">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
 <script src="site_libs/quarto-html/tippy.umd.min.js"></script>
@@ -109,32 +109,38 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./slay_project.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Slay Project</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./nerf.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">NeRF</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">NeRF</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./instant_ngp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Instant NGP</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Instant NGP</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./3d_gaussian_splatting.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Gasussian Splatting 3D</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Gasussian Splatting 3D</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./4d_gaussian_splatting.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Gasussian Splatting 4D</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Gasussian Splatting 4D</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -182,7 +188,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a></li>
+  <li><a href="#preface" id="toc-preface" class="nav-link active" data-scroll-target="#preface">Preface</a>
+  <ul class="collapse">
+  <li><a href="#objetivos-del-libro" id="toc-objetivos-del-libro" class="nav-link" data-scroll-target="#objetivos-del-libro">Objetivos del Libro</a>
+  <ul class="collapse">
+  <li><a href="#análisis-del-presente-y-futuro-del-modelado-3d" id="toc-análisis-del-presente-y-futuro-del-modelado-3d" class="nav-link" data-scroll-target="#análisis-del-presente-y-futuro-del-modelado-3d">1. Análisis del presente y futuro del modelado 3D</a></li>
+  <li><a href="#aplicación-en-proyecto-slay" id="toc-aplicación-en-proyecto-slay" class="nav-link" data-scroll-target="#aplicación-en-proyecto-slay">2. Aplicación en Proyecto Slay</a></li>
+  </ul></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -221,13 +234,31 @@ ul.task-list li input[type="checkbox"] {
 
 <section id="preface" class="level1 unnumbered">
 <h1 class="unnumbered">Preface</h1>
-<p><img src="images/b3-hero.png" class="img-fluid"></p>
-<p>Este libro digital tiene como obejtivo general ser un resumen metodológico de la historia y estado del arte de la metodología <a href="https://www.matthewtancik.com/nerf">NeRF</a> (Neural Radiance Fields), como también los experimentos realizados bajo el proyecto Slay.</p>
-<p>El proyecto Slay …. experiencia en un concierto</p>
-<p><img src="images/b1-concert-3.png" class="img-fluid"></p>
-<p>La tecnología <a href="https://www.matthewtancik.com/nerf">NeRF</a> (Neural Radiance Fields es la clave para hacer esto realidad. Puede reconstruir la representación tridimensional de una escena a partir de imágenes captadas desde múltiples ángulos y generar imágenes de la escena desde cualquier punto de vista y posición (nueva síntesis de puntos de vista).</p>
+<p>Bienvenidos a este libro digital que explora las tecnologías de modelado 3D basándose en imágenes en 2D como los es NeRF (Neural Radiance Fields) y actualemente Gaussian Spatting.</p>
+<section id="objetivos-del-libro" class="level2">
+<h2 class="anchored" data-anchor-id="objetivos-del-libro">Objetivos del Libro</h2>
+<p>El propósito fundamental de este libro es proporcionar una visión completa y detallada de la tecnología NERF. Desde su concepción hasta su estado actual, exploraremos cada aspecto de esta innovadora metodología de modelado 3D. El presente libro tiene dos objetivos principales</p>
+<section id="análisis-del-presente-y-futuro-del-modelado-3d" class="level3">
+<h3 class="anchored" data-anchor-id="análisis-del-presente-y-futuro-del-modelado-3d">1. Análisis del presente y futuro del modelado 3D</h3>
+<ul>
+<li><p><strong>Historia y Evolución</strong>: Comenzaremos por rastrear los orígenes de NERF y cómo ha evolucionado a lo largo del tiempo. Desde los conceptos iniciales hasta las implementaciones de vanguardia, examinaremos su trayectoria y descubriremos cómo ha revolucionado el campo del modelado 3D.</p></li>
+<li><p><strong>Estado del Arte</strong>: Exploraremos las últimas investigaciones y avances en el campo de NERF y Gaussian Spatting. A través de ejemplos y estudios de casos actuales, veremos cómo esta tecnología está siendo utilizada en aplicaciones prácticas y cómo continúa evolucionando.</p></li>
+<li><p><strong>Definiciones y Conceptos Clave</strong>: Entenderemos a fondo los términos y conceptos esenciales asociados a la tegnologías de modelado 3D. Desde campos de radiancia hasta redes neuronales, te proporcionaremos una base sólida para comprender los detalles técnicos.</p></li>
+<li><p><strong>Registro de Recursos</strong>: Compilaremos una lista de recursos disponibles, incluyendo bibliografía, herramientas de software, y enlaces a implementaciones de código.</p></li>
+</ul>
+</section>
+<section id="aplicación-en-proyecto-slay" class="level3">
+<h3 class="anchored" data-anchor-id="aplicación-en-proyecto-slay">2. Aplicación en Proyecto Slay</h3>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="images/b3-hero.png" class="img-fluid figure-img" width="800"></p>
+</figure>
+</div>
+<p>En el presente libro será además una bitácora de aplicación de los avances de la tecnología de modelado 3D y 4D en el proyecto Slay que recolectando los registros audiovisuales en los conciertos crear una experiencia en 4D a millones de de usuarios en otras partes del mundo.</p>
 
 
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -468,8 +499,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   <div class="nav-page nav-page-previous">
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./intro.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./slay_project.html" class="pagination-link">
+        <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Slay Project</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
