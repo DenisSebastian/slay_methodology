@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Slay Book - 5&nbsp; Gasussian Splatting 4D</title>
+<title>Slay Book - 6&nbsp; Gasussian Splatting 4D</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -77,7 +77,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./4d_gaussian_splatting.html"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Gasussian Splatting 4D</span></a></li></ol></nav>
+      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./4d_gaussian_splatting.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Gasussian Splatting 4D</span></a></li></ol></nav>
       <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
       </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -110,32 +110,38 @@ ul.task-list li input[type="checkbox"] {
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="./slay_project.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Slay Project</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="./intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./nerf.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">NeRF</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">NeRF</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./instant_ngp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Instant NGP</span></span></a>
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Instant NGP</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./3d_gaussian_splatting.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Gasussian Splatting 3D</span></span></a>
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Gasussian Splatting 3D</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./4d_gaussian_splatting.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Gasussian Splatting 4D</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Gasussian Splatting 4D</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -183,14 +189,14 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract"><span class="header-section-number">5.1</span> Abstract</a></li>
-  <li><a href="#explanation" id="toc-explanation" class="nav-link" data-scroll-target="#explanation"><span class="header-section-number">5.2</span> Explanation</a></li>
-  <li><a href="#experimentation" id="toc-experimentation" class="nav-link" data-scroll-target="#experimentation"><span class="header-section-number">5.3</span> Experimentation</a>
+  <li><a href="#abstract" id="toc-abstract" class="nav-link active" data-scroll-target="#abstract"><span class="header-section-number">6.1</span> Abstract</a></li>
+  <li><a href="#explanation" id="toc-explanation" class="nav-link" data-scroll-target="#explanation"><span class="header-section-number">6.2</span> Explanation</a></li>
+  <li><a href="#experimentation" id="toc-experimentation" class="nav-link" data-scroll-target="#experimentation"><span class="header-section-number">6.3</span> Experimentation</a>
   <ul class="collapse">
-  <li><a href="#code" id="toc-code" class="nav-link" data-scroll-target="#code"><span class="header-section-number">5.3.1</span> Code</a></li>
-  <li><a href="#postprocess" id="toc-postprocess" class="nav-link" data-scroll-target="#postprocess"><span class="header-section-number">5.3.2</span> Postprocess</a></li>
+  <li><a href="#code" id="toc-code" class="nav-link" data-scroll-target="#code"><span class="header-section-number">6.3.1</span> Code</a></li>
+  <li><a href="#postprocess" id="toc-postprocess" class="nav-link" data-scroll-target="#postprocess"><span class="header-section-number">6.3.2</span> Postprocess</a></li>
   </ul></li>
-  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">5.4</span> References</a></li>
+  <li><a href="#references" id="toc-references" class="nav-link" data-scroll-target="#references"><span class="header-section-number">6.4</span> References</a></li>
   </ul>
 </nav>
     </div>
@@ -199,7 +205,7 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Gasussian Splatting 4D</span></h1>
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Gasussian Splatting 4D</span></h1>
 <p class="subtitle lead">for Real-Time Radiance Field Rendering</p>
 </div>
 
@@ -215,31 +221,31 @@ ul.task-list li input[type="checkbox"] {
 
 </header>
 
-<section id="abstract" class="level2" data-number="5.1">
-<h2 data-number="5.1" class="anchored" data-anchor-id="abstract"><span class="header-section-number">5.1</span> Abstract</h2>
+<section id="abstract" class="level2" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="abstract"><span class="header-section-number">6.1</span> Abstract</h2>
 <p>Representing and rendering dynamic scenes has been an important but challenging task. Especially, to accurately model complex motions, high efficiency is usually hard to maintain. We introduce the 4D Gaussian Splatting (4D-GS) to achieve real-time dynamic scene rendering while also enjoying high training and storage efficiency. An efficient deformation field is constructed to model both Gaussian motions and shape deformations. Different adjacent Gaussians are connected via a HexPlane to produce more accurate position and shape deformations. Our 4D-GS method achieves real-time rendering under high resolutions, 70 FPS at a 800*800 resolution on an RTX 3090 GPU, while maintaining comparable or higher quality than previous state-of-the-art methods</p>
 <div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="https://guanjunwu.github.io/4dgs/static/videos/teaser_beef.mp4"></video></div>
 </section>
-<section id="explanation" class="level2" data-number="5.2">
-<h2 data-number="5.2" class="anchored" data-anchor-id="explanation"><span class="header-section-number">5.2</span> Explanation</h2>
+<section id="explanation" class="level2" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="explanation"><span class="header-section-number">6.2</span> Explanation</h2>
 <p><a href="https://guanjunwu.github.io/4dgs/">Web Page</a></p>
 <p><img src="images/pipeline_4d_gs.bmp" class="img-fluid"></p>
 <p><a href="https://arxiv.org/pdf/2310.08528.pdf">Paper: 4D Gaussian Splatting</a></p>
 </section>
-<section id="experimentation" class="level2" data-number="5.3">
-<h2 data-number="5.3" class="anchored" data-anchor-id="experimentation"><span class="header-section-number">5.3</span> Experimentation</h2>
-<section id="code" class="level3" data-number="5.3.1">
-<h3 data-number="5.3.1" class="anchored" data-anchor-id="code"><span class="header-section-number">5.3.1</span> Code</h3>
+<section id="experimentation" class="level2" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="experimentation"><span class="header-section-number">6.3</span> Experimentation</h2>
+<section id="code" class="level3" data-number="6.3.1">
+<h3 data-number="6.3.1" class="anchored" data-anchor-id="code"><span class="header-section-number">6.3.1</span> Code</h3>
 <p><a href="https://github.com/hustvl/4DGaussians">Github 4DGaussians</a></p>
 </section>
-<section id="postprocess" class="level3" data-number="5.3.2">
-<h3 data-number="5.3.2" class="anchored" data-anchor-id="postprocess"><span class="header-section-number">5.3.2</span> Postprocess</h3>
+<section id="postprocess" class="level3" data-number="6.3.2">
+<h3 data-number="6.3.2" class="anchored" data-anchor-id="postprocess"><span class="header-section-number">6.3.2</span> Postprocess</h3>
 <p>Renderización volumétrica a malla Cube Maching</p>
 <p>no</p>
 </section>
 </section>
-<section id="references" class="level2" data-number="5.4">
-<h2 data-number="5.4" class="anchored" data-anchor-id="references"><span class="header-section-number">5.4</span> References</h2>
+<section id="references" class="level2" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="references"><span class="header-section-number">6.4</span> References</h2>
 
 
 </section>
@@ -481,7 +487,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
       <a href="./3d_gaussian_splatting.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Gasussian Splatting 3D</span></span>
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Gasussian Splatting 3D</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">

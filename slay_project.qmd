@@ -21,7 +21,6 @@ format:
 :::
 
 ::: {.column width="45%"}
-<br> <br> <br> <br> <br>
 
 #### Slay let you watch at home on your phone or headset your favorite shows and concerts, just like you are there. {.unnumbered}
 :::
@@ -56,19 +55,15 @@ With these simple steps you can contribute by uploading a video to our platform 
 
 ::: columns
 ::: {.column width="50%"}
-<br> <br> <br> <br>
 
 ##### 1. Upload a video on our app or website. {.unnumbered}
 
-<br>
 
 ##### 2. We put together all the videos uploaded. {.unnumbered}
 
-<br>
 
 ##### 3. Experience and share content with your friends. {.unnumbered}
 
-<br>
 :::
 
 ::: {.column width="5%"}
@@ -98,10 +93,6 @@ Using our **#buzzword** technology to export media into a metaverse experience.
 :::
 
 ::: {.column width="60%"}
-<br>
-<br>
-<br>
-<br>
 
 ### Discover and enjoy concerts and shows on our apps. {.unnumbered}
 
