@@ -1,0 +1,113 @@
+---
+subtitle: "Every show, anywhere, anytime."
+format:
+  html:
+    toc-depth: 3
+    toc: false
+---
+
+# Slay Project
+
+![](images/hero-slay.jpg){fig-align="center"}
+
+## Don't miss another show, ever. {.unnumbered}
+
+::: columns
+::: {.column width="50%"}
+<br> ![](images/b1-vr.png){fig-align="center"}
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="45%"}
+<br> <br> <br> <br> <br>
+
+#### Slay let you watch at home on your phone or headset your favorite shows and concerts, just like you are there. {.unnumbered}
+:::
+:::
+
+## All the content is out there. We're just putting it together. {.unnumbered}
+
+We collect all videos recorded from a show and re-creates the concerts from start to finish so you can enjoy it from your home.
+
+With these simple steps you can contribute by uploading a video to our platform and we take care of the rest, then you can just enojoy the show.
+
+<br>
+
+::: columns
+::: {.column width="50%"}
+<br> <br> <br> ![](images/b1-stage.png){fig-align="center" width="800"}
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="45%"}
+![](images/b1-concert-1.png){fig-align="center"}
+
+![](images/b1-concert-2.png){fig-align="center"}
+
+![](images/b1-concert-3.png){fig-align="center"}
+:::
+:::
+
+## How it Works {.unnumbered}
+
+::: columns
+::: {.column width="50%"}
+<br> <br> <br> <br>
+
+##### 1. Upload a video on our app or website. {.unnumbered}
+
+<br>
+
+##### 2. We put together all the videos uploaded. {.unnumbered}
+
+<br>
+
+##### 3. Experience and share content with your friends. {.unnumbered}
+
+<br>
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="40%"}
+<br>
+
+![](images/b2-how.png){fig-align="center" width="400"}
+:::
+:::
+
+## Metaverse ins Here {.unnumbered}
+
+Using our **#buzzword** technology to export media into a metaverse experience.
+
+![](images/b3-hero.png)
+
+## Concerts on our apps {.unnumbered}
+
+::: columns
+::: {.column width="30%"}
+![](images/b4-app.png){fig-align="left" width="200"}
+:::
+
+::: {.column width="5%"}
+:::
+
+::: {.column width="60%"}
+<br>
+<br>
+<br>
+<br>
+
+### Discover and enjoy concerts and shows on our apps. {.unnumbered}
+
+
+Slay will be available later this year on the AppStore and Google Play store.
+
+A beta version of Meta Quest will be released on early 2024.
+:::
+:::

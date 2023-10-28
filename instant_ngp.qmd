@@ -5,6 +5,8 @@ subtitle: "Develop and Deploy Instant NGP without writing CUDA"
 
 ## Introducción
 
+
+
 Imagina esto: cuando hojea un álbum de fotos y ve imágenes de viajes familiares pasados, ¿desea volver a visitar esos lugares y revivir esos cálidos momentos? Cuando navega por un museo en línea, ¿desea ajustar libremente su perspectiva, observar de cerca los detalles de los objetos expuestos y disfrutar de una interacción plena con las reliquias culturales? Cuando los médicos se enfrentan a pacientes, ¿pueden mejorar significativamente la precisión y la eficacia del diagnóstico sintetizando una perspectiva tridimensional de la zona afectada a partir de imágenes y proporcionando estimaciones del tamaño y el volumen de la lesión?
 
 La tecnología {{< var nerf.name_l >}} ({{< var nerf.name >}}) es la clave para hacer esto realidad. Puede reconstruir la representación tridimensional de una escena a partir de imágenes captadas desde múltiples ángulos y generar imágenes de la escena desde cualquier punto de vista y posición (nueva síntesis de puntos de vista).

@@ -1,15 +1,23 @@
 # Preface {.unnumbered}
 
-![](images/b3-hero.png)
+Bienvenidos a este libro digital que explora las tecnologías de modelado 3D basándose en imágenes en 2D como los es NeRF (Neural Radiance Fields) y actualemente Gaussian Spatting.
 
-Este libro digital tiene como obejtivo general ser un resumen metodológico de la historia y estado del arte de la metodología {{< var nerf.name_l >}} ({{< var nerf.name >}}), como también los experimentos realizados bajo el proyecto Slay.
+## Objetivos del Libro
 
+El propósito fundamental de este libro es proporcionar una visión completa y detallada de la tecnología NERF. Desde su concepción hasta su estado actual, exploraremos cada aspecto de esta innovadora metodología de modelado 3D. El presente libro tiene dos objetivos principales
 
-El proyecto Slay .... experiencia en un concierto
+### 1. Análisis del presente y futuro del modelado 3D
 
-![](images/b1-concert-3.png)
+-   **Historia y Evolución**: Comenzaremos por rastrear los orígenes de NERF y cómo ha evolucionado a lo largo del tiempo. Desde los conceptos iniciales hasta las implementaciones de vanguardia, examinaremos su trayectoria y descubriremos cómo ha revolucionado el campo del modelado 3D.
 
-La tecnología {{< var nerf.name_l >}} ({{< var nerf.name >}} es la clave para hacer esto realidad. Puede reconstruir la representación tridimensional de una escena a partir de imágenes captadas desde múltiples ángulos y generar imágenes de la escena desde cualquier punto de vista y posición (nueva síntesis de puntos de vista).
+-   **Estado del Arte**: Exploraremos las últimas investigaciones y avances en el campo de NERF y Gaussian Spatting. A través de ejemplos y estudios de casos actuales, veremos cómo esta tecnología está siendo utilizada en aplicaciones prácticas y cómo continúa evolucionando.
 
+-   **Definiciones y Conceptos Clave**: Entenderemos a fondo los términos y conceptos esenciales asociados a la tegnologías de modelado 3D. Desde campos de radiancia hasta redes neuronales, te proporcionaremos una base sólida para comprender los detalles técnicos.
 
+-   **Registro de Recursos**: Compilaremos una lista de recursos disponibles, incluyendo bibliografía, herramientas de software, y enlaces a implementaciones de código.
 
+### 2. Aplicación en Proyecto Slay
+
+![](images/b3-hero.png){fig-align="center" width="800"}
+
+En el presente libro será además una bitácora de aplicación de los avances de la tecnología de modelado 3D y 4D en el proyecto Slay que recolectando los registros audiovisuales en los conciertos crear una experiencia en 4D a millones de de usuarios en otras partes del mundo.

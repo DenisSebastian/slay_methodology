@@ -11,6 +11,7 @@ book:
     left: "Copyright 2023, [Denis Berroeta](<denis.berroeta@gmail.com>)" 
   chapters:
     - index.qmd
+    - slay_project.qmd
     - intro.qmd
     - nerf.qmd
     - instant_ngp.qmd

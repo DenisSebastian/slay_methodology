@@ -4,210 +4,119 @@
     "href": "index.html",
     "title": "Slay Book",
     "section": "",
-    "text": "Preface\n\nEste libro digital tiene como obejtivo general ser un resumen metodológico de la historia y estado del arte de la metodología NeRF (Neural Radiance Fields), como también los experimentos realizados bajo el proyecto Slay.\nEl proyecto Slay …. experiencia en un concierto\n\nLa tecnología NeRF (Neural Radiance Fields es la clave para hacer esto realidad. Puede reconstruir la representación tridimensional de una escena a partir de imágenes captadas desde múltiples ángulos y generar imágenes de la escena desde cualquier punto de vista y posición (nueva síntesis de puntos de vista)."
-  },
-  {
-    "objectID": "ref_digital.html",
-    "href": "ref_digital.html",
-    "title": "Referencias Digitales",
-    "section": "",
-    "text": "Instant NeRF\nNVIDIA Research Turns 2D Photos Into 3D Scenes in the Blink of an AI"
-  },
-  {
-    "objectID": "concepts.html",
-    "href": "concepts.html",
-    "title": "Appendix A — Conceptos",
-    "section": "",
-    "text": "NeRF:\n\nNeRF (Neural Radiance Field) Un campo neural de radiancia es una red simple totalmente conectada (los pesos son ~5MB) entrenada para reproducir vistas de entrada de una sola escena utilizando una pérdida de renderizado. La red mapea directamente desde la ubicación espacial y la dirección de visión (entrada 5D) al color y la opacidad (salida 4D), actuando como el “volumen” para que podamos utilizar el renderizado de volumen para renderizar de forma diferenciada nuevas vistas.\n\nCOLMAP:\n\nCOLMAP es un programa de estructura a partir del movimiento (SfM) y estereoscopía multivista (MVS) con una interfaz gráfica y de línea de comandos. Ofrece una amplia gama de funciones para la reconstrucción de colecciones de imágenes ordenadas y desordenadas. El software está licenciado bajo la nueva licencia BSD. Creditos: Schönberger and Frahm (2016), Schönberger et al. (2016)\n\nFotogrametría:\n\nEs….\n\nInstant NeRF:\n\nC….\n\nCUDA:\n\nCube Maching…\n\nCube Maching:\n\n…\n\n\n\n\n\n\nSchönberger, Johannes Lutz, and Jan-Michael Frahm. 2016. “Structure-from-Motion Revisited.” In Conference on Computer Vision and Pattern Recognition (CVPR).\n\n\nSchönberger, Johannes Lutz, Enliang Zheng, Marc Pollefeys, and Jan-Michael Frahm. 2016. “Pixelwise View Selection for Unstructured Multi-View Stereo.” In European Conference on Computer Vision (ECCV)."
-  },
-  {
-    "objectID": "contacts.html#evergine.name",
-    "href": "contacts.html#evergine.name",
-    "title": "Appendix B — Directorio de Contactos",
-    "section": "B.1 ",
-    "text": "B.1"
-  },
-  {
-    "objectID": "contacts.html#var-evergine.name",
-    "href": "contacts.html#var-evergine.name",
-    "title": "Appendix B — Directorio de Contactos",
-    "section": "B.1 Evergine",
-    "text": "B.1 Evergine\nPage Official\nYoutube Channel\nLinkedIn Page\nGithub Repository"
-  },
-  {
-    "objectID": "intro.html",
-    "href": "intro.html",
-    "title": "1  Introduction",
-    "section": "",
-    "text": "La metodología de inteligencia artificial denominada NeRF Neural Radiance Fields surge del trabajo de investigación de Mildenhall et al. (2020), donde presenta un método que consigue resultados de vanguardia (en ese momento) para sintetizar nuevas vistas de escenas complejas optimizando una función de escena volumétrica continua subyacente utilizando un conjunto disperso de vistas de entrada.\nEn términos técnicos su algoritmo representa una escena utilizando una red neuronal profunda totalmente conectada (no convolucional), cuya entrada es una única coordenada continua 5D (ubicación espacial (x, y, z) y dirección de visión (\\theta, \\phi)) y cuya salida es la densidad de volumen y la radiación emitida dependiente de la vista en esa ubicación espacial.\n\n\n\n\n\n\nSintetizaron las vistas consultando las coordenadas 5D a lo largo de los rayos de la cámara y utilizaron técnicas clásicas de renderizado de volúmenes para proyectar los colores y densidades de salida en una imagen. Dado que el renderizado de volúmenes es naturalmente diferenciable, la única entrada necesaria para optimizar esta representación es un conjunto de imágenes con poses de cámara conocidas. Describieron cómo optimizar eficazmente los campos de radiancia neuronales para representar nuevas vistas fotorrealistas de escenas con geometría y apariencia complicadas, y demostraron resultados que superan trabajos anteriores sobre representación neuronal y síntesis de vistas. Fuente: Project Page\n\n\n\n\n\n\n\n\nMildenhall, Ben, Pratul P. Srinivasan, Matthew Tancik, Jonathan T. Barron, Ravi Ramamoorthi, and Ren Ng. 2020. “NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis.” In ECCV."
-  },
-  {
-    "objectID": "methods.html",
-    "href": "methods.html",
-    "title": "2  Métodos",
-    "section": "",
-    "text": "En términos técnicos su algoritmo representa una escena utilizando una red neuronal profunda totalmente conectada (no convolucional), cuya entrada es una única coordenada continua 5D (ubicación espacial (x, y, z) y dirección de visión (\\theta, \\phi)) y cuya salida es la densidad de volumen y la radiación emitida dependiente de la vista en esa ubicación espacial.\n\n\n\n\n\n\nSintetizaron las vistas consultando las coordenadas 5D a lo largo de los rayos de la cámara y utilizaron técnicas clásicas de renderizado de volúmenes para proyectar los colores y densidades de salida en una imagen. Dado que el renderizado de volúmenes es naturalmente diferenciable, la única entrada necesaria para optimizar esta representación es un conjunto de imágenes con poses de cámara conocidas. Describieron cómo optimizar eficazmente los campos de radiancia neuronales para representar nuevas vistas fotorrealistas de escenas con geometría y apariencia complicadas, y demostraron resultados que superan trabajos anteriores sobre representación neuronal y síntesis de vistas. Fuente: Project Page"
-  },
-  {
-    "objectID": "intro.html#estado-actual",
-    "href": "intro.html#estado-actual",
-    "title": "1  Introduction",
-    "section": "1.2 Estado Actual",
-    "text": "1.2 Estado Actual"
-  },
-  {
-    "objectID": "methods.html#paso-a-paso",
-    "href": "methods.html#paso-a-paso",
-    "title": "2  Métodos",
-    "section": "2.2 Paso a paso",
-    "text": "2.2 Paso a paso\nEn primer lugar, se deben tener en cuenta las imágenes de referencia de la escena, junto con la información de la posición de cámara correspondiente a cada imagen. A partir de estos datos, se entrena una red neuronal para que pueda predecir la radiación de luz en cualquier punto de la escena.\nPara ello, se divide la escena en pequeños fragmentos, y se ajusta un modelo de radiación de luz a cada uno de ellos. Este modelo permite predecir la radiación de luz que se observaría en cualquier punto de la escena, a partir de una posición de cámara dada.\nUna vez que se ha entrenado la red neuronal, se puede utilizar para generar vistas sintéticas de la escena. Para ello, se selecciona una posición de cámara arbitraria, y se utiliza la red neuronal para predecir la radiación de luz en cada punto de la escena, a partir de esta posición de cámara. A continuación, se renderiza la vista sintética correspondiente a la posición de cámara seleccionada, utilizando la información de radiación de luz predicha por la red neuronal.\nEl método NerF ha demostrado ser altamente efectivo en la síntesis de vistas realistas de escenas complejas, como paisajes naturales o interiores detallados."
-  },
-  {
-    "objectID": "methods.html#introducción",
-    "href": "methods.html#introducción",
-    "title": "2  Métodos",
-    "section": "2.1 Introducción",
-    "text": "2.1 Introducción\nEn términos técnicos su algoritmo representa una escena utilizando una red neuronal profunda totalmente conectada (no convolucional), cuya entrada es una única coordenada continua 5D (ubicación espacial (x, y, z) y dirección de visión (\\theta, \\phi)) y cuya salida es la densidad de volumen y la radiación emitida dependiente de la vista en esa ubicación espacial.\n\n\n\n\n\n\nEn el trabajo de (mildenhall2020ner?) sintetizaron las vistas consultando las coordenadas 5D a lo largo de los rayos de la cámara y utilizaron técnicas clásicas de renderizado de volúmenes para proyectar los colores y densidades de salida en una imagen. Dado que el renderizado de volúmenes es naturalmente diferenciable, la única entrada necesaria para optimizar esta representación es un conjunto de imágenes con poses de cámara conocidas. Describieron cómo optimizar eficazmente los campos de radiancia neuronales para representar nuevas vistas fotorrealistas de escenas con geometría y apariencia complicadas, y demostraron resultados que superan trabajos anteriores sobre representación neuronal y síntesis de vistas. Fuente: Project Page"
-  },
-  {
-    "objectID": "methods.html#introducción-nerf-clásico",
-    "href": "methods.html#introducción-nerf-clásico",
-    "title": "3  NeRF",
-    "section": "3.1 Introducción NeRF Clásico",
-    "text": "3.1 Introducción NeRF Clásico\nEl método NerF (Neural Radiance Fields) es una técnica de inteligencia artificial que permite generar vistas sintéticas de escenas complejas en 3D. Para ello, utiliza una red neuronal que modela la radiación de luz a través de la escena y que puede ser entrenada con un conjunto de datos de imágenes y posiciones de cámara. En esencia, esta técnica crea un modelo 3D de la escena, que puede ser renderizado desde cualquier punto de vista. El método NerF ha demostrado ser altamente efectivo en la síntesis de vistas realistas de escenas complejas, como paisajes naturales o interiores detallados. Si quieres profundizar en el tema, puedes revisar el paper “NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis” Mildenhall et al. (2020) .\nEn el trabajo de Mildenhall et al. (2020) sintetizaron las vistas consultando las coordenadas 5D a lo largo de los rayos de la cámara y utilizaron técnicas clásicas de renderizado de volúmenes para proyectar los colores y densidades de salida en una imagen. Dado que el renderizado de volúmenes es naturalmente diferenciable, la única entrada necesaria para optimizar esta representación es un conjunto de imágenes con poses de cámara conocidas. Describieron cómo optimizar eficazmente los campos de radiancia neuronales para representar nuevas vistas fotorrealistas de escenas con geometría y apariencia complicadas, y demostraron resultados que superan trabajos anteriores sobre representación neuronal y síntesis de vistas. Fuente: Project Page"
-  },
-  {
-    "objectID": "methods.html#proceso",
-    "href": "methods.html#proceso",
-    "title": "3  NeRF",
-    "section": "3.2 Proceso",
-    "text": "3.2 Proceso\n\n3.2.1 Entrada\nEn primer lugar, se deben tener en cuenta las imágenes de referencia de la escena, junto con la información de la posición de cámara correspondiente a cada imagen. A partir de estos datos, se entrena una red neuronal para que pueda predecir la radiación de luz en cualquier punto de la escena.\n\n\n\n\n\nSe sintetiza las vistas consultando las coordenadas continua 5D (ubicación espacial (x, y, z) y dirección de visión (\\theta, \\phi)) a lo largo de los rayos de la cámara y utilizaron técnicas clásicas de renderizado de volúmenes para proyectar los colores y densidades de salida en una imagen.\n\n\n3.2.2 Entrenamiento\nEn esta etapa utiliza una red neuronal que modela la radiación de luz a través de la escena, y que puede ser entrenada a partir de un conjunto de datos de imágenes y posiciones de cámara. En esencia, esta técnica crea un modelo 3D de la escena\nPara ello, se divide la escena en pequeños fragmentos, y se ajusta un modelo de radiación de luz a cada uno de ellos. Este modelo permite predecir la radiación de luz que se observaría en cualquier punto de la escena, a partir de una posición de cámara dada.\n\n\n\n\n\n\nLa salida es la densidad de volumen y la radiación emitida dependiente de la vista en esa ubicación espacial.\n\n\n3.2.3 Renderizado\nUna vez que se ha entrenado la red neuronal, se puede utilizar para generar vistas sintéticas de la escena. Para ello, se selecciona una posición de cámara arbitraria, y se utiliza la red neuronal para predecir la radiación de luz en cada punto de la escena, a partir de esta posición de cámara. A continuación, se renderiza la vista sintética correspondiente a la posición de cámara seleccionada, utilizando la información de radiación de luz predicha por la red neuronal.\nEl método NerF ha demostrado ser altamente efectivo en la síntesis de vistas realistas de escenas complejas, como paisajes naturales o interiores detallados.\n\n\n\n\nMildenhall, Ben, Pratul P. Srinivasan, Matthew Tancik, Jonathan T. Barron, Ravi Ramamoorthi, and Ren Ng. 2020. “NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis.” In ECCV."
-  },
-  {
-    "objectID": "ref_digital.html#instant-nerf",
-    "href": "ref_digital.html#instant-nerf",
-    "title": "Referencias Digitales",
-    "section": "Instant NeRF",
-    "text": "Instant NeRF\nInstant Neural Graphics Primitives with a Multiresolution Hash Encoding\nGetting Started with NVIDIA Instant NeRFs\nNVIDIA Research Turns 2D Photos Into 3D Scenes in the Blink of an AI"
-  },
-  {
-    "objectID": "references.html",
-    "href": "references.html",
-    "title": "Referencias Bibliográficas",
-    "section": "",
-    "text": "Mildenhall, Ben, Pratul P. Srinivasan, Matthew Tancik, Jonathan T.\nBarron, Ravi Ramamoorthi, and Ren Ng. 2020. “NeRF: Representing\nScenes as Neural Radiance Fields for View Synthesis.” In\nECCV.\n\n\nSchönberger, Johannes Lutz, and Jan-Michael Frahm. 2016.\n“Structure-from-Motion Revisited.” In Conference on\nComputer Vision and Pattern Recognition (CVPR).\n\n\nSchönberger, Johannes Lutz, Enliang Zheng, Marc Pollefeys, and\nJan-Michael Frahm. 2016. “Pixelwise View Selection for\nUnstructured Multi-View Stereo.” In European Conference on\nComputer Vision (ECCV)."
-  },
-  {
-    "objectID": "ref_digital.html#dot-csv---canal-youtube",
-    "href": "ref_digital.html#dot-csv---canal-youtube",
-    "title": "Referencias Digitales",
-    "section": "Dot CSV - Canal Youtube",
-    "text": "Dot CSV - Canal Youtube\n\n\n\n\n\n\n1. ¿Es NeRF el Futuro de los Gráficos en Tiempo Real?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2. ¡Me he CAPTURADO en 3D… ¡DENTRO de una Red Neuronal!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3. ¡Me he CAPTURADO EN 3D con Inteligencia Artificial …en SEGUNDOS!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4. ¡Esta TECNOLOGÍA será la REVOLUCIÓN de los Gráficos 3D!"
-  },
-  {
-    "objectID": "ref_digital.html#taichi-lang",
-    "href": "ref_digital.html#taichi-lang",
-    "title": "Referencias Digitales",
-    "section": "Taichi-Lang",
-    "text": "Taichi-Lang\nTaichi NeRF (Part 1): Develop and Deploy Instant NGP without writing CUDA"
-  },
-  {
-    "objectID": "taichi.html#introducción",
-    "href": "taichi.html#introducción",
-    "title": "2  Instant NGP",
-    "section": "2.1 Introducción",
-    "text": "2.1 Introducción\nImagina esto: cuando hojea un álbum de fotos y ve imágenes de viajes familiares pasados, ¿desea volver a visitar esos lugares y revivir esos cálidos momentos? Cuando navega por un museo en línea, ¿desea ajustar libremente su perspectiva, observar de cerca los detalles de los objetos expuestos y disfrutar de una interacción plena con las reliquias culturales? Cuando los médicos se enfrentan a pacientes, ¿pueden mejorar significativamente la precisión y la eficacia del diagnóstico sintetizando una perspectiva tridimensional de la zona afectada a partir de imágenes y proporcionando estimaciones del tamaño y el volumen de la lesión?\nLa tecnología NeRF (Neural Radiance Fields) es la clave para hacer esto realidad. Puede reconstruir la representación tridimensional de una escena a partir de imágenes captadas desde múltiples ángulos y generar imágenes de la escena desde cualquier punto de vista y posición (nueva síntesis de puntos de vista).\nEl siguiente vídeo muestra cómo se utiliza la tecnología NeRF para lograr la itinerancia 3D capturando algunas imágenes estáticas de las oficinas de Taichi con un teléfono móvil.\nEn los últimos dos años, la tecnología NeRF se ha convertido en un campo candente de la visión por ordenador. Desde el revolucionario trabajo de Mildenhall et al. (2020), NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis, el campo de los NeRF ha generado muchos estudios posteriores, especialmente el reciente trabajo mejorado Instant NGP, que fue incluido en la lista de los mejores inventos de 2022 de la revista Time.\nEn comparación con investigaciones anteriores, los avances significativos logrados por los mencionados trabajos NeRF e Instant NGP son:\nNeRF puede obtener una representación de alta precisión de la escena, y las imágenes renderizadas desde nuevos ángulos son muy realistas.\nBasándose en el trabajo de NeRF, Instant NGP acorta significativamente el tiempo de entrenamiento y renderizado, reduciendo el tiempo de entrenamiento a menos de un minuto, y haciendo que el renderizado en tiempo real sea fácilmente alcanzable. Estas mejoras hacen que la tecnología de NeRF sea realmente factible de aplicar.\nNo solo los investigadores en el campo del aprendizaje profundo, sino también los profesionales de muchas otras industrias están siguiendo de cerca los avances de NeRF, pensando en las posibilidades de aplicar NeRF en sus campos.\nEl objetivo principal de este artículo es doble:\n\nQueremos presentar cómo Taichi y PyTorch pueden combinarse para crear un flujo de trabajo de desarrollo Instant NGP totalmente basado en Python. Sin una sola línea de código CUDA, Taichi calculará automáticamente las derivadas de tu núcleo y conseguirá un rendimiento similar al de CUDA. Esto te permite dedicar más tiempo a las iteraciones de ideas de investigación que a la tediosa programación CUDA y al ajuste del rendimiento.\nLos dispositivos móviles serán un escenario esencial para la implementación de NeRF en el futuro. Introducimos el uso del marco Taichi AOT (compilación anticipada), que puede desplegar el modelo NeRF entrenado en dispositivos móviles sin preocuparse por la compatibilidad de plataformas. La siguiente animación muestra nuestros esfuerzos utilizando el marco AOT de Taichi para portar el modelo Lego del papel Instant NGP a un iPad para la inferencia y renderización en tiempo real:\n\n\n\n\n\n\nPrimero repasaremos brevemente los principios de NeRF y las mejoras de Instant NGP, y después presentaremos la combinación de Taichi e Instant NGP."
-  },
-  {
-    "objectID": "taichi.html#referencias",
-    "href": "taichi.html#referencias",
-    "title": "2  Instant NGP",
-    "section": "2.4 Referencias",
-    "text": "2.4 Referencias\nDevelop and Deploy Instant NGP without writing CUDA\n\n\n\n\nMildenhall, Ben, Pratul P. Srinivasan, Matthew Tancik, Jonathan T. Barron, Ravi Ramamoorthi, and Ren Ng. 2020. “NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis.” In ECCV."
-  },
-  {
-    "objectID": "taichi.html#part-i-what-is-a-neural-radiance-field-nerf",
-    "href": "taichi.html#part-i-what-is-a-neural-radiance-field-nerf",
-    "title": "2  Instant NGP",
-    "section": "2.2 Part I: What is a Neural Radiance Field (NeRF)",
-    "text": "2.2 Part I: What is a Neural Radiance Field (NeRF)\nEn términos sencillos, un campo de radiancia neuronal es la codificación de toda una escena 3D en los parámetros de una red neuronal. Para representar una escena desde cualquier punto de vista nuevo, la red neuronal tiene que aprender el color RGB y la densidad de volumen \\sigma (es decir, si el punto está “ocupado” o no) de cada punto del espacio. La densidad de volumen en un punto es independiente del punto de vista, pero el color cambia con el punto de vista (por ejemplo, el objeto visto desde un ángulo diferente cambia), por lo que la red neuronal en realidad necesita aprender el color (r, g, b) y la densidad de volumen \\sigma de un punto (x, y, z) bajo diferentes ángulos de cámara (\\theta, \\phi) (es decir, latitud y longitud).\nPor lo tanto, la entrada al campo de radiancia neuronal es un vector de cinco dimensiones (x, y, z, \\theta, \\phi), y la salida es un vector de cuatro dimensiones (r, g, b, \\sigma):\n\n\n\n\n\nAsumiendo que tenemos tal campo de radiancia neural, enviando los correspondientes x, y, z, \\theta, \\phi) de cada punto en el espacio más allá en el renderizado de volumen resultará en una imagen 2D vista desde el punto de vista actual (\\theta, \\phi).\n\nEl concepto de densidad de volumen (volume rendering) se utiliza a menudo en la computación gráfica para representar medios como nubes y humo. Representa la probabilidad de que un punto bloquee un rayo de luz cuando lo atraviesa. La densidad de volumen mide la contribución de un punto al color final del rayo.\n\n\n2.2.1 Volume Rendering\nEl paso central de NeRF es un proceso denominado renderizado de volumen. El renderizado de volumen puede “aplanar” el campo neuronal en una imagen 2D, que luego se comparará con una imagen de referencia para generar pérdidas. Este proceso es diferenciable, por lo que puede utilizarse para entrenar la red.\nAntes de introducir el renderizado de volumen, entendamos primero los principios básicos de la imagen de cámara. En la computación gráfica, para ahorrar recursos computacionales, se supone que el color de un punto de la escena tras ser alcanzado por un rayo emitido desde la cámara es el color del píxel en la intersección del rayo y la pantalla:\n\n\n\n\n\nSin embargo, al renderizar medios atmosféricos similares al humo, los rayos atraviesan el medio en lugar de detenerse únicamente en su superficie. Además, durante la propagación de los rayos, una cierta proporción de éstos será absorbida por el medio (sin tener en cuenta la dispersión y la autoemisión). La parte del medio que absorbe los rayos contribuye al color final de los rayos. Cuanto mayor sea la densidad de volumen, más rayos serán absorbidos y más intenso será el color de esta parte del medio. Por tanto, el color final de los rayos es la integral de los colores de los puntos a lo largo de la trayectoria.\n Suponiendo que la cámara está en o y la dirección del rayo es d, la ecuación del rayo es r(t)=o+t*d, y su color de píxel predicho c(r) es:\nC(r)=\\int_{t_n}^{t_f}T(t)\\sigma(t)c(r(t), d), dt En la fórmula, T(t) representa la proporción de luz transmitida al punto t, y \\sigma(t)dt representa la proporción de luz bloqueada por una pequeña vecindad cercana al punto t. El producto de ambos es la proporción de luz que llega a t y es bloqueada en t, multiplicada por el color c(r(t), d) de ese punto, que es la contribución de este punto al color final del rayo. El intervalo integral [t_n, t_f] representa el punto de intersección más cercano t_{near} y el punto de intersección más lejano t_{far} del rayo con el medio.\nEn los cálculos reales, necesitamos utilizar sumas discretas para aproximar el valor de la integral. Es decir, muestreamos ciertos puntos discretos a lo largo del rayo y ponderamos sus colores sumándolos. No vamos a entrar en detalles sobre este proceso de discretización, pero puedes consultar explicaciones como la del enlace de la imagen anterior."
-  },
-  {
-    "objectID": "taichi.html#entrenaiento-de-nerf",
-    "href": "taichi.html#entrenaiento-de-nerf",
-    "title": "2  Instant NGP",
-    "section": "2.3 Entrenaiento de NeRF",
-    "text": "2.3 Entrenaiento de NeRF\nUna vez conocidos los campos neuronales de radiancia y el renderizado de volúmenes, veamos más en detalle el proceso de entrenamiento de NeRF. Todo el proceso se divide en cinco pasos, como se muestra en la siguiente figura:\n\n\n\n\n\n\n\nCamera parameters:\n\nTras preparar un conjunto de imágenes 2D capturadas, el primer paso es calcular los parámetros de pose de la cámara para cada imagen. Para ello se pueden utilizar herramientas como COLMAP. COLMAP compara los puntos comunes de la escena que aparecen en diferentes imágenes para calcular la pose de la cámara. Además, suponemos que toda la escena se encuentra dentro de una caja cúbica con un rango de [-1,1]^3.\n\n\n\n3D point sampling:\n\nPara una imagen real, se emite un rayo desde la cámara, que atraviesa la imagen y entra en la escena. El valor del píxel I(p) del punto de intersección p entre el rayo y la imagen es el color de referencia. Tomamos muestras discretas de varios puntos a lo largo de este rayo. Las coordenadas espaciales (x, y, z) de estos puntos de muestra y la pose de la cámara (\\theta, \\phi) calculada en el primer paso se combinan como entrada de la red neuronal.\n\n\n\nNeRF model:\n\nPredecir el color y la densidad de cada punto de muestra en el rayo a través de la red neuronal.\n\n\n\nRendering:\n\nMediante el renderizado de volúmenes, podemos utilizar el color y la densidad de los puntos de muestra obtenidos por la red neuronal en el paso anterior para calcular la suma discreta, aproximando el valor del píxel \\hat{I}(p) correspondiente al rayo.\n\n\n\nPhotometric loss:\n\nComparando \\hat{I}(p) con el verdadero valor de color I(p) del rayo y calculando el error y el gradiente, se puede entrenar la red neuronal."
+    "text": "Preface\nBienvenidos a este libro digital que explora las tecnologías de modelado 3D basándose en imágenes en 2D como los es NeRF (Neural Radiance Fields) y actualemente Gaussian Spatting."
   },
   {
     "objectID": "intro.html#origen",
     "href": "intro.html#origen",
-    "title": "1  Introduction",
-    "section": "1.1 Origen",
-    "text": "1.1 Origen\nEl método de NeRF Neural Radiance Fields es una técnica de inteligencia artificial que permite generar vistas sintéticas de escenas complejas en 3D, a partir de una serie de imágenes de referencia. Para ello, utiliza una red neuronal que modela la radiación de luz a través de la escena, y que puede ser entrenada a partir de un conjunto de datos de imágenes y posiciones de cámara. En esencia, esta técnica crea un modelo 3D de la escena, que puede ser renderizado desde cualquier punto de vista. El método NerF ha demostrado ser altamente efectivo en la síntesis de vistas realistas de escenas complejas, como paisajes naturales o interiores detallados.\nLa metodología de inteligencia artificial denominada NeRF surge del trabajo de investigación de Mildenhall et al. (2020), donde presenta un método que consigue resultados de vanguardia (en ese momento) para sintetizar nuevas vistas de escenas complejas optimizando una función de escena volumétrica continua subyacente utilizando un conjunto disperso de vistas de entrada."
+    "title": "2  Introduction",
+    "section": "2.1 Origen",
+    "text": "2.1 Origen\nEl método de NeRF Neural Radiance Fields es una técnica de inteligencia artificial que permite generar vistas sintéticas de escenas complejas en 3D, a partir de una serie de imágenes de referencia. Para ello, utiliza una red neuronal que modela la radiación de luz a través de la escena, y que puede ser entrenada a partir de un conjunto de datos de imágenes y posiciones de cámara. En esencia, esta técnica crea un modelo 3D de la escena, que puede ser renderizado desde cualquier punto de vista. El método NerF ha demostrado ser altamente efectivo en la síntesis de vistas realistas de escenas complejas, como paisajes naturales o interiores detallados.\nLa metodología de inteligencia artificial denominada NeRF surge del trabajo de investigación de Mildenhall et al. (2020), donde presenta un método que consigue resultados de vanguardia (en ese momento) para sintetizar nuevas vistas de escenas complejas optimizando una función de escena volumétrica continua subyacente utilizando un conjunto disperso de vistas de entrada."
   },
   {
-    "objectID": "intro.html#aplicaciones-futuras",
-    "href": "intro.html#aplicaciones-futuras",
-    "title": "1  Introduction",
-    "section": "1.3 Aplicaciones Futuras",
-    "text": "1.3 Aplicaciones Futuras\n\n\n\n\nMildenhall, Ben, Pratul P. Srinivasan, Matthew Tancik, Jonathan T. Barron, Ravi Ramamoorthi, and Ren Ng. 2020. “NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis.” In ECCV."
+    "objectID": "intro.html#presente",
+    "href": "intro.html#presente",
+    "title": "2  Introduction",
+    "section": "2.2 Presente",
+    "text": "2.2 Presente\nInstant_ngp.qmd\n3D Gaussian Splatting.qmd"
   },
   {
-    "objectID": "ref_digital.html#paper-whit-code",
-    "href": "ref_digital.html#paper-whit-code",
-    "title": "Referencias Digitales",
-    "section": "Paper whit Code",
-    "text": "Paper whit Code\nNeRF Search"
+    "objectID": "intro.html#futuro",
+    "href": "intro.html#futuro",
+    "title": "2  Introduction",
+    "section": "2.3 Futuro",
+    "text": "2.3 Futuro\n4D Gaussian Splatting\n\n\n\n\nMildenhall, Ben, Pratul P. Srinivasan, Matthew Tancik, Jonathan T. Barron, Ravi Ramamoorthi, and Ren Ng. 2020. “NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis.” In ECCV."
   },
   {
-    "objectID": "ref_digital.html#jittor-jnerf",
-    "href": "ref_digital.html#jittor-jnerf",
-    "title": "Referencias Digitales",
-    "section": "Jittor: JNeRF",
-    "text": "Jittor: JNeRF\ngithub JNeRF"
+    "objectID": "nerf.html#abstract",
+    "href": "nerf.html#abstract",
+    "title": "2  NeRF",
+    "section": "2.1 Abstract",
+    "text": "2.1 Abstract"
   },
   {
-    "objectID": "gaussian_splatting.html#abstract",
-    "href": "gaussian_splatting.html#abstract",
-    "title": "4  3D Gasussian Splatting (web)",
-    "section": "4.1 Abstract",
-    "text": "4.1 Abstract\nRadiance Field methods have recently revolutionized novel-view synthesis of scenes captured with multiple photos or videos. However, achieving high visual quality still requires neural networks that are costly to train and render, while recent faster methods inevitably trade off speed for quality. For unbounded and complete scenes (rather than isolated objects) and 1080p resolution rendering, no current method can achieve real-time display rates.\nWe introduce three key elements that allow us to achieve state-of-the-art visual quality while maintaining competitive training times and importantly allow high-quality real-time (≥ 100 fps) novel-view synthesis at 1080p resolution.\n\nFirst, starting from sparse points produced during camera calibration, we represent the scene with 3D Gaussians that preserve desirable properties of continuous volumetric radiance fields for scene optimization while avoiding unnecessary computation in empty space;\nSecond, we perform interleaved optimization/density control of the 3D Gaussians, notably optimizing anisotropic covariance to achieve an accurate representation of the scene;\nThird, we develop a fast visibility-aware rendering algorithm that supports anisotropic splatting and both accelerates training and allows realtime rendering. We demonstrate state-of-the-art visual quality and real-time rendering on several established datasets."
+    "objectID": "nerf.html#explanation",
+    "href": "nerf.html#explanation",
+    "title": "2  NeRF",
+    "section": "2.2 Explanation",
+    "text": "2.2 Explanation\nEl método NerF (Neural Radiance Fields) es una técnica de inteligencia artificial que permite generar vistas sintéticas de escenas complejas en 3D. Para ello, utiliza una red neuronal que modela la radiación de luz a través de la escena y que puede ser entrenada con un conjunto de datos de imágenes y posiciones de cámara. En esencia, esta técnica crea un modelo 3D de la escena, que puede ser renderizado desde cualquier punto de vista. El método NerF ha demostrado ser altamente efectivo en la síntesis de vistas realistas de escenas complejas, como paisajes naturales o interiores detallados. Si quieres profundizar en el tema, puedes revisar el paper “NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis” Mildenhall et al. (2020) .\nEn el trabajo de Mildenhall et al. (2020) sintetizaron las vistas consultando las coordenadas 5D a lo largo de los rayos de la cámara y utilizaron técnicas clásicas de renderizado de volúmenes para proyectar los colores y densidades de salida en una imagen. Dado que el renderizado de volúmenes es naturalmente diferenciable, la única entrada necesaria para optimizar esta representación es un conjunto de imágenes con poses de cámara conocidas. Describieron cómo optimizar eficazmente los campos de radiancia neuronales para representar nuevas vistas fotorrealistas de escenas con geometría y apariencia complicadas, y demostraron resultados que superan trabajos anteriores sobre representación neuronal y síntesis de vistas. Fuente: Project Page\n\n2.2.1 Entrada\nEn primer lugar, se deben tener en cuenta las imágenes de referencia de la escena, junto con la información de la posición de cámara correspondiente a cada imagen. A partir de estos datos, se entrena una red neuronal para que pueda predecir la radiación de luz en cualquier punto de la escena.\n\n\n\n\n\nSe sintetiza las vistas consultando las coordenadas continua 5D (ubicación espacial (x, y, z) y dirección de visión (\\theta, \\phi)) a lo largo de los rayos de la cámara y utilizaron técnicas clásicas de renderizado de volúmenes para proyectar los colores y densidades de salida en una imagen.\n\n\n2.2.2 Entrenamiento\nEn esta etapa utiliza una red neuronal que modela la radiación de luz a través de la escena, y que puede ser entrenada a partir de un conjunto de datos de imágenes y posiciones de cámara. En esencia, esta técnica crea un modelo 3D de la escena\nPara ello, se divide la escena en pequeños fragmentos, y se ajusta un modelo de radiación de luz a cada uno de ellos. Este modelo permite predecir la radiación de luz que se observaría en cualquier punto de la escena, a partir de una posición de cámara dada.\n\n\n\n\n\n\nLa salida es la densidad de volumen y la radiación emitida dependiente de la vista en esa ubicación espacial.\n\n\n2.2.3 Renderizado\nUna vez que se ha entrenado la red neuronal, se puede utilizar para generar vistas sintéticas de la escena. Para ello, se selecciona una posición de cámara arbitraria, y se utiliza la red neuronal para predecir la radiación de luz en cada punto de la escena, a partir de esta posición de cámara. A continuación, se renderiza la vista sintética correspondiente a la posición de cámara seleccionada, utilizando la información de radiación de luz predicha por la red neuronal.\nEl método NerF ha demostrado ser altamente efectivo en la síntesis de vistas realistas de escenas complejas, como paisajes naturales o interiores detallados."
   },
   {
-    "objectID": "gaussian_splatting.html#abstract-web",
-    "href": "gaussian_splatting.html#abstract-web",
-    "title": "4  3D Gasussian Splatting",
+    "objectID": "nerf.html#experimentation",
+    "href": "nerf.html#experimentation",
+    "title": "2  NeRF",
+    "section": "2.3 Experimentation",
+    "text": "2.3 Experimentation"
+  },
+  {
+    "objectID": "nerf.html#postprocess",
+    "href": "nerf.html#postprocess",
+    "title": "2  NeRF",
+    "section": "2.4 Postprocess",
+    "text": "2.4 Postprocess\nLos software de edición de modelado 3D normalmente trabajan con renderizado de malla y este tipo de modelos retornan resultados denominados rendereización volumétrica, entonces al hoy (22-10-2023) es posible de realizar con técnicas de Cube Maching pero perdiendo mucha calidad."
+  },
+  {
+    "objectID": "nerf.html#references",
+    "href": "nerf.html#references",
+    "title": "2  NeRF",
+    "section": "2.5 References",
+    "text": "2.5 References\n\n\n\n\nMildenhall, Ben, Pratul P. Srinivasan, Matthew Tancik, Jonathan T. Barron, Ravi Ramamoorthi, and Ren Ng. 2020. “NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis.” In ECCV."
+  },
+  {
+    "objectID": "instant_ngp.html#introducción",
+    "href": "instant_ngp.html#introducción",
+    "title": "4  Instant NGP",
+    "section": "4.1 Introducción",
+    "text": "4.1 Introducción\nImagina esto: cuando hojea un álbum de fotos y ve imágenes de viajes familiares pasados, ¿desea volver a visitar esos lugares y revivir esos cálidos momentos? Cuando navega por un museo en línea, ¿desea ajustar libremente su perspectiva, observar de cerca los detalles de los objetos expuestos y disfrutar de una interacción plena con las reliquias culturales? Cuando los médicos se enfrentan a pacientes, ¿pueden mejorar significativamente la precisión y la eficacia del diagnóstico sintetizando una perspectiva tridimensional de la zona afectada a partir de imágenes y proporcionando estimaciones del tamaño y el volumen de la lesión?\nLa tecnología NeRF (Neural Radiance Fields) es la clave para hacer esto realidad. Puede reconstruir la representación tridimensional de una escena a partir de imágenes captadas desde múltiples ángulos y generar imágenes de la escena desde cualquier punto de vista y posición (nueva síntesis de puntos de vista).\nEl siguiente vídeo muestra cómo se utiliza la tecnología NeRF para lograr la itinerancia 3D capturando algunas imágenes estáticas de las oficinas de Taichi con un teléfono móvil.\nEn los últimos dos años, la tecnología NeRF se ha convertido en un campo candente de la visión por ordenador. Desde el revolucionario trabajo de Mildenhall et al. (2020), NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis, el campo de los NeRF ha generado muchos estudios posteriores, especialmente el reciente trabajo mejorado Instant NGP, que fue incluido en la lista de los mejores inventos de 2022 de la revista Time.\nEn comparación con investigaciones anteriores, los avances significativos logrados por los mencionados trabajos NeRF e Instant NGP son:\nNeRF puede obtener una representación de alta precisión de la escena, y las imágenes renderizadas desde nuevos ángulos son muy realistas.\nBasándose en el trabajo de NeRF, Instant NGP acorta significativamente el tiempo de entrenamiento y renderizado, reduciendo el tiempo de entrenamiento a menos de un minuto, y haciendo que el renderizado en tiempo real sea fácilmente alcanzable. Estas mejoras hacen que la tecnología de NeRF sea realmente factible de aplicar.\nNo solo los investigadores en el campo del aprendizaje profundo, sino también los profesionales de muchas otras industrias están siguiendo de cerca los avances de NeRF, pensando en las posibilidades de aplicar NeRF en sus campos.\nEl objetivo principal de este artículo es doble:\n\nQueremos presentar cómo Taichi y PyTorch pueden combinarse para crear un flujo de trabajo de desarrollo Instant NGP totalmente basado en Python. Sin una sola línea de código CUDA, Taichi calculará automáticamente las derivadas de tu núcleo y conseguirá un rendimiento similar al de CUDA. Esto te permite dedicar más tiempo a las iteraciones de ideas de investigación que a la tediosa programación CUDA y al ajuste del rendimiento.\nLos dispositivos móviles serán un escenario esencial para la implementación de NeRF en el futuro. Introducimos el uso del marco Taichi AOT (compilación anticipada), que puede desplegar el modelo NeRF entrenado en dispositivos móviles sin preocuparse por la compatibilidad de plataformas. La siguiente animación muestra nuestros esfuerzos utilizando el marco AOT de Taichi para portar el modelo Lego del papel Instant NGP a un iPad para la inferencia y renderización en tiempo real:\n\n\n\n\n\n\nPrimero repasaremos brevemente los principios de NeRF y las mejoras de Instant NGP, y después presentaremos la combinación de Taichi e Instant NGP."
+  },
+  {
+    "objectID": "instant_ngp.html#part-i-what-is-a-neural-radiance-field-nerf",
+    "href": "instant_ngp.html#part-i-what-is-a-neural-radiance-field-nerf",
+    "title": "4  Instant NGP",
+    "section": "4.2 Part I: What is a Neural Radiance Field (NeRF)",
+    "text": "4.2 Part I: What is a Neural Radiance Field (NeRF)\nEn términos sencillos, un campo de radiancia neuronal es la codificación de toda una escena 3D en los parámetros de una red neuronal. Para representar una escena desde cualquier punto de vista nuevo, la red neuronal tiene que aprender el color RGB y la densidad de volumen \\sigma (es decir, si el punto está “ocupado” o no) de cada punto del espacio. La densidad de volumen en un punto es independiente del punto de vista, pero el color cambia con el punto de vista (por ejemplo, el objeto visto desde un ángulo diferente cambia), por lo que la red neuronal en realidad necesita aprender el color (r, g, b) y la densidad de volumen \\sigma de un punto (x, y, z) bajo diferentes ángulos de cámara (\\theta, \\phi) (es decir, latitud y longitud).\nPor lo tanto, la entrada al campo de radiancia neuronal es un vector de cinco dimensiones (x, y, z, \\theta, \\phi), y la salida es un vector de cuatro dimensiones (r, g, b, \\sigma):\n\n\n\n\n\nAsumiendo que tenemos tal campo de radiancia neural, enviando los correspondientes x, y, z, \\theta, \\phi) de cada punto en el espacio más allá en el renderizado de volumen resultará en una imagen 2D vista desde el punto de vista actual (\\theta, \\phi).\n\nEl concepto de densidad de volumen (volume rendering) se utiliza a menudo en la computación gráfica para representar medios como nubes y humo. Representa la probabilidad de que un punto bloquee un rayo de luz cuando lo atraviesa. La densidad de volumen mide la contribución de un punto al color final del rayo.\n\n\n4.2.1 Volume Rendering\nEl paso central de NeRF es un proceso denominado renderizado de volumen. El renderizado de volumen puede “aplanar” el campo neuronal en una imagen 2D, que luego se comparará con una imagen de referencia para generar pérdidas. Este proceso es diferenciable, por lo que puede utilizarse para entrenar la red.\nAntes de introducir el renderizado de volumen, entendamos primero los principios básicos de la imagen de cámara. En la computación gráfica, para ahorrar recursos computacionales, se supone que el color de un punto de la escena tras ser alcanzado por un rayo emitido desde la cámara es el color del píxel en la intersección del rayo y la pantalla:\n\n\n\n\n\nSin embargo, al renderizar medios atmosféricos similares al humo, los rayos atraviesan el medio en lugar de detenerse únicamente en su superficie. Además, durante la propagación de los rayos, una cierta proporción de éstos será absorbida por el medio (sin tener en cuenta la dispersión y la autoemisión). La parte del medio que absorbe los rayos contribuye al color final de los rayos. Cuanto mayor sea la densidad de volumen, más rayos serán absorbidos y más intenso será el color de esta parte del medio. Por tanto, el color final de los rayos es la integral de los colores de los puntos a lo largo de la trayectoria.\n\n\n\n\n\nSuponiendo que la cámara está en o y la dirección del rayo es d, la ecuación del rayo es r(t)=o+t*d, y su color de píxel predicho c(r) es:\nC(r)=\\int_{t_n}^{t_f}T(t)\\sigma(t)c(r(t), d), dt En la fórmula, T(t) representa la proporción de luz transmitida al punto t, y \\sigma(t)dt representa la proporción de luz bloqueada por una pequeña vecindad cercana al punto t. El producto de ambos es la proporción de luz que llega a t y es bloqueada en t, multiplicada por el color c(r(t), d) de ese punto, que es la contribución de este punto al color final del rayo. El intervalo integral [t_n, t_f] representa el punto de intersección más cercano t_{near} y el punto de intersección más lejano t_{far} del rayo con el medio.\nEn los cálculos reales, necesitamos utilizar sumas discretas para aproximar el valor de la integral. Es decir, muestreamos ciertos puntos discretos a lo largo del rayo y ponderamos sus colores sumándolos. No vamos a entrar en detalles sobre este proceso de discretización, pero puedes consultar explicaciones como la del enlace de la imagen anterior."
+  },
+  {
+    "objectID": "instant_ngp.html#entrenaiento-de-nerf",
+    "href": "instant_ngp.html#entrenaiento-de-nerf",
+    "title": "4  Instant NGP",
+    "section": "4.3 Entrenaiento de NeRF",
+    "text": "4.3 Entrenaiento de NeRF\nUna vez conocidos los campos neuronales de radiancia y el renderizado de volúmenes, veamos más en detalle el proceso de entrenamiento de NeRF. Todo el proceso se divide en cinco pasos, como se muestra en la siguiente figura:\n\n\n\n\n\n\n\nCamera parameters:\n\nTras preparar un conjunto de imágenes 2D capturadas, el primer paso es calcular los parámetros de pose de la cámara para cada imagen. Para ello se pueden utilizar herramientas como COLMAP. COLMAP compara los puntos comunes de la escena que aparecen en diferentes imágenes para calcular la pose de la cámara. Además, suponemos que toda la escena se encuentra dentro de una caja cúbica con un rango de [-1,1]^3.\n\n\n\n3D point sampling:\n\nPara una imagen real, se emite un rayo desde la cámara, que atraviesa la imagen y entra en la escena. El valor del píxel I(p) del punto de intersección p entre el rayo y la imagen es el color de referencia. Tomamos muestras discretas de varios puntos a lo largo de este rayo. Las coordenadas espaciales (x, y, z) de estos puntos de muestra y la pose de la cámara (\\theta, \\phi) calculada en el primer paso se combinan como entrada de la red neuronal.\n\n\n\nNeRF model:\n\nPredecir el color y la densidad de cada punto de muestra en el rayo a través de la red neuronal.\n\n\n\nRendering:\n\nMediante el renderizado de volúmenes, podemos utilizar el color y la densidad de los puntos de muestra obtenidos por la red neuronal en el paso anterior para calcular la suma discreta, aproximando el valor del píxel \\hat{I}(p) correspondiente al rayo.\n\n\n\nPhotometric loss:\n\nComparando \\hat{I}(p) con el verdadero valor de color I(p) del rayo y calculando el error y el gradiente, se puede entrenar la red neuronal."
+  },
+  {
+    "objectID": "instant_ngp.html#referencias",
+    "href": "instant_ngp.html#referencias",
+    "title": "4  Instant NGP",
+    "section": "4.4 Referencias",
+    "text": "4.4 Referencias\nDevelop and Deploy Instant NGP without writing CUDA\n\n\n\n\nMildenhall, Ben, Pratul P. Srinivasan, Matthew Tancik, Jonathan T. Barron, Ravi Ramamoorthi, and Ren Ng. 2020. “NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis.” In ECCV."
+  },
+  {
+    "objectID": "3d_gaussian_splatting.html#abstract-web",
+    "href": "3d_gaussian_splatting.html#abstract-web",
+    "title": "4  Gasussian Splatting 3D",
     "section": "4.1 Abstract (web)",
     "text": "4.1 Abstract (web)\nRadiance Field methods have recently revolutionized novel-view synthesis of scenes captured with multiple photos or videos. However, achieving high visual quality still requires neural networks that are costly to train and render, while recent faster methods inevitably trade off speed for quality. For unbounded and complete scenes (rather than isolated objects) and 1080p resolution rendering, no current method can achieve real-time display rates.\nWe introduce three key elements that allow us to achieve state-of-the-art visual quality while maintaining competitive training times and importantly allow high-quality real-time (≥ 100 fps) novel-view synthesis at 1080p resolution.\n\nFirst, starting from sparse points produced during camera calibration, we represent the scene with 3D Gaussians that preserve desirable properties of continuous volumetric radiance fields for scene optimization while avoiding unnecessary computation in empty space;\nSecond, we perform interleaved optimization/density control of the 3D Gaussians, notably optimizing anisotropic covariance to achieve an accurate representation of the scene;\nThird, we develop a fast visibility-aware rendering algorithm that supports anisotropic splatting and both accelerates training and allows realtime rendering. We demonstrate state-of-the-art visual quality and real-time rendering on several established datasets."
   },
   {
-    "objectID": "gaussian_splatting.html#code",
-    "href": "gaussian_splatting.html#code",
-    "title": "4  3D Gasussian Splatting",
-    "section": "4.3 Code",
-    "text": "4.3 Code\nGithub gaussian-splatting"
-  },
-  {
-    "objectID": "gaussian_splatting.html#explanation",
-    "href": "gaussian_splatting.html#explanation",
-    "title": "4  3D Gasussian Splatting",
+    "objectID": "3d_gaussian_splatting.html#explanation",
+    "href": "3d_gaussian_splatting.html#explanation",
+    "title": "4  Gasussian Splatting 3D",
     "section": "4.2 Explanation",
     "text": "4.2 Explanation\n3D Gaussian Splatting. David Cochard"
   },
   {
-    "objectID": "gaussian_splatting.html#unity",
-    "href": "gaussian_splatting.html#unity",
-    "title": "4  3D Gasussian Splatting",
-    "section": "4.4 Unity",
-    "text": "4.4 Unity"
-  },
-  {
-    "objectID": "gaussian_splatting.html#experimentation",
-    "href": "gaussian_splatting.html#experimentation",
-    "title": "4  3D Gasussian Splatting",
+    "objectID": "3d_gaussian_splatting.html#experimentation",
+    "href": "3d_gaussian_splatting.html#experimentation",
+    "title": "4  Gasussian Splatting 3D",
     "section": "4.3 Experimentation",
     "text": "4.3 Experimentation\nGithub gaussian-splatting"
+  },
+  {
+    "objectID": "3d_gaussian_splatting.html#postprocess",
+    "href": "3d_gaussian_splatting.html#postprocess",
+    "title": "4  Gasussian Splatting 3D",
+    "section": "4.4 Postprocess",
+    "text": "4.4 Postprocess\nRenderizado Volumétrico -&gt; Malla\n\n4.4.1 Unity"
   },
   {
     "objectID": "4d_gaussian_splatting.html#abstract",
@@ -238,129 +147,108 @@
     "text": "5.4 References"
   },
   {
-    "objectID": "3d_gaussian_splatting.html#abstract-web",
-    "href": "3d_gaussian_splatting.html#abstract-web",
-    "title": "4  Gasussian Splatting 3D",
-    "section": "4.1 Abstract (web)",
-    "text": "4.1 Abstract (web)\nRadiance Field methods have recently revolutionized novel-view synthesis of scenes captured with multiple photos or videos. However, achieving high visual quality still requires neural networks that are costly to train and render, while recent faster methods inevitably trade off speed for quality. For unbounded and complete scenes (rather than isolated objects) and 1080p resolution rendering, no current method can achieve real-time display rates.\nWe introduce three key elements that allow us to achieve state-of-the-art visual quality while maintaining competitive training times and importantly allow high-quality real-time (≥ 100 fps) novel-view synthesis at 1080p resolution.\n\nFirst, starting from sparse points produced during camera calibration, we represent the scene with 3D Gaussians that preserve desirable properties of continuous volumetric radiance fields for scene optimization while avoiding unnecessary computation in empty space;\nSecond, we perform interleaved optimization/density control of the 3D Gaussians, notably optimizing anisotropic covariance to achieve an accurate representation of the scene;\nThird, we develop a fast visibility-aware rendering algorithm that supports anisotropic splatting and both accelerates training and allows realtime rendering. We demonstrate state-of-the-art visual quality and real-time rendering on several established datasets."
+    "objectID": "references.html",
+    "href": "references.html",
+    "title": "Referencias Bibliográficas",
+    "section": "",
+    "text": "Mildenhall, Ben, Pratul P. Srinivasan, Matthew Tancik, Jonathan T.\nBarron, Ravi Ramamoorthi, and Ren Ng. 2020. “NeRF: Representing\nScenes as Neural Radiance Fields for View Synthesis.” In\nECCV.\n\n\nSchönberger, Johannes Lutz, and Jan-Michael Frahm. 2016.\n“Structure-from-Motion Revisited.” In Conference on\nComputer Vision and Pattern Recognition (CVPR).\n\n\nSchönberger, Johannes Lutz, Enliang Zheng, Marc Pollefeys, and\nJan-Michael Frahm. 2016. “Pixelwise View Selection for\nUnstructured Multi-View Stereo.” In European Conference on\nComputer Vision (ECCV)."
   },
   {
-    "objectID": "3d_gaussian_splatting.html#explanation",
-    "href": "3d_gaussian_splatting.html#explanation",
-    "title": "4  Gasussian Splatting 3D",
-    "section": "4.2 Explanation",
-    "text": "4.2 Explanation\n3D Gaussian Splatting. David Cochard"
+    "objectID": "ref_digital.html#instant-nerf",
+    "href": "ref_digital.html#instant-nerf",
+    "title": "Referencias Digitales",
+    "section": "Instant NeRF",
+    "text": "Instant NeRF\nInstant Neural Graphics Primitives with a Multiresolution Hash Encoding\nGetting Started with NVIDIA Instant NeRFs\nNVIDIA Research Turns 2D Photos Into 3D Scenes in the Blink of an AI"
   },
   {
-    "objectID": "3d_gaussian_splatting.html#experimentation",
-    "href": "3d_gaussian_splatting.html#experimentation",
-    "title": "4  Gasussian Splatting 3D",
-    "section": "4.3 Experimentation",
-    "text": "4.3 Experimentation\nGithub gaussian-splatting"
+    "objectID": "ref_digital.html#paper-whit-code",
+    "href": "ref_digital.html#paper-whit-code",
+    "title": "Referencias Digitales",
+    "section": "Paper whit Code",
+    "text": "Paper whit Code\nNeRF Search"
   },
   {
-    "objectID": "3d_gaussian_splatting.html#unity",
-    "href": "3d_gaussian_splatting.html#unity",
-    "title": "4  Gasussian Splatting 3D",
-    "section": "4.4 Unity",
-    "text": "4.4 Unity"
+    "objectID": "ref_digital.html#dot-csv---canal-youtube",
+    "href": "ref_digital.html#dot-csv---canal-youtube",
+    "title": "Referencias Digitales",
+    "section": "Dot CSV - Canal Youtube",
+    "text": "Dot CSV - Canal Youtube\n\n\n\n\n\n\n1. ¿Es NeRF el Futuro de los Gráficos en Tiempo Real?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2. ¡Me he CAPTURADO en 3D… ¡DENTRO de una Red Neuronal!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3. ¡Me he CAPTURADO EN 3D con Inteligencia Artificial …en SEGUNDOS!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4. ¡Esta TECNOLOGÍA será la REVOLUCIÓN de los Gráficos 3D!"
   },
   {
-    "objectID": "instant_ngp.html#introducción",
-    "href": "instant_ngp.html#introducción",
-    "title": "3  Instant NGP",
-    "section": "3.1 Introducción",
-    "text": "3.1 Introducción\nImagina esto: cuando hojea un álbum de fotos y ve imágenes de viajes familiares pasados, ¿desea volver a visitar esos lugares y revivir esos cálidos momentos? Cuando navega por un museo en línea, ¿desea ajustar libremente su perspectiva, observar de cerca los detalles de los objetos expuestos y disfrutar de una interacción plena con las reliquias culturales? Cuando los médicos se enfrentan a pacientes, ¿pueden mejorar significativamente la precisión y la eficacia del diagnóstico sintetizando una perspectiva tridimensional de la zona afectada a partir de imágenes y proporcionando estimaciones del tamaño y el volumen de la lesión?\nLa tecnología NeRF (Neural Radiance Fields) es la clave para hacer esto realidad. Puede reconstruir la representación tridimensional de una escena a partir de imágenes captadas desde múltiples ángulos y generar imágenes de la escena desde cualquier punto de vista y posición (nueva síntesis de puntos de vista).\nEl siguiente vídeo muestra cómo se utiliza la tecnología NeRF para lograr la itinerancia 3D capturando algunas imágenes estáticas de las oficinas de Taichi con un teléfono móvil.\nEn los últimos dos años, la tecnología NeRF se ha convertido en un campo candente de la visión por ordenador. Desde el revolucionario trabajo de Mildenhall et al. (2020), NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis, el campo de los NeRF ha generado muchos estudios posteriores, especialmente el reciente trabajo mejorado Instant NGP, que fue incluido en la lista de los mejores inventos de 2022 de la revista Time.\nEn comparación con investigaciones anteriores, los avances significativos logrados por los mencionados trabajos NeRF e Instant NGP son:\nNeRF puede obtener una representación de alta precisión de la escena, y las imágenes renderizadas desde nuevos ángulos son muy realistas.\nBasándose en el trabajo de NeRF, Instant NGP acorta significativamente el tiempo de entrenamiento y renderizado, reduciendo el tiempo de entrenamiento a menos de un minuto, y haciendo que el renderizado en tiempo real sea fácilmente alcanzable. Estas mejoras hacen que la tecnología de NeRF sea realmente factible de aplicar.\nNo solo los investigadores en el campo del aprendizaje profundo, sino también los profesionales de muchas otras industrias están siguiendo de cerca los avances de NeRF, pensando en las posibilidades de aplicar NeRF en sus campos.\nEl objetivo principal de este artículo es doble:\n\nQueremos presentar cómo Taichi y PyTorch pueden combinarse para crear un flujo de trabajo de desarrollo Instant NGP totalmente basado en Python. Sin una sola línea de código CUDA, Taichi calculará automáticamente las derivadas de tu núcleo y conseguirá un rendimiento similar al de CUDA. Esto te permite dedicar más tiempo a las iteraciones de ideas de investigación que a la tediosa programación CUDA y al ajuste del rendimiento.\nLos dispositivos móviles serán un escenario esencial para la implementación de NeRF en el futuro. Introducimos el uso del marco Taichi AOT (compilación anticipada), que puede desplegar el modelo NeRF entrenado en dispositivos móviles sin preocuparse por la compatibilidad de plataformas. La siguiente animación muestra nuestros esfuerzos utilizando el marco AOT de Taichi para portar el modelo Lego del papel Instant NGP a un iPad para la inferencia y renderización en tiempo real:\n\n\n\n\n\n\nPrimero repasaremos brevemente los principios de NeRF y las mejoras de Instant NGP, y después presentaremos la combinación de Taichi e Instant NGP."
+    "objectID": "ref_digital.html#taichi-lang",
+    "href": "ref_digital.html#taichi-lang",
+    "title": "Referencias Digitales",
+    "section": "Taichi-Lang",
+    "text": "Taichi-Lang\nTaichi NeRF (Part 1): Develop and Deploy Instant NGP without writing CUDA"
   },
   {
-    "objectID": "instant_ngp.html#part-i-what-is-a-neural-radiance-field-nerf",
-    "href": "instant_ngp.html#part-i-what-is-a-neural-radiance-field-nerf",
-    "title": "3  Instant NGP",
-    "section": "3.2 Part I: What is a Neural Radiance Field (NeRF)",
-    "text": "3.2 Part I: What is a Neural Radiance Field (NeRF)\nEn términos sencillos, un campo de radiancia neuronal es la codificación de toda una escena 3D en los parámetros de una red neuronal. Para representar una escena desde cualquier punto de vista nuevo, la red neuronal tiene que aprender el color RGB y la densidad de volumen \\sigma (es decir, si el punto está “ocupado” o no) de cada punto del espacio. La densidad de volumen en un punto es independiente del punto de vista, pero el color cambia con el punto de vista (por ejemplo, el objeto visto desde un ángulo diferente cambia), por lo que la red neuronal en realidad necesita aprender el color (r, g, b) y la densidad de volumen \\sigma de un punto (x, y, z) bajo diferentes ángulos de cámara (\\theta, \\phi) (es decir, latitud y longitud).\nPor lo tanto, la entrada al campo de radiancia neuronal es un vector de cinco dimensiones (x, y, z, \\theta, \\phi), y la salida es un vector de cuatro dimensiones (r, g, b, \\sigma):\n\n\n\n\n\nAsumiendo que tenemos tal campo de radiancia neural, enviando los correspondientes x, y, z, \\theta, \\phi) de cada punto en el espacio más allá en el renderizado de volumen resultará en una imagen 2D vista desde el punto de vista actual (\\theta, \\phi).\n\nEl concepto de densidad de volumen (volume rendering) se utiliza a menudo en la computación gráfica para representar medios como nubes y humo. Representa la probabilidad de que un punto bloquee un rayo de luz cuando lo atraviesa. La densidad de volumen mide la contribución de un punto al color final del rayo.\n\n\n3.2.1 Volume Rendering\nEl paso central de NeRF es un proceso denominado renderizado de volumen. El renderizado de volumen puede “aplanar” el campo neuronal en una imagen 2D, que luego se comparará con una imagen de referencia para generar pérdidas. Este proceso es diferenciable, por lo que puede utilizarse para entrenar la red.\nAntes de introducir el renderizado de volumen, entendamos primero los principios básicos de la imagen de cámara. En la computación gráfica, para ahorrar recursos computacionales, se supone que el color de un punto de la escena tras ser alcanzado por un rayo emitido desde la cámara es el color del píxel en la intersección del rayo y la pantalla:\n\n\n\n\n\nSin embargo, al renderizar medios atmosféricos similares al humo, los rayos atraviesan el medio en lugar de detenerse únicamente en su superficie. Además, durante la propagación de los rayos, una cierta proporción de éstos será absorbida por el medio (sin tener en cuenta la dispersión y la autoemisión). La parte del medio que absorbe los rayos contribuye al color final de los rayos. Cuanto mayor sea la densidad de volumen, más rayos serán absorbidos y más intenso será el color de esta parte del medio. Por tanto, el color final de los rayos es la integral de los colores de los puntos a lo largo de la trayectoria.\n\n\n\n\n\nSuponiendo que la cámara está en o y la dirección del rayo es d, la ecuación del rayo es r(t)=o+t*d, y su color de píxel predicho c(r) es:\nC(r)=\\int_{t_n}^{t_f}T(t)\\sigma(t)c(r(t), d), dt En la fórmula, T(t) representa la proporción de luz transmitida al punto t, y \\sigma(t)dt representa la proporción de luz bloqueada por una pequeña vecindad cercana al punto t. El producto de ambos es la proporción de luz que llega a t y es bloqueada en t, multiplicada por el color c(r(t), d) de ese punto, que es la contribución de este punto al color final del rayo. El intervalo integral [t_n, t_f] representa el punto de intersección más cercano t_{near} y el punto de intersección más lejano t_{far} del rayo con el medio.\nEn los cálculos reales, necesitamos utilizar sumas discretas para aproximar el valor de la integral. Es decir, muestreamos ciertos puntos discretos a lo largo del rayo y ponderamos sus colores sumándolos. No vamos a entrar en detalles sobre este proceso de discretización, pero puedes consultar explicaciones como la del enlace de la imagen anterior."
+    "objectID": "ref_digital.html#jittor-jnerf",
+    "href": "ref_digital.html#jittor-jnerf",
+    "title": "Referencias Digitales",
+    "section": "Jittor: JNeRF",
+    "text": "Jittor: JNeRF\ngithub JNeRF"
   },
   {
-    "objectID": "instant_ngp.html#entrenaiento-de-nerf",
-    "href": "instant_ngp.html#entrenaiento-de-nerf",
-    "title": "3  Instant NGP",
-    "section": "3.3 Entrenaiento de NeRF",
-    "text": "3.3 Entrenaiento de NeRF\nUna vez conocidos los campos neuronales de radiancia y el renderizado de volúmenes, veamos más en detalle el proceso de entrenamiento de NeRF. Todo el proceso se divide en cinco pasos, como se muestra en la siguiente figura:\n\n\n\n\n\n\n\nCamera parameters:\n\nTras preparar un conjunto de imágenes 2D capturadas, el primer paso es calcular los parámetros de pose de la cámara para cada imagen. Para ello se pueden utilizar herramientas como COLMAP. COLMAP compara los puntos comunes de la escena que aparecen en diferentes imágenes para calcular la pose de la cámara. Además, suponemos que toda la escena se encuentra dentro de una caja cúbica con un rango de [-1,1]^3.\n\n\n\n3D point sampling:\n\nPara una imagen real, se emite un rayo desde la cámara, que atraviesa la imagen y entra en la escena. El valor del píxel I(p) del punto de intersección p entre el rayo y la imagen es el color de referencia. Tomamos muestras discretas de varios puntos a lo largo de este rayo. Las coordenadas espaciales (x, y, z) de estos puntos de muestra y la pose de la cámara (\\theta, \\phi) calculada en el primer paso se combinan como entrada de la red neuronal.\n\n\n\nNeRF model:\n\nPredecir el color y la densidad de cada punto de muestra en el rayo a través de la red neuronal.\n\n\n\nRendering:\n\nMediante el renderizado de volúmenes, podemos utilizar el color y la densidad de los puntos de muestra obtenidos por la red neuronal en el paso anterior para calcular la suma discreta, aproximando el valor del píxel \\hat{I}(p) correspondiente al rayo.\n\n\n\nPhotometric loss:\n\nComparando \\hat{I}(p) con el verdadero valor de color I(p) del rayo y calculando el error y el gradiente, se puede entrenar la red neuronal."
+    "objectID": "concepts.html",
+    "href": "concepts.html",
+    "title": "Appendix A — Conceptos",
+    "section": "",
+    "text": "NeRF:\n\nNeRF (Neural Radiance Field) Un campo neural de radiancia es una red simple totalmente conectada (los pesos son ~5MB) entrenada para reproducir vistas de entrada de una sola escena utilizando una pérdida de renderizado. La red mapea directamente desde la ubicación espacial y la dirección de visión (entrada 5D) al color y la opacidad (salida 4D), actuando como el “volumen” para que podamos utilizar el renderizado de volumen para renderizar de forma diferenciada nuevas vistas.\n\nCOLMAP:\n\nCOLMAP es un programa de estructura a partir del movimiento (SfM) y estereoscopía multivista (MVS) con una interfaz gráfica y de línea de comandos. Ofrece una amplia gama de funciones para la reconstrucción de colecciones de imágenes ordenadas y desordenadas. El software está licenciado bajo la nueva licencia BSD. Creditos: Schönberger and Frahm (2016), Schönberger et al. (2016)\n\nFotogrametría:\n\nEs….\n\nInstant NeRF:\n\nC….\n\nCUDA:\n\nCube Maching…\n\nCube Maching:\n\n…\n\n\n\n\n\n\nSchönberger, Johannes Lutz, and Jan-Michael Frahm. 2016. “Structure-from-Motion Revisited.” In Conference on Computer Vision and Pattern Recognition (CVPR).\n\n\nSchönberger, Johannes Lutz, Enliang Zheng, Marc Pollefeys, and Jan-Michael Frahm. 2016. “Pixelwise View Selection for Unstructured Multi-View Stereo.” In European Conference on Computer Vision (ECCV)."
   },
   {
-    "objectID": "instant_ngp.html#referencias",
-    "href": "instant_ngp.html#referencias",
-    "title": "3  Instant NGP",
-    "section": "3.4 Referencias",
-    "text": "3.4 Referencias\nDevelop and Deploy Instant NGP without writing CUDA\n\n\n\n\nMildenhall, Ben, Pratul P. Srinivasan, Matthew Tancik, Jonathan T. Barron, Ravi Ramamoorthi, and Ren Ng. 2020. “NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis.” In ECCV."
+    "objectID": "contacts.html#var-evergine.name",
+    "href": "contacts.html#var-evergine.name",
+    "title": "Appendix B — Directorio de Contactos",
+    "section": "B.1 Evergine",
+    "text": "B.1 Evergine\nPage Official\nYoutube Channel\nLinkedIn Page\nGithub Repository"
   },
   {
-    "objectID": "intro.html#futuro",
-    "href": "intro.html#futuro",
-    "title": "1  Introduction",
-    "section": "1.3 Futuro",
-    "text": "1.3 Futuro\n4D Gaussian Splatting\n\n\n\n\nMildenhall, Ben, Pratul P. Srinivasan, Matthew Tancik, Jonathan T. Barron, Ravi Ramamoorthi, and Ren Ng. 2020. “NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis.” In ECCV."
+    "objectID": "index.html#footnotes",
+    "href": "index.html#footnotes",
+    "title": "Slay Book",
+    "section": "",
+    "text": "NERF es un enfoque de modelado 3D basado en redes neuronales que se utiliza para reconstruir escenas tridimensionales a partir de colecciones de imágenes 2D o vídeos. Su objetivo es capturar la estructura y apariencia de objetos y escenas en 3D.↩︎"
   },
   {
-    "objectID": "nerf.html#introducción-nerf-clásico",
-    "href": "nerf.html#introducción-nerf-clásico",
-    "title": "2  NeRF",
-    "section": "2.1 Introducción NeRF Clásico",
-    "text": "2.1 Introducción NeRF Clásico\nEl método NerF (Neural Radiance Fields) es una técnica de inteligencia artificial que permite generar vistas sintéticas de escenas complejas en 3D. Para ello, utiliza una red neuronal que modela la radiación de luz a través de la escena y que puede ser entrenada con un conjunto de datos de imágenes y posiciones de cámara. En esencia, esta técnica crea un modelo 3D de la escena, que puede ser renderizado desde cualquier punto de vista. El método NerF ha demostrado ser altamente efectivo en la síntesis de vistas realistas de escenas complejas, como paisajes naturales o interiores detallados. Si quieres profundizar en el tema, puedes revisar el paper “NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis” Mildenhall et al. (2020) .\nEn el trabajo de Mildenhall et al. (2020) sintetizaron las vistas consultando las coordenadas 5D a lo largo de los rayos de la cámara y utilizaron técnicas clásicas de renderizado de volúmenes para proyectar los colores y densidades de salida en una imagen. Dado que el renderizado de volúmenes es naturalmente diferenciable, la única entrada necesaria para optimizar esta representación es un conjunto de imágenes con poses de cámara conocidas. Describieron cómo optimizar eficazmente los campos de radiancia neuronales para representar nuevas vistas fotorrealistas de escenas con geometría y apariencia complicadas, y demostraron resultados que superan trabajos anteriores sobre representación neuronal y síntesis de vistas. Fuente: Project Page"
+    "objectID": "index.html#objetivos-del-libro",
+    "href": "index.html#objetivos-del-libro",
+    "title": "Slay Book",
+    "section": "Objetivos del Libro",
+    "text": "Objetivos del Libro\nEl propósito fundamental de este libro es proporcionar una visión completa y detallada de la tecnología NERF. Desde su concepción hasta su estado actual, exploraremos cada aspecto de esta innovadora metodología de modelado 3D. El presente libro tiene dos objetivos principales\n\n1. Análisis del presente y futuro del modelado 3D\n\nHistoria y Evolución: Comenzaremos por rastrear los orígenes de NERF y cómo ha evolucionado a lo largo del tiempo. Desde los conceptos iniciales hasta las implementaciones de vanguardia, examinaremos su trayectoria y descubriremos cómo ha revolucionado el campo del modelado 3D.\nEstado del Arte: Exploraremos las últimas investigaciones y avances en el campo de NERF y Gaussian Spatting. A través de ejemplos y estudios de casos actuales, veremos cómo esta tecnología está siendo utilizada en aplicaciones prácticas y cómo continúa evolucionando.\nDefiniciones y Conceptos Clave: Entenderemos a fondo los términos y conceptos esenciales asociados a la tegnologías de modelado 3D. Desde campos de radiancia hasta redes neuronales, te proporcionaremos una base sólida para comprender los detalles técnicos.\nRegistro de Recursos: Compilaremos una lista de recursos disponibles, incluyendo bibliografía, herramientas de software, y enlaces a implementaciones de código.\n\n\n\n2. Aplicación en Proyecto Slay\n\n\n\n\n\nEn el presente libro será además una bitácora de aplicación de los avances de la tecnología de modelado 3D y 4D en el proyecto Slay que recolectando los registros audiovisuales en los conciertos crear una experiencia en 4D a millones de de usuarios en otras partes del mundo."
   },
   {
-    "objectID": "nerf.html#proceso",
-    "href": "nerf.html#proceso",
-    "title": "2  NeRF",
-    "section": "2.2 Proceso",
-    "text": "2.2 Proceso\n\n2.2.1 Entrada\nEn primer lugar, se deben tener en cuenta las imágenes de referencia de la escena, junto con la información de la posición de cámara correspondiente a cada imagen. A partir de estos datos, se entrena una red neuronal para que pueda predecir la radiación de luz en cualquier punto de la escena.\n\n\n\n\n\nSe sintetiza las vistas consultando las coordenadas continua 5D (ubicación espacial (x, y, z) y dirección de visión (\\theta, \\phi)) a lo largo de los rayos de la cámara y utilizaron técnicas clásicas de renderizado de volúmenes para proyectar los colores y densidades de salida en una imagen.\n\n\n2.2.2 Entrenamiento\nEn esta etapa utiliza una red neuronal que modela la radiación de luz a través de la escena, y que puede ser entrenada a partir de un conjunto de datos de imágenes y posiciones de cámara. En esencia, esta técnica crea un modelo 3D de la escena\nPara ello, se divide la escena en pequeños fragmentos, y se ajusta un modelo de radiación de luz a cada uno de ellos. Este modelo permite predecir la radiación de luz que se observaría en cualquier punto de la escena, a partir de una posición de cámara dada.\n\n\n\n\n\n\nLa salida es la densidad de volumen y la radiación emitida dependiente de la vista en esa ubicación espacial.\n\n\n2.2.3 Renderizado\nUna vez que se ha entrenado la red neuronal, se puede utilizar para generar vistas sintéticas de la escena. Para ello, se selecciona una posición de cámara arbitraria, y se utiliza la red neuronal para predecir la radiación de luz en cada punto de la escena, a partir de esta posición de cámara. A continuación, se renderiza la vista sintética correspondiente a la posición de cámara seleccionada, utilizando la información de radiación de luz predicha por la red neuronal.\nEl método NerF ha demostrado ser altamente efectivo en la síntesis de vistas realistas de escenas complejas, como paisajes naturales o interiores detallados.\n\n\n\n\nMildenhall, Ben, Pratul P. Srinivasan, Matthew Tancik, Jonathan T. Barron, Ravi Ramamoorthi, and Ren Ng. 2020. “NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis.” In ECCV."
+    "objectID": "slay_project.html#how-it-works",
+    "href": "slay_project.html#how-it-works",
+    "title": "1  Slay Project",
+    "section": "How it Works",
+    "text": "How it Works\n\n\n   \n\n1. Upload a video on our app or website.\n\n\n\n2. We put together all the videos uploaded.\n\n\n\n3. Experience and share content with your friends."
   },
   {
-    "objectID": "nerf.html#abstract",
-    "href": "nerf.html#abstract",
-    "title": "2  NeRF",
-    "section": "2.1 Abstract",
-    "text": "2.1 Abstract"
+    "objectID": "slay_project.html#dont-miss-another-show-ever.",
+    "href": "slay_project.html#dont-miss-another-show-ever.",
+    "title": "1  Slay Project",
+    "section": "Don’t miss another show, ever.",
+    "text": "Don’t miss another show, ever.\n\n\n \n\n\n\n    \n\nSlay let you watch at home on your phone or headset your favorite shows and concerts, just like you are there."
   },
   {
-    "objectID": "nerf.html#explanation",
-    "href": "nerf.html#explanation",
-    "title": "2  NeRF",
-    "section": "2.2 Explanation",
-    "text": "2.2 Explanation\nEl método NerF (Neural Radiance Fields) es una técnica de inteligencia artificial que permite generar vistas sintéticas de escenas complejas en 3D. Para ello, utiliza una red neuronal que modela la radiación de luz a través de la escena y que puede ser entrenada con un conjunto de datos de imágenes y posiciones de cámara. En esencia, esta técnica crea un modelo 3D de la escena, que puede ser renderizado desde cualquier punto de vista. El método NerF ha demostrado ser altamente efectivo en la síntesis de vistas realistas de escenas complejas, como paisajes naturales o interiores detallados. Si quieres profundizar en el tema, puedes revisar el paper “NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis” Mildenhall et al. (2020) .\nEn el trabajo de Mildenhall et al. (2020) sintetizaron las vistas consultando las coordenadas 5D a lo largo de los rayos de la cámara y utilizaron técnicas clásicas de renderizado de volúmenes para proyectar los colores y densidades de salida en una imagen. Dado que el renderizado de volúmenes es naturalmente diferenciable, la única entrada necesaria para optimizar esta representación es un conjunto de imágenes con poses de cámara conocidas. Describieron cómo optimizar eficazmente los campos de radiancia neuronales para representar nuevas vistas fotorrealistas de escenas con geometría y apariencia complicadas, y demostraron resultados que superan trabajos anteriores sobre representación neuronal y síntesis de vistas. Fuente: Project Page\n\n2.2.1 Entrada\nEn primer lugar, se deben tener en cuenta las imágenes de referencia de la escena, junto con la información de la posición de cámara correspondiente a cada imagen. A partir de estos datos, se entrena una red neuronal para que pueda predecir la radiación de luz en cualquier punto de la escena.\n\n\n\n\n\nSe sintetiza las vistas consultando las coordenadas continua 5D (ubicación espacial (x, y, z) y dirección de visión (\\theta, \\phi)) a lo largo de los rayos de la cámara y utilizaron técnicas clásicas de renderizado de volúmenes para proyectar los colores y densidades de salida en una imagen.\n\n\n2.2.2 Entrenamiento\nEn esta etapa utiliza una red neuronal que modela la radiación de luz a través de la escena, y que puede ser entrenada a partir de un conjunto de datos de imágenes y posiciones de cámara. En esencia, esta técnica crea un modelo 3D de la escena\nPara ello, se divide la escena en pequeños fragmentos, y se ajusta un modelo de radiación de luz a cada uno de ellos. Este modelo permite predecir la radiación de luz que se observaría en cualquier punto de la escena, a partir de una posición de cámara dada.\n\n\n\n\n\n\nLa salida es la densidad de volumen y la radiación emitida dependiente de la vista en esa ubicación espacial.\n\n\n2.2.3 Renderizado\nUna vez que se ha entrenado la red neuronal, se puede utilizar para generar vistas sintéticas de la escena. Para ello, se selecciona una posición de cámara arbitraria, y se utiliza la red neuronal para predecir la radiación de luz en cada punto de la escena, a partir de esta posición de cámara. A continuación, se renderiza la vista sintética correspondiente a la posición de cámara seleccionada, utilizando la información de radiación de luz predicha por la red neuronal.\nEl método NerF ha demostrado ser altamente efectivo en la síntesis de vistas realistas de escenas complejas, como paisajes naturales o interiores detallados."
+    "objectID": "slay_project.html#all-the-content-is-out-there.-were-just-putting-it-together.",
+    "href": "slay_project.html#all-the-content-is-out-there.-were-just-putting-it-together.",
+    "title": "1  Slay Project",
+    "section": "All the content is out there. We’re just putting it together.",
+    "text": "All the content is out there. We’re just putting it together.\nWe collect all videos recorded from a show and re-creates the concerts from start to finish so you can enjoy it from your home.\nWith these simple steps you can contribute by uploading a video to our platform and we take care of the rest, then you can just enojoy the show."
   },
   {
-    "objectID": "nerf.html#experimentation",
-    "href": "nerf.html#experimentation",
-    "title": "2  NeRF",
-    "section": "2.3 Experimentation",
-    "text": "2.3 Experimentation"
+    "objectID": "slay_project.html#metaverse-ins-here",
+    "href": "slay_project.html#metaverse-ins-here",
+    "title": "1  Slay Project",
+    "section": "Metaverse ins Here",
+    "text": "Metaverse ins Here\nUsing our #buzzword technology to export media into a metaverse experience."
   },
   {
-    "objectID": "nerf.html#references",
-    "href": "nerf.html#references",
-    "title": "2  NeRF",
-    "section": "2.5 References",
-    "text": "2.5 References\n\n\n\n\nMildenhall, Ben, Pratul P. Srinivasan, Matthew Tancik, Jonathan T. Barron, Ravi Ramamoorthi, and Ren Ng. 2020. “NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis.” In ECCV."
-  },
-  {
-    "objectID": "intro.html#presente",
-    "href": "intro.html#presente",
-    "title": "1  Introduction",
-    "section": "1.2 Presente",
-    "text": "1.2 Presente\nInstant_ngp.qmd\n3D Gaussian Splatting.qmd"
-  },
-  {
-    "objectID": "3d_gaussian_splatting.html#postprocess",
-    "href": "3d_gaussian_splatting.html#postprocess",
-    "title": "4  Gasussian Splatting 3D",
-    "section": "4.4 Postprocess",
-    "text": "4.4 Postprocess\nRenderizado Volumétrico -&gt; Malla\n\n4.4.1 Unity"
-  },
-  {
-    "objectID": "nerf.html#postprocess",
-    "href": "nerf.html#postprocess",
-    "title": "2  NeRF",
-    "section": "2.4 Postprocess",
-    "text": "2.4 Postprocess\nLos software de edición de modelado 3D normalmente trabajan con renderizado de malla y este tipo de modelos retornan resultados denominados rendereización volumétrica, entonces al hoy (22-10-2023) es posible de realizar con técnicas de Cube Maching pero perdiendo mucha calidad."
+    "objectID": "slay_project.html#concerts-on-our-apps",
+    "href": "slay_project.html#concerts-on-our-apps",
+    "title": "1  Slay Project",
+    "section": "Concerts on our apps",
+    "text": "Concerts on our apps\n\n\n\n\n\n\n\n\n\n\n   \n\nDiscover and enjoy concerts and shows on our apps.\nSlay will be available later this year on the AppStore and Google Play store.\nA beta version of Meta Quest will be released on early 2024."
   }
 ]
