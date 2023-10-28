@@ -48,3 +48,67 @@ h3{
 li.sidebar-menu-container{
   font-size: 14px
 }
+
+.slay_text{
+  color: #090909;
+  text-decoration: none;
+  font-weight: 700;
+  background: #F9ED06;
+  padding: 1px 5px;
+}
+
+.t_size_h3{
+  font-size: 18px;
+  text-align: justify;
+}
+
+.t_size_h2{
+  font-size: 22px;
+  font-weight: 800;
+}
+
+
+.light-block .block .col-6 ul li span.numb {
+  background: #F9ED06;
+  color: #090909;
+  width: 36px;
+  height: 36px;
+  display: inline-block;
+  margin-right: 12px;
+  text-align: center;
+  line-height: 36px;
+  font-size: 14px;
+  font-weight: 700;
+  border-radius: 18px;
+}
+
+.text-col {
+  height: 100%;
+  background-color: black;
+  padding-left: 10px;
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+}
+
+mark {
+  color: #090909;
+  background: #F9ED06;
+  font-weight: 1000;
+  padding: 5px 5px;
+}
+
+span.kicker {
+  color: #090909;
+  text-decoration: none;
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  font-weight: 700;
+  background: #F9ED06;
+  padding: 6px 12px;
+  border-radius: 100px;
+  margin: 72px 0 0 36px;
+  display: inline-block;
+}
+
