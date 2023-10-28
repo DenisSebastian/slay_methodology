@@ -10,7 +10,7 @@ format:
 
 ![](images/hero-slay.jpg){fig-align="center"}
 
-## Don't miss another show, ever. {.unnumbered}
+## Don't miss another show, <mark>ever</mark>. {.unnumbered}
 
 ::: columns
 ::: {.column width="50%"}
@@ -22,7 +22,11 @@ format:
 
 ::: {.column width="45%"}
 
-#### Slay let you watch at home on your phone or headset your favorite shows and concerts, just like you are there. {.unnumbered}
+<br>
+
+<p class = "t_size_h3">Slay let you watch at home on your phone or headset your favorite shows and concerts, just like you are there.</p>
+
+
 :::
 :::
 
@@ -56,13 +60,18 @@ With these simple steps you can contribute by uploading a video to our platform 
 ::: columns
 ::: {.column width="50%"}
 
-##### 1. Upload a video on our app or website. {.unnumbered}
 
+<br>
 
-##### 2. We put together all the videos uploaded. {.unnumbered}
+<p class = "t_size_h3">
 
+1. Upload a video on our app or website.
 
-##### 3. Experience and share content with your friends. {.unnumbered}
+2. We put together all the videos uploaded.
+
+3. Experience and share content with your friends. 
+
+</p>
 
 :::
 
@@ -78,7 +87,7 @@ With these simple steps you can contribute by uploading a video to our platform 
 
 ## Metaverse ins Here {.unnumbered}
 
-Using our **#buzzword** technology to export media into a metaverse experience.
+Using our <mark>#buzzword</mark> technology to export media into a <mark>metaverse</mark> experience.
 
 ![](images/b3-hero.png)
 
@@ -86,7 +95,8 @@ Using our **#buzzword** technology to export media into a metaverse experience.
 
 ::: columns
 ::: {.column width="30%"}
-![](images/b4-app.png){fig-align="left" width="200"}
+
+![](images/b4-app.png){fig-align="center" width="200"}
 :::
 
 ::: {.column width="5%"}
@@ -94,11 +104,12 @@ Using our **#buzzword** technology to export media into a metaverse experience.
 
 ::: {.column width="60%"}
 
-### Discover and enjoy concerts and shows on our apps. {.unnumbered}
+
+<p class ="t_size_h2">Discover and enjoy <mark>concerts</mark>  and shows on our apps. </p>
+
+<p class = "t_size_h3"> Slay will be available later this year on the AppStore and Google Play store.</p>
 
 
-Slay will be available later this year on the AppStore and Google Play store.
-
-A beta version of Meta Quest will be released on early 2024.
+<p class = "t_size_h3">A beta version of Meta Quest will be released on early 2024.</p>
 :::
 :::
