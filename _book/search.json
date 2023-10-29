@@ -207,7 +207,7 @@
     "href": "ref_digital.html#paper-whit-code",
     "title": "Referencias Digitales",
     "section": "Paper whit Code",
-    "text": "Paper whit Code\nNeRF Search"
+    "text": "Paper whit Code\nNeRF Search\nGaussian Splatting Search"
   },
   {
     "objectID": "ref_digital.html#dot-csv---canal-youtube",
@@ -245,10 +245,17 @@
     "text": "B.1 Evergine\nPage Official\nYoutube Channel\nLinkedIn Page\nGithub Repository"
   },
   {
-    "objectID": "slay_project.html#dont-miss-another-show-ever.-ever.",
-    "href": "slay_project.html#dont-miss-another-show-ever.-ever.",
-    "title": "1  Slay Project",
-    "section": "Don’t miss another show, ever. ever.",
-    "text": "Don’t miss another show, ever. ever.\n\n\n \n\n\n\n\nSlay let you watch at home on your phone or headset your favorite shows and concerts, just like you are there."
+    "objectID": "ref_digital.html#youtube",
+    "href": "ref_digital.html#youtube",
+    "title": "Referencias Digitales",
+    "section": "Youtube",
+    "text": "Youtube\n\nDot CSV - Canal Youtube\n\n\n\n\n\n\n1. ¿Es NeRF el Futuro de los Gráficos en Tiempo Real?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2. ¡Me he CAPTURADO en 3D… ¡DENTRO de una Red Neuronal!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3. ¡Me he CAPTURADO EN 3D con Inteligencia Artificial …en SEGUNDOS!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4. ¡Esta TECNOLOGÍA será la REVOLUCIÓN de los Gráficos 3D!\n\n\n\n\n\n\n\n\n\n\n\nBad Decisions Studio- Canal Youtube\n\n\n\n\n\n\n1. What is 3D Gaussian Splatting?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2. 3D Gaussian Splatting in UNREAL ENGINE 5 is INSANE!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3. 3D Gaussian Splatting in VR (Virtual Reality)"
+  },
+  {
+    "objectID": "ref_digital.html#independs-experiments",
+    "href": "ref_digital.html#independs-experiments",
+    "title": "Referencias Digitales",
+    "section": "Independs Experiments",
+    "text": "Independs Experiments\n\nTaichi-Lang\nTaichi NeRF (Part 1): Develop and Deploy Instant NGP without writing CUDA\n\n\nJittor: JNeRF\ngithub JNeRF"
   }
 ]

@@ -16,8 +16,13 @@
 
 [NeRF Search](https://paperswithcode.com/method/nerf)
 
+[Gaussian Splatting  Search](https://paperswithcode.com/search?q_meta=&q_type=&q=gaussian+splatting)
 
-## Dot CSV - Canal Youtube
+
+## Youtube
+
+
+### Dot CSV - Canal Youtube
 
 ::: {.callout-note collapse="true"}
 ### 1. [¿Es NeRF el Futuro de los Gráficos en Tiempo Real?](https://www.youtube.com/watch?v=IKFmxP2HLXs)
@@ -49,11 +54,38 @@
 :::
 
 
-## Taichi-Lang
+### Bad Decisions Studio- Canal Youtube
+
+::: {.callout-note collapse="true"}
+### 1. [What is 3D Gaussian Splatting?](https://www.youtube.com/watch?v=Tnij_xHEnXc)
+
+{{< video https://www.youtube.com/watch?v=Tnij_xHEnXc >}}
+
+:::
+
+::: {.callout-note collapse="true"}
+### 2. [3D Gaussian Splatting in UNREAL ENGINE 5 is INSANE!](https://www.youtube.com/watch?v=KaAxGr_xck4)
+
+{{< video https://www.youtube.com/watch?v=KaAxGr_xck4 >}}
+
+:::
+
+::: {.callout-note collapse="true"}
+### 3. [3D Gaussian Splatting in VR (Virtual Reality)](https://www.youtube.com/watch?v=PJw60fUqe8c)
+
+{{< video https://www.youtube.com/watch?v=PJw60fUqe8c >}}
+
+:::
+
+
+
+## Independs Experiments
+
+### Taichi-Lang
 
 [Taichi NeRF (Part 1): Develop and Deploy Instant NGP without writing CUDA](https://docs.taichi-lang.org/blog/taichi-instant-ngp)
 
 
-## Jittor: JNeRF
+### Jittor: JNeRF
 
 [github JNeRF](https://github.com/Jittor/JNeRF)
