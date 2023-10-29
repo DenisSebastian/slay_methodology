@@ -210,25 +210,18 @@
     "text": "Paper whit Code\nNeRF Search\nGaussian Splatting Search"
   },
   {
-    "objectID": "ref_digital.html#dot-csv---canal-youtube",
-    "href": "ref_digital.html#dot-csv---canal-youtube",
+    "objectID": "ref_digital.html#youtube",
+    "href": "ref_digital.html#youtube",
     "title": "Referencias Digitales",
-    "section": "Dot CSV - Canal Youtube",
-    "text": "Dot CSV - Canal Youtube\n\n\n\n\n\n\n1. ¿Es NeRF el Futuro de los Gráficos en Tiempo Real?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2. ¡Me he CAPTURADO en 3D… ¡DENTRO de una Red Neuronal!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3. ¡Me he CAPTURADO EN 3D con Inteligencia Artificial …en SEGUNDOS!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4. ¡Esta TECNOLOGÍA será la REVOLUCIÓN de los Gráficos 3D!"
+    "section": "Youtube",
+    "text": "Youtube\n\nDot CSV - Canal Youtube\n\n\n\n\n\n\n1. ¿Es NeRF el Futuro de los Gráficos en Tiempo Real?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2. ¡Me he CAPTURADO en 3D… ¡DENTRO de una Red Neuronal!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3. ¡Me he CAPTURADO EN 3D con Inteligencia Artificial …en SEGUNDOS!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4. ¡Esta TECNOLOGÍA será la REVOLUCIÓN de los Gráficos 3D!\n\n\n\n\n\n\n\n\n\n\n\nBad Decisions Studio- Canal Youtube\n\n\n\n\n\n\n1. What is 3D Gaussian Splatting?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2. 3D Gaussian Splatting in UNREAL ENGINE 5 is INSANE!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3. 3D Gaussian Splatting in VR (Virtual Reality)"
   },
   {
-    "objectID": "ref_digital.html#taichi-lang",
-    "href": "ref_digital.html#taichi-lang",
+    "objectID": "ref_digital.html#independs-experiments",
+    "href": "ref_digital.html#independs-experiments",
     "title": "Referencias Digitales",
-    "section": "Taichi-Lang",
-    "text": "Taichi-Lang\nTaichi NeRF (Part 1): Develop and Deploy Instant NGP without writing CUDA"
-  },
-  {
-    "objectID": "ref_digital.html#jittor-jnerf",
-    "href": "ref_digital.html#jittor-jnerf",
-    "title": "Referencias Digitales",
-    "section": "Jittor: JNeRF",
-    "text": "Jittor: JNeRF\ngithub JNeRF"
+    "section": "Independs Experiments",
+    "text": "Independs Experiments\n\nTaichi-Lang\nTaichi NeRF (Part 1): Develop and Deploy Instant NGP without writing CUDA\n\n\nJittor: JNeRF\ngithub JNeRF"
   },
   {
     "objectID": "concepts.html",
@@ -243,19 +236,5 @@
     "title": "Appendix B — Directorio de Contactos",
     "section": "B.1 Evergine",
     "text": "B.1 Evergine\nPage Official\nYoutube Channel\nLinkedIn Page\nGithub Repository"
-  },
-  {
-    "objectID": "ref_digital.html#youtube",
-    "href": "ref_digital.html#youtube",
-    "title": "Referencias Digitales",
-    "section": "Youtube",
-    "text": "Youtube\n\nDot CSV - Canal Youtube\n\n\n\n\n\n\n1. ¿Es NeRF el Futuro de los Gráficos en Tiempo Real?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2. ¡Me he CAPTURADO en 3D… ¡DENTRO de una Red Neuronal!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3. ¡Me he CAPTURADO EN 3D con Inteligencia Artificial …en SEGUNDOS!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4. ¡Esta TECNOLOGÍA será la REVOLUCIÓN de los Gráficos 3D!\n\n\n\n\n\n\n\n\n\n\n\nBad Decisions Studio- Canal Youtube\n\n\n\n\n\n\n1. What is 3D Gaussian Splatting?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2. 3D Gaussian Splatting in UNREAL ENGINE 5 is INSANE!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3. 3D Gaussian Splatting in VR (Virtual Reality)"
-  },
-  {
-    "objectID": "ref_digital.html#independs-experiments",
-    "href": "ref_digital.html#independs-experiments",
-    "title": "Referencias Digitales",
-    "section": "Independs Experiments",
-    "text": "Independs Experiments\n\nTaichi-Lang\nTaichi NeRF (Part 1): Develop and Deploy Instant NGP without writing CUDA\n\n\nJittor: JNeRF\ngithub JNeRF"
   }
 ]

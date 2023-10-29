@@ -16,8 +16,8 @@ El propósito fundamental de este libro es proporcionar una visión completa y d
 
 -   **Registro de Recursos**: Compilaremos una lista de recursos disponibles, incluyendo bibliografía, herramientas de software, y enlaces a implementaciones de código.
 
-### 2. Aplicación en Proyecto Slay
+### 2. Aplicación en Proyecto Slay  
 
 ![](images/b3-hero.png){fig-align="center" width="800"}
 
-En el presente libro será además una bitácora de aplicación de los avances de la tecnología de modelado 3D y 4D en el proyecto Slay que recolectando los registros audiovisuales en los conciertos crear una experiencia en 4D a millones de de usuarios en otras partes del mundo.
+En el presente libro será además una bitácora de aplicación de los avances de la tecnología de modelado 3D y 4D en el proyecto <mark>Slay</mark> que recolectando los registros audiovisuales en los conciertos crear una experiencia en 4D a millones de de usuarios en otras partes del mundo.

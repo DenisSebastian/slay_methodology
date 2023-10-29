@@ -6,7 +6,10 @@ book:
   subtitle: "Resumen Metodológico de Modelado 4D para Slay"
   author: "Denis Berroeta (<denisberroeta@gmail.cl>)"
   date: "2023-05-28"
+  favicon: images/favicon.png
   #number-sections: 3
+  sidebar:
+    logo: images/logo.svg
   page-footer: 
     left: "Copyright 2023, [Denis Berroeta](<denis.berroeta@gmail.com>)" 
   chapters:
@@ -25,7 +28,6 @@ book:
     - contacts.qmd
 
 bibliography: references.bib
-
 format:
   html:
     theme: cosmo
