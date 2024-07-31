@@ -4,237 +4,393 @@
     "href": "index.html",
     "title": "Slay Book",
     "section": "",
-    "text": "Preface\nBienvenidos a este libro digital que explora las tecnologías de modelado 3D basándose en imágenes en 2D como los es NeRF (Neural Radiance Fields) y actualemente Gaussian Spatting."
+    "text": "Preface\nBienvenidos a este libro digital que explora las tecnologías de modelado 3D basándose en imágenes en 2D como los es NeRF (Neural Radiance Fields) y actualemente Gaussian Spatting.",
+    "crumbs": [
+      "Preface"
+    ]
   },
   {
     "objectID": "index.html#objetivos-del-libro",
     "href": "index.html#objetivos-del-libro",
     "title": "Slay Book",
     "section": "Objetivos del Libro",
-    "text": "Objetivos del Libro\nEl propósito fundamental de este libro es proporcionar una visión completa y detallada de la tecnología NERF. Desde su concepción hasta su estado actual, exploraremos cada aspecto de esta innovadora metodología de modelado 3D. El presente libro tiene dos objetivos principales\n\n1. Análisis del presente y futuro del modelado 3D\n\nHistoria y Evolución: Comenzaremos por rastrear los orígenes de NERF y cómo ha evolucionado a lo largo del tiempo. Desde los conceptos iniciales hasta las implementaciones de vanguardia, examinaremos su trayectoria y descubriremos cómo ha revolucionado el campo del modelado 3D.\nEstado del Arte: Exploraremos las últimas investigaciones y avances en el campo de NERF y Gaussian Spatting. A través de ejemplos y estudios de casos actuales, veremos cómo esta tecnología está siendo utilizada en aplicaciones prácticas y cómo continúa evolucionando.\nDefiniciones y Conceptos Clave: Entenderemos a fondo los términos y conceptos esenciales asociados a la tegnologías de modelado 3D. Desde campos de radiancia hasta redes neuronales, te proporcionaremos una base sólida para comprender los detalles técnicos.\nRegistro de Recursos: Compilaremos una lista de recursos disponibles, incluyendo bibliografía, herramientas de software, y enlaces a implementaciones de código.\n\n\n\n2. Aplicación en Proyecto Slay\n\n\n\n\n\nEn el presente libro será además una bitácora de aplicación de los avances de la tecnología de modelado 3D y 4D en el proyecto Slay que recolectando los registros audiovisuales en los conciertos crear una experiencia en 4D a millones de de usuarios en otras partes del mundo."
+    "text": "Objetivos del Libro\nEl propósito fundamental de este libro es proporcionar una visión completa y detallada de la tecnología NERF. Desde su concepción hasta su estado actual, exploraremos cada aspecto de esta innovadora metodología de modelado 3D. El presente libro tiene dos objetivos principales\n\n1. Análisis del presente y futuro del modelado 3D\n\nHistoria y Evolución: Comenzaremos por rastrear los orígenes de NERF y cómo ha evolucionado a lo largo del tiempo. Desde los conceptos iniciales hasta las implementaciones de vanguardia, examinaremos su trayectoria y descubriremos cómo ha revolucionado el campo del modelado 3D.\nEstado del Arte: Exploraremos las últimas investigaciones y avances en el campo de NERF y Gaussian Spatting. A través de ejemplos y estudios de casos actuales, veremos cómo esta tecnología está siendo utilizada en aplicaciones prácticas y cómo continúa evolucionando.\nDefiniciones y Conceptos Clave: Entenderemos a fondo los términos y conceptos esenciales asociados a la tegnologías de modelado 3D. Desde campos de radiancia hasta redes neuronales, te proporcionaremos una base sólida para comprender los detalles técnicos.\nRegistro de Recursos: Compilaremos una lista de recursos disponibles, incluyendo bibliografía, herramientas de software, y enlaces a implementaciones de código.\n\n\n\n2. Aplicación en Proyecto Slay\n\n\n\n\n\nEn el presente libro será además una bitácora de aplicación de los avances de la tecnología de modelado 3D y 4D en el proyecto Slay que recolectando los registros audiovisuales en los conciertos crear una experiencia en 4D a millones de de usuarios en otras partes del mundo.",
+    "crumbs": [
+      "Preface"
+    ]
+  },
+  {
+    "objectID": "slay_project.html",
+    "href": "slay_project.html",
+    "title": "1  Slay Project",
+    "section": "",
+    "text": "Don’t miss another show, ever.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Slay Project</span>"
+    ]
   },
   {
     "objectID": "slay_project.html#dont-miss-another-show-ever.",
     "href": "slay_project.html#dont-miss-another-show-ever.",
     "title": "1  Slay Project",
-    "section": "Don’t miss another show, ever.",
-    "text": "Don’t miss another show, ever.\n\n\n \n\n\n\n\n\nSlay let you watch at home on your phone or headset your favorite shows and concerts, just like you are there."
+    "section": "",
+    "text": "Slay let you watch at home on your phone or headset your favorite shows and concerts, just like you are there.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Slay Project</span>"
+    ]
   },
   {
     "objectID": "slay_project.html#all-the-content-is-out-there.-were-just-putting-it-together.",
     "href": "slay_project.html#all-the-content-is-out-there.-were-just-putting-it-together.",
     "title": "1  Slay Project",
     "section": "All the content is out there. We’re just putting it together.",
-    "text": "All the content is out there. We’re just putting it together.\nWe collect all videos recorded from a show and re-creates the concerts from start to finish so you can enjoy it from your home.\nWith these simple steps you can contribute by uploading a video to our platform and we take care of the rest, then you can just enojoy the show."
+    "text": "All the content is out there. We’re just putting it together.\nWe collect all videos recorded from a show and re-creates the concerts from start to finish so you can enjoy it from your home.\nWith these simple steps you can contribute by uploading a video to our platform and we take care of the rest, then you can just enojoy the show.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Slay Project</span>"
+    ]
   },
   {
     "objectID": "slay_project.html#how-it-works",
     "href": "slay_project.html#how-it-works",
     "title": "1  Slay Project",
     "section": "How it Works",
-    "text": "How it Works\n\n\n\n\n\nUpload a video on our app or website.\nWe put together all the videos uploaded.\nExperience and share content with your friends."
+    "text": "How it Works\n\n\n\n\n\nUpload a video on our app or website.\nWe put together all the videos uploaded.\nExperience and share content with your friends.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Slay Project</span>"
+    ]
   },
   {
     "objectID": "slay_project.html#metaverse-ins-here",
     "href": "slay_project.html#metaverse-ins-here",
     "title": "1  Slay Project",
     "section": "Metaverse ins Here",
-    "text": "Metaverse ins Here\nUsing our #buzzword technology to export media into a metaverse experience."
+    "text": "Metaverse ins Here\nUsing our #buzzword technology to export media into a metaverse experience.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Slay Project</span>"
+    ]
   },
   {
     "objectID": "slay_project.html#concerts-on-our-apps",
     "href": "slay_project.html#concerts-on-our-apps",
     "title": "1  Slay Project",
     "section": "Concerts on our apps",
-    "text": "Concerts on our apps\n\n\n\n\n\n\n\n\n\n\n\nDiscover and enjoy concerts and shows on our apps.\n\n\nSlay will be available later this year on the AppStore and Google Play store.\n\n\nA beta version of Meta Quest will be released on early 2024."
+    "text": "Concerts on our apps\n\n\n\n\n\n\n\n\n\n\n\nDiscover and enjoy concerts and shows on our apps.\n\n\nSlay will be available later this year on the AppStore and Google Play store.\n\n\nA beta version of Meta Quest will be released on early 2024.",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>Slay Project</span>"
+    ]
   },
   {
-    "objectID": "intro.html#origen",
-    "href": "intro.html#origen",
-    "title": "2  Introduction",
-    "section": "2.1 Origen",
-    "text": "2.1 Origen\nEl método de NeRF Neural Radiance Fields es una técnica de inteligencia artificial que permite generar vistas sintéticas de escenas complejas en 3D, a partir de una serie de imágenes de referencia. Para ello, utiliza una red neuronal que modela la radiación de luz a través de la escena, y que puede ser entrenada a partir de un conjunto de datos de imágenes y posiciones de cámara. En esencia, esta técnica crea un modelo 3D de la escena, que puede ser renderizado desde cualquier punto de vista. El método NerF ha demostrado ser altamente efectivo en la síntesis de vistas realistas de escenas complejas, como paisajes naturales o interiores detallados.\nLa metodología de inteligencia artificial denominada NeRF surge del trabajo de investigación de Mildenhall et al. (2020), donde presenta un método que consigue resultados de vanguardia (en ese momento) para sintetizar nuevas vistas de escenas complejas optimizando una función de escena volumétrica continua subyacente utilizando un conjunto disperso de vistas de entrada."
+    "objectID": "history.html",
+    "href": "history.html",
+    "title": "Introducción a NeRF",
+    "section": "",
+    "text": "Introducción a los NeRFs:\nLos NeRFs son una tecnología innovadora que ha revolucionado la manera en que se crean y representan las escenas tridimensionales. A través del uso de redes neuronales profundas, los NeRFs pueden transformar múltiples imágenes 2D de una escena en una representación 3D detallada y precisa.",
+    "crumbs": [
+      "Introducción a NeRF"
+    ]
   },
   {
-    "objectID": "intro.html#presente",
-    "href": "intro.html#presente",
-    "title": "2  Introduction",
-    "section": "2.2 Presente",
-    "text": "2.2 Presente\nInstant_ngp.qmd\n3D Gaussian Splatting.qmd"
+    "objectID": "history.html#introducción-a-los-nerfs",
+    "href": "history.html#introducción-a-los-nerfs",
+    "title": "Introducción a NeRF",
+    "section": "",
+    "text": "Funcionamiento de los NeRFs\n\nCaptura de Imágenes: Para empezar, se requieren múltiples imágenes de una escena capturadas desde diferentes ángulos. Estas imágenes sirven como datos de entrada para el modelo.\nEntrenamiento del Modelo: Una red neuronal se entrena utilizando estas imágenes para aprender a predecir la radiancia (color e intensidad de la luz) y la densidad de cada punto en el espacio tridimensional. Este proceso de aprendizaje permite que el modelo entienda cómo se debe representar cada punto en la escena en 3D.\nRenderizado: Una vez que el modelo está entrenado, puede generar nuevas vistas de la escena desde ángulos no capturados originalmente, ofreciendo una visualización tridimensional completa.\n\nEl proceso de entrenamiento de los NeRFs implica la minimización de una función de pérdida, que compara las vistas generadas por el modelo con las imágenes reales, permitiendo que el modelo capture detalles finos y texturas realistas.\n\n\nAplicaciones de los NeRFs\n\nRealidad Virtual y Aumentada: Los NeRFs permiten la creación de entornos inmersivos y realistas, mejorando significativamente la experiencia del usuario en aplicaciones de realidad virtual y aumentada.\nCine y Videojuegos: Esta tecnología facilita la creación de gráficos de alta calidad, reduciendo el tiempo y los recursos necesarios en comparación con las técnicas tradicionales de modelado 3D.\nSimulaciones Médicas: Los NeRFs se utilizan para crear modelos detallados del cuerpo humano, mejorando las herramientas de diagnóstico y planificación quirúrgica.\n\n\n\nDesafíos y Soluciones\n\nVolumen de Datos: El entrenamiento de los NeRFs requiere una gran cantidad de imágenes, lo que puede representar un desafío.\n\nSolución: Se están desarrollando técnicas de compresión y optimización de datos para reducir la cantidad de imágenes necesarias.\n\nComputación Intensiva: El renderizado de los NeRFs es un proceso computacionalmente costoso.\n\nSolución: La implementación de algoritmos de optimización y el uso de hardware especializado, como GPUs, están ayudando a mitigar este problema.\n\n\n\n\nInnovaciones Recientes\nUna de las plataformas más recientes y avanzadas para trabajar con NeRFs es nerfstudio, que centraliza la investigación y el desarrollo en este campo. Nerfstudio tiene como objetivo simplificar el uso y aprendizaje de NeRFs, facilitando su implementación en diversos proyectos.\nUna innovación destacada en nerfstudio es la pipeline de Gaussian Splatting, que promete mejorar la calidad y velocidad del renderizado. Además, se están realizando avances en la creación de escenas 4D, que incluyen el tiempo como una dimensión adicional, ofreciendo nuevas posibilidades para la industria del entretenimiento.",
+    "crumbs": [
+      "Introducción a NeRF"
+    ]
   },
   {
-    "objectID": "intro.html#futuro",
-    "href": "intro.html#futuro",
-    "title": "2  Introduction",
-    "section": "2.3 Futuro",
-    "text": "2.3 Futuro\n4D Gaussian Splatting\n\n\n\n\nMildenhall, Ben, Pratul P. Srinivasan, Matthew Tancik, Jonathan T. Barron, Ravi Ramamoorthi, and Ren Ng. 2020. “NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis.” In ECCV."
+    "objectID": "history.html#resumen",
+    "href": "history.html#resumen",
+    "title": "Introducción a NeRF",
+    "section": "Resumen:",
+    "text": "Resumen:\nLos Campos de Radiancia Neural (NeRFs) representan una herramienta poderosa en la creación de modelos 3D a partir de imágenes 2D. Su capacidad para generar visualizaciones realistas y detalladas abre nuevas oportunidades en diversas aplicaciones tecnológicas, desde la realidad virtual y aumentada hasta el cine, videojuegos y simulaciones médicas. A pesar de los desafíos técnicos, los continuos avances en la investigación y el desarrollo de NeRFs prometen revolucionar la creación de contenido visual.",
+    "crumbs": [
+      "Introducción a NeRF"
+    ]
   },
   {
-    "objectID": "nerf.html#abstract",
-    "href": "nerf.html#abstract",
-    "title": "3  NeRF",
-    "section": "3.1 Abstract",
-    "text": "3.1 Abstract"
+    "objectID": "history.html#referencias",
+    "href": "history.html#referencias",
+    "title": "Introducción a NeRF",
+    "section": "Referencias:",
+    "text": "Referencias:\n\nProfessor Kanazawa Lectures about NeRFs at Stanford HAI",
+    "crumbs": [
+      "Introducción a NeRF"
+    ]
   },
   {
-    "objectID": "nerf.html#explanation",
-    "href": "nerf.html#explanation",
-    "title": "3  NeRF",
-    "section": "3.2 Explanation",
-    "text": "3.2 Explanation\nEl método NerF (Neural Radiance Fields) es una técnica de inteligencia artificial que permite generar vistas sintéticas de escenas complejas en 3D. Para ello, utiliza una red neuronal que modela la radiación de luz a través de la escena y que puede ser entrenada con un conjunto de datos de imágenes y posiciones de cámara. En esencia, esta técnica crea un modelo 3D de la escena, que puede ser renderizado desde cualquier punto de vista. El método NerF ha demostrado ser altamente efectivo en la síntesis de vistas realistas de escenas complejas, como paisajes naturales o interiores detallados. Si quieres profundizar en el tema, puedes revisar el paper “NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis” Mildenhall et al. (2020) .\nEn el trabajo de Mildenhall et al. (2020) sintetizaron las vistas consultando las coordenadas 5D a lo largo de los rayos de la cámara y utilizaron técnicas clásicas de renderizado de volúmenes para proyectar los colores y densidades de salida en una imagen. Dado que el renderizado de volúmenes es naturalmente diferenciable, la única entrada necesaria para optimizar esta representación es un conjunto de imágenes con poses de cámara conocidas. Describieron cómo optimizar eficazmente los campos de radiancia neuronales para representar nuevas vistas fotorrealistas de escenas con geometría y apariencia complicadas, y demostraron resultados que superan trabajos anteriores sobre representación neuronal y síntesis de vistas. Fuente: Project Page\n\n3.2.1 Entrada\nEn primer lugar, se deben tener en cuenta las imágenes de referencia de la escena, junto con la información de la posición de cámara correspondiente a cada imagen. A partir de estos datos, se entrena una red neuronal para que pueda predecir la radiación de luz en cualquier punto de la escena.\n\n\n\n\n\nSe sintetiza las vistas consultando las coordenadas continua 5D (ubicación espacial (x, y, z) y dirección de visión (\\theta, \\phi)) a lo largo de los rayos de la cámara y utilizaron técnicas clásicas de renderizado de volúmenes para proyectar los colores y densidades de salida en una imagen.\n\n\n3.2.2 Entrenamiento\nEn esta etapa utiliza una red neuronal que modela la radiación de luz a través de la escena, y que puede ser entrenada a partir de un conjunto de datos de imágenes y posiciones de cámara. En esencia, esta técnica crea un modelo 3D de la escena\nPara ello, se divide la escena en pequeños fragmentos, y se ajusta un modelo de radiación de luz a cada uno de ellos. Este modelo permite predecir la radiación de luz que se observaría en cualquier punto de la escena, a partir de una posición de cámara dada.\n\n\n\n\n\n\nLa salida es la densidad de volumen y la radiación emitida dependiente de la vista en esa ubicación espacial.\n\n\n3.2.3 Renderizado\nUna vez que se ha entrenado la red neuronal, se puede utilizar para generar vistas sintéticas de la escena. Para ello, se selecciona una posición de cámara arbitraria, y se utiliza la red neuronal para predecir la radiación de luz en cada punto de la escena, a partir de esta posición de cámara. A continuación, se renderiza la vista sintética correspondiente a la posición de cámara seleccionada, utilizando la información de radiación de luz predicha por la red neuronal.\nEl método NerF ha demostrado ser altamente efectivo en la síntesis de vistas realistas de escenas complejas, como paisajes naturales o interiores detallados."
+    "objectID": "nerf.html",
+    "href": "nerf.html",
+    "title": "2  NeRF",
+    "section": "",
+    "text": "NeRF (Neural Radiance Fields) es una técnica de inteligencia artificial que permite generar vistas sintéticas de escenas complejas en 3D, es un método de vanguardia para sintetizar vistas novedosas de escenas complejas. Al optimizar una función volumétrica continua usando un conjunto esparcido de vistas de entrada, NeRF genera imágenes altamente realistas a través de una red neuronal que produce densidad de volumen y radiancia basada en coordenadas espaciales y direccionales (Mildenhall et al. 2020).\n\nNeRF utiliza una red profunda totalmente conectada que toma coordenadas 5D (ubicación espacial y dirección de visualización) como entrada, produciendo la densidad de volumen y la radiancia. Esta información se usa para sintetizar nuevas vistas mediante técnicas de renderizado volumétrico, requiriendo solo imágenes con poses de cámara conocidas. El método sobresale en la representación de escenas con geometría y apariencia complejas, produciendo resultados fotorrealistas.\n\n\nNeRF representa un avance en la síntesis de vistas, ofreciendo un método para generar nuevas vistas de escenas con un realismo y detalle sin precedentes. Utiliza una red profunda para procesar coordenadas 5D, haciéndolo altamente eficiente y efectivo para diversas aplicaciones, incluyendo la representación de escenas sintéticas, la visualización de geometría y la realidad mixta.\n\n\n\n\n\n\n\nReferencias:: NeRF Página Principal, Paper, Code, Data,  MID-NeRF\n\n\n\n\nMildenhall, Ben, Pratul P. Srinivasan, Matthew Tancik, Jonathan T. Barron, Ravi Ramamoorthi, and Ren Ng. 2020. “NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis.” In ECCV.",
+    "crumbs": [
+      "Introducción a NeRF",
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>NeRF</span>"
+    ]
   },
   {
-    "objectID": "nerf.html#experimentation",
-    "href": "nerf.html#experimentation",
-    "title": "3  NeRF",
-    "section": "3.3 Experimentation",
-    "text": "3.3 Experimentation"
+    "objectID": "instant_ngp.html",
+    "href": "instant_ngp.html",
+    "title": "3  Instant NGP",
+    "section": "",
+    "text": "El artículo de Instant Neural Graphics Primitives de NVIDIA Research describe un método innovador para entrenar primitivas gráficas neuronales de manera casi instantánea utilizando una codificación de hash de multiresolución. Este enfoque permite realizar entrenamientos rápidos y eficientes en GPU para tareas como imágenes gigapíxel, campos de radiancia neural (NeRF), funciones de distancia firmada (SDF) y caché de radiancia neural (Müller et al. 2022).\n\n\n\nMétodo\n\n\nEl documento presenta una solución para reducir el costo computacional del entrenamiento de redes neuronales gráficas mediante el uso de una estructura de hash multiresolución. Esta estructura permite a la red desambiguar colisiones de hash, optimizando el rendimiento y calidad sin necesidad de redes grandes. Utilizando CUDA y minimizando el desperdicio de ancho de banda y operaciones, el método logra entrenamientos rápidos y renders eficientes. Se muestran resultados en diversas aplicaciones: desde imágenes de gigapíxeles hasta campos de radiancia y funciones de distancia firmada, destacando la velocidad y calidad alcanzada.\n\n\nVideo\nTraining Progress\n\n\nNVIDIA presenta una técnica avanzada para el entrenamiento rápido de primitivas gráficas neuronales, reduciendo el costo computacional con una codificación de hash multiresolución. Esto permite aplicaciones eficientes y de alta calidad en diversas áreas gráficas, optimizando recursos y tiempo.\n\n\n\n\n\nReferencias: Página principal, Paper, Video, Presentation, Real-Time Live, Code\n\n\n\n\nMüller, Thomas, Alex Evans, Christoph Schied, and Alexander Keller. 2022. “Instant Neural Graphics Primitives with a Multiresolution Hash Encoding.” ACM Trans. Graph. 41 (4): 102:1–15. https://doi.org/10.1145/3528223.3530127.",
+    "crumbs": [
+      "Introducción a NeRF",
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Instant NGP</span>"
+    ]
   },
   {
-    "objectID": "nerf.html#postprocess",
-    "href": "nerf.html#postprocess",
-    "title": "3  NeRF",
-    "section": "3.4 Postprocess",
-    "text": "3.4 Postprocess\nLos software de edición de modelado 3D normalmente trabajan con renderizado de malla y este tipo de modelos retornan resultados denominados rendereización volumétrica, entonces al hoy (22-10-2023) es posible de realizar con técnicas de Cube Maching pero perdiendo mucha calidad."
+    "objectID": "gaussian_splatting.html",
+    "href": "gaussian_splatting.html",
+    "title": "4  Gaussian Splatting",
+    "section": "",
+    "text": "El artículo titulado 3D Gaussian Splatting for Real-Time Radiance Field Rendering presenta un método innovador llamado 3D Gaussian Splatting para la renderización de campos de radiancia en tiempo real, logrando síntesis de vistas novedosas con alta calidad visual a 1080p y ≥100 fps. Utiliza puntos dispersos para representar escenas mediante Gaussians 3D optimizados para preservar propiedades volumétricas, controlando la densidad y acelerando el renderizado en tiempo real (Kerbl et al. 2023).\n\n\n\nImagen de A Comprehensive Overview of Gaussian Splatting\n\n\nEl método se enfoca en resolver el problema de la síntesis de vistas de escenas completas en tiempo real, algo que los métodos previos no podían lograr sin sacrificar calidad. Para ello, introduce tres elementos clave:\n\nRepresentación con Gaussians 3D: Partiendo de puntos dispersos generados durante la calibración de la cámara, se usan Gaussians 3D para representar la escena, evitando cálculos innecesarios en espacios vacíos.\nOptimización intercalada: Control de densidad y optimización de la covarianza anisotrópica de los Gaussians para lograr una representación precisa de la escena.\nAlgoritmo de renderizado rápido: Un algoritmo de renderizado consciente de la visibilidad que soporta splatting anisotrópico, acelerando el entrenamiento y permitiendo el renderizado en tiempo real.\n\nLos resultados muestran calidad visual de última generación y renderizado en tiempo real en varios conjuntos de datos establecidos. Video Explicativo\n\nEl método 3D Gaussian Splatting ofrece una solución innovadora para la síntesis de vistas novedosas de escenas completas en tiempo real a alta resolución. Combina representaciones eficientes y algoritmos de renderizado avanzados para lograr una calidad visual sobresaliente sin los elevados costos de entrenamiento de las redes neuronales.\n\n\n\n\n\n\nReferencias: 3D Gaussian Splatting for Real-Time Radiance Field Rendering, A Comprehensive Overview of GS, Video: 3DGaussian Splatting, 3D Gaussian Splatting. David Cochard, Video: 3D Gaussian Splatting in UNREAL ENGINE 5 is INSANE!, Video: How to View 3D Gaussian Splatting Scenes in Unity\n\n\n\n\nKerbl, Bernhard, Georgios Kopanas, Thomas Leimkühler, and George Drettakis. 2023. “3D Gaussian Splatting for Real-Time Radiance Field Rendering.” ACM Transactions on Graphics 42 (4). https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/.",
+    "crumbs": [
+      "Introducción a NeRF",
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Gaussian Splatting</span>"
+    ]
   },
   {
-    "objectID": "nerf.html#references",
-    "href": "nerf.html#references",
-    "title": "3  NeRF",
-    "section": "3.5 References",
-    "text": "3.5 References\n\n\n\n\nMildenhall, Ben, Pratul P. Srinivasan, Matthew Tancik, Jonathan T. Barron, Ravi Ramamoorthi, and Ren Ng. 2020. “NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis.” In ECCV."
+    "objectID": "spotlesssplat.html",
+    "href": "spotlesssplat.html",
+    "title": "5  Spot Less Splat",
+    "section": "",
+    "text": "Project: https://spotlesssplats.github.io/\nCode will be made available by July 10th.",
+    "crumbs": [
+      "Introducción a NeRF",
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Spot Less Splat</span>"
+    ]
   },
   {
-    "objectID": "instant_ngp.html#introducción",
-    "href": "instant_ngp.html#introducción",
-    "title": "4  Instant NGP",
-    "section": "4.1 Introducción",
-    "text": "4.1 Introducción\nImagina esto: cuando hojea un álbum de fotos y ve imágenes de viajes familiares pasados, ¿desea volver a visitar esos lugares y revivir esos cálidos momentos? Cuando navega por un museo en línea, ¿desea ajustar libremente su perspectiva, observar de cerca los detalles de los objetos expuestos y disfrutar de una interacción plena con las reliquias culturales? Cuando los médicos se enfrentan a pacientes, ¿pueden mejorar significativamente la precisión y la eficacia del diagnóstico sintetizando una perspectiva tridimensional de la zona afectada a partir de imágenes y proporcionando estimaciones del tamaño y el volumen de la lesión?\nLa tecnología NeRF (Neural Radiance Fields) es la clave para hacer esto realidad. Puede reconstruir la representación tridimensional de una escena a partir de imágenes captadas desde múltiples ángulos y generar imágenes de la escena desde cualquier punto de vista y posición (nueva síntesis de puntos de vista).\nEl siguiente vídeo muestra cómo se utiliza la tecnología NeRF para lograr la itinerancia 3D capturando algunas imágenes estáticas de las oficinas de Taichi con un teléfono móvil.\nEn los últimos dos años, la tecnología NeRF se ha convertido en un campo candente de la visión por ordenador. Desde el revolucionario trabajo de Mildenhall et al. (2020), NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis, el campo de los NeRF ha generado muchos estudios posteriores, especialmente el reciente trabajo mejorado Instant NGP, que fue incluido en la lista de los mejores inventos de 2022 de la revista Time.\nEn comparación con investigaciones anteriores, los avances significativos logrados por los mencionados trabajos NeRF e Instant NGP son:\nNeRF puede obtener una representación de alta precisión de la escena, y las imágenes renderizadas desde nuevos ángulos son muy realistas.\nBasándose en el trabajo de NeRF, Instant NGP acorta significativamente el tiempo de entrenamiento y renderizado, reduciendo el tiempo de entrenamiento a menos de un minuto, y haciendo que el renderizado en tiempo real sea fácilmente alcanzable. Estas mejoras hacen que la tecnología de NeRF sea realmente factible de aplicar.\nNo solo los investigadores en el campo del aprendizaje profundo, sino también los profesionales de muchas otras industrias están siguiendo de cerca los avances de NeRF, pensando en las posibilidades de aplicar NeRF en sus campos.\nEl objetivo principal de este artículo es doble:\n\nQueremos presentar cómo Taichi y PyTorch pueden combinarse para crear un flujo de trabajo de desarrollo Instant NGP totalmente basado en Python. Sin una sola línea de código CUDA, Taichi calculará automáticamente las derivadas de tu núcleo y conseguirá un rendimiento similar al de CUDA. Esto te permite dedicar más tiempo a las iteraciones de ideas de investigación que a la tediosa programación CUDA y al ajuste del rendimiento.\nLos dispositivos móviles serán un escenario esencial para la implementación de NeRF en el futuro. Introducimos el uso del marco Taichi AOT (compilación anticipada), que puede desplegar el modelo NeRF entrenado en dispositivos móviles sin preocuparse por la compatibilidad de plataformas. La siguiente animación muestra nuestros esfuerzos utilizando el marco AOT de Taichi para portar el modelo Lego del papel Instant NGP a un iPad para la inferencia y renderización en tiempo real:\n\n\n\n\n\n\nPrimero repasaremos brevemente los principios de NeRF y las mejoras de Instant NGP, y después presentaremos la combinación de Taichi e Instant NGP."
+    "objectID": "preprocessing.html",
+    "href": "preprocessing.html",
+    "title": "6  Preprocessing",
+    "section": "",
+    "text": "6.1 COLMAP\nCOLMAP es un software de rpoposito general que spermite crear Structure-from-Motion (SfM) y Multi-View Stereo (MVS) con una interfaz gráfica y de línea de comandos. Ofrece una amplia gama de funciones para la reconstrucción de colecciones de imágenes ordenadas y desordenadas (Schönberger and Frahm 2016) (Schönberger et al. 2016). Para el caso de tecnologías Syntectic Views Novel es el software más utilizado para obtener las poses de la cámara que los modelos como NERF y Gaussian Splatting utilizan normalmente.\nReferencias: Project COLMAP, Tutorial",
+    "crumbs": [
+      "State of Art",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Preprocessing</span>"
+    ]
   },
   {
-    "objectID": "instant_ngp.html#part-i-what-is-a-neural-radiance-field-nerf",
-    "href": "instant_ngp.html#part-i-what-is-a-neural-radiance-field-nerf",
-    "title": "4  Instant NGP",
-    "section": "4.2 Part I: What is a Neural Radiance Field (NeRF)",
-    "text": "4.2 Part I: What is a Neural Radiance Field (NeRF)\nEn términos sencillos, un campo de radiancia neuronal es la codificación de toda una escena 3D en los parámetros de una red neuronal. Para representar una escena desde cualquier punto de vista nuevo, la red neuronal tiene que aprender el color RGB y la densidad de volumen \\sigma (es decir, si el punto está “ocupado” o no) de cada punto del espacio. La densidad de volumen en un punto es independiente del punto de vista, pero el color cambia con el punto de vista (por ejemplo, el objeto visto desde un ángulo diferente cambia), por lo que la red neuronal en realidad necesita aprender el color (r, g, b) y la densidad de volumen \\sigma de un punto (x, y, z) bajo diferentes ángulos de cámara (\\theta, \\phi) (es decir, latitud y longitud).\nPor lo tanto, la entrada al campo de radiancia neuronal es un vector de cinco dimensiones (x, y, z, \\theta, \\phi), y la salida es un vector de cuatro dimensiones (r, g, b, \\sigma):\n\n\n\n\n\nAsumiendo que tenemos tal campo de radiancia neural, enviando los correspondientes x, y, z, \\theta, \\phi) de cada punto en el espacio más allá en el renderizado de volumen resultará en una imagen 2D vista desde el punto de vista actual (\\theta, \\phi).\n\nEl concepto de densidad de volumen (volume rendering) se utiliza a menudo en la computación gráfica para representar medios como nubes y humo. Representa la probabilidad de que un punto bloquee un rayo de luz cuando lo atraviesa. La densidad de volumen mide la contribución de un punto al color final del rayo.\n\n\n4.2.1 Volume Rendering\nEl paso central de NeRF es un proceso denominado renderizado de volumen. El renderizado de volumen puede “aplanar” el campo neuronal en una imagen 2D, que luego se comparará con una imagen de referencia para generar pérdidas. Este proceso es diferenciable, por lo que puede utilizarse para entrenar la red.\nAntes de introducir el renderizado de volumen, entendamos primero los principios básicos de la imagen de cámara. En la computación gráfica, para ahorrar recursos computacionales, se supone que el color de un punto de la escena tras ser alcanzado por un rayo emitido desde la cámara es el color del píxel en la intersección del rayo y la pantalla:\n\n\n\n\n\nSin embargo, al renderizar medios atmosféricos similares al humo, los rayos atraviesan el medio en lugar de detenerse únicamente en su superficie. Además, durante la propagación de los rayos, una cierta proporción de éstos será absorbida por el medio (sin tener en cuenta la dispersión y la autoemisión). La parte del medio que absorbe los rayos contribuye al color final de los rayos. Cuanto mayor sea la densidad de volumen, más rayos serán absorbidos y más intenso será el color de esta parte del medio. Por tanto, el color final de los rayos es la integral de los colores de los puntos a lo largo de la trayectoria.\n\n\n\n\n\nSuponiendo que la cámara está en o y la dirección del rayo es d, la ecuación del rayo es r(t)=o+t*d, y su color de píxel predicho c(r) es:\nC(r)=\\int_{t_n}^{t_f}T(t)\\sigma(t)c(r(t), d), dt En la fórmula, T(t) representa la proporción de luz transmitida al punto t, y \\sigma(t)dt representa la proporción de luz bloqueada por una pequeña vecindad cercana al punto t. El producto de ambos es la proporción de luz que llega a t y es bloqueada en t, multiplicada por el color c(r(t), d) de ese punto, que es la contribución de este punto al color final del rayo. El intervalo integral [t_n, t_f] representa el punto de intersección más cercano t_{near} y el punto de intersección más lejano t_{far} del rayo con el medio.\nEn los cálculos reales, necesitamos utilizar sumas discretas para aproximar el valor de la integral. Es decir, muestreamos ciertos puntos discretos a lo largo del rayo y ponderamos sus colores sumándolos. No vamos a entrar en detalles sobre este proceso de discretización, pero puedes consultar explicaciones como la del enlace de la imagen anterior."
+    "objectID": "preprocessing.html#colmap",
+    "href": "preprocessing.html#colmap",
+    "title": "6  Preprocessing",
+    "section": "",
+    "text": "Modelo disperso del centro de Roma a partir de 21.000 fotos producidas por el proceso SfM de COLMAP.",
+    "crumbs": [
+      "State of Art",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Preprocessing</span>"
+    ]
   },
   {
-    "objectID": "instant_ngp.html#entrenaiento-de-nerf",
-    "href": "instant_ngp.html#entrenaiento-de-nerf",
-    "title": "4  Instant NGP",
-    "section": "4.3 Entrenaiento de NeRF",
-    "text": "4.3 Entrenaiento de NeRF\nUna vez conocidos los campos neuronales de radiancia y el renderizado de volúmenes, veamos más en detalle el proceso de entrenamiento de NeRF. Todo el proceso se divide en cinco pasos, como se muestra en la siguiente figura:\n\n\n\n\n\n\n\nCamera parameters:\n\nTras preparar un conjunto de imágenes 2D capturadas, el primer paso es calcular los parámetros de pose de la cámara para cada imagen. Para ello se pueden utilizar herramientas como COLMAP. COLMAP compara los puntos comunes de la escena que aparecen en diferentes imágenes para calcular la pose de la cámara. Además, suponemos que toda la escena se encuentra dentro de una caja cúbica con un rango de [-1,1]^3.\n\n\n\n3D point sampling:\n\nPara una imagen real, se emite un rayo desde la cámara, que atraviesa la imagen y entra en la escena. El valor del píxel I(p) del punto de intersección p entre el rayo y la imagen es el color de referencia. Tomamos muestras discretas de varios puntos a lo largo de este rayo. Las coordenadas espaciales (x, y, z) de estos puntos de muestra y la pose de la cámara (\\theta, \\phi) calculada en el primer paso se combinan como entrada de la red neuronal.\n\n\n\nNeRF model:\n\nPredecir el color y la densidad de cada punto de muestra en el rayo a través de la red neuronal.\n\n\n\nRendering:\n\nMediante el renderizado de volúmenes, podemos utilizar el color y la densidad de los puntos de muestra obtenidos por la red neuronal en el paso anterior para calcular la suma discreta, aproximando el valor del píxel \\hat{I}(p) correspondiente al rayo.\n\n\n\nPhotometric loss:\n\nComparando \\hat{I}(p) con el verdadero valor de color I(p) del rayo y calculando el error y el gradiente, se puede entrenar la red neuronal."
+    "objectID": "preprocessing.html#colmap-free-3d-gaussian-splatting",
+    "href": "preprocessing.html#colmap-free-3d-gaussian-splatting",
+    "title": "6  Preprocessing",
+    "section": "6.2 COLMAP-Free 3D Gaussian Splatting",
+    "text": "6.2 COLMAP-Free 3D Gaussian Splatting\nEl artículo Fu et al. (2023) presenta un enfoque innovador llamado COLMAP-Free 3D Gaussian Splatting que permite la síntesis de vistas novedosas foto-realistas y la reconstrucción de escenas 3D sin necesidad de preprocesar poses de cámara con COLMAP. Este método mejora significativamente la estimación de poses de cámara y la síntesis de vistas bajo grandes cambios de movimiento al utilizar representaciones explícitas y la continuidad del video de entrada. El método presenta 3 puntos claves:\n\nSíntesis de Vistas Nuevas: El método ajusta una curva Bezier a las poses de cámara estimadas, permitiendo la síntesis de imágenes desde puntos de vista de prueba.\nEstimación de Poses de Cámara: Se visualizan las trayectorias estimadas contra las trayectorias de referencia para evaluar la precisión del método.\nReconstrucción de Escenas 3D desde Videos Sora La técnica se aplica a videos generados por Sora, un modelo generativo de texto a video, demostrando la capacidad de generar datos 3D infinitos a partir de pocas líneas de texto.\n\n\n\n\nCOLMAP-Free 3D Gaussian Splatting\n\n\nEl enfoque COLMAP-Free 3D Gaussian Splatting permite la síntesis de vistas y la reconstrucción de escenas 3D sin la necesidad de preprocesamiento de poses de cámara, mostrando mejoras significativas en comparación con métodos anteriores. https://oasisyang.github.io/colmap-free-3dgs/\nReferencias: Link del Proyecto, arXiv, Video, Slides, Code.",
+    "crumbs": [
+      "State of Art",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Preprocessing</span>"
+    ]
   },
   {
-    "objectID": "instant_ngp.html#referencias",
-    "href": "instant_ngp.html#referencias",
-    "title": "4  Instant NGP",
-    "section": "4.4 Referencias",
-    "text": "4.4 Referencias\nDevelop and Deploy Instant NGP without writing CUDA\n\n\n\n\nMildenhall, Ben, Pratul P. Srinivasan, Matthew Tancik, Jonathan T. Barron, Ravi Ramamoorthi, and Ren Ng. 2020. “NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis.” In ECCV."
+    "objectID": "preprocessing.html#vggsfm",
+    "href": "preprocessing.html#vggsfm",
+    "title": "6  Preprocessing",
+    "section": "6.3 VGGSfM",
+    "text": "6.3 VGGSfM\nVisual Geometry Grounded Deep Structure From Motion\nVGGSfM es un pipeline de Structure from Motion (SfM) completamente diferenciable que permite la reconstrucción de poses de cámara y estructuras 3D a partir de imágenes 2D (Wang et al. 2023). Utiliza técnicas avanzadas de seguimiento de puntos y un ajuste de conjunto diferenciable, logrando resultados de última generación en conjuntos de datos como CO3D, IMC Phototourism y ETH3D. VGGSfM utiliza un proceso en tres etapas:\n\n\n\nVGGSfM: Visual Geometry Grounded Deep Structure From Motion.\n\n\n\nExtracción de Tracks 2D: Se extraen puntos de seguimiento 2D a partir de las imágenes de entrada utilizando una red neuronal profunda entrenada para esta tarea específica.\nReconstrucción de Cámaras: Utiliza los tracks 2D para reconstruir las poses de las cámaras. La reconstrucción de la cámara se realiza mediante una optimización iterativa que minimiza el error de reproyección entre los puntos 2D y sus correspondientes en el espacio 3D.\nOptimización 3D Diferenciable: La reconstrucción 3D se optimiza utilizando una capa de ajuste de conjunto diferenciable que permite la retropropagación del error a través de todas las etapas del pipeline. Esto asegura una integración de extremo a extremo que mejora la precisión y robustez del modelo.\n\nCuando un método es “diferenciable”, significa que todas las operaciones y funciones utilizadas dentro del algoritmo permiten el cálculo de sus derivadas. Esto es crucial en el entrenamiento de modelos de aprendizaje profundo, donde se usa el descenso de gradiente para minimizar errores. En el contexto de VGGSfM, la diferenciabilidad permite que el error se retropropague a través del pipeline completo (desde la extracción de puntos hasta la optimización 3D), mejorando así la precisión de la reconstrucción de las poses de cámara y la estructura 3D mediante ajustes iterativos eficientes.\nVGGSfM se ha aplicado a fotos en entornos no controlados, mostrando nubes de puntos densas y cámaras estimadas con alta precisión. Las visualizaciones cualitativas demuestran la capacidad del método para proporcionar reconstrucciones detalladas de cámaras y nubes de puntos en varios conjuntos de datos. En comparación con otros métodos, VGGSfM ha mostrado mejoras significativas en términos de precisión y consistencia, superando incluso a métodos tradicionales como COLMAP en algunos casos.\nVGGSfM es un enfoque innovador en SfM, completamente diferenciable y capaz de reconstruir estructuras 3D y poses de cámara con alta precisión. Su integración de extremo a extremo y la utilización de técnicas avanzadas de seguimiento y optimización lo convierten en una herramienta poderosa para la reconstrucción 3D a partir de imágenes 2D, demostrando resultados superiores en múltiples conjuntos de datos.\nReferencias: Link del Proyecto, Paper, Code, Demo",
+    "crumbs": [
+      "State of Art",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Preprocessing</span>"
+    ]
   },
   {
-    "objectID": "3d_gaussian_splatting.html#abstract-web",
-    "href": "3d_gaussian_splatting.html#abstract-web",
-    "title": "5  Gasussian Splatting 3D",
-    "section": "5.1 Abstract (web)",
-    "text": "5.1 Abstract (web)\nRadiance Field methods have recently revolutionized novel-view synthesis of scenes captured with multiple photos or videos. However, achieving high visual quality still requires neural networks that are costly to train and render, while recent faster methods inevitably trade off speed for quality. For unbounded and complete scenes (rather than isolated objects) and 1080p resolution rendering, no current method can achieve real-time display rates.\nWe introduce three key elements that allow us to achieve state-of-the-art visual quality while maintaining competitive training times and importantly allow high-quality real-time (≥ 100 fps) novel-view synthesis at 1080p resolution.\n\nFirst, starting from sparse points produced during camera calibration, we represent the scene with 3D Gaussians that preserve desirable properties of continuous volumetric radiance fields for scene optimization while avoiding unnecessary computation in empty space;\nSecond, we perform interleaved optimization/density control of the 3D Gaussians, notably optimizing anisotropic covariance to achieve an accurate representation of the scene;\nThird, we develop a fast visibility-aware rendering algorithm that supports anisotropic splatting and both accelerates training and allows realtime rendering. We demonstrate state-of-the-art visual quality and real-time rendering on several established datasets."
+    "objectID": "preprocessing.html#flowmap",
+    "href": "preprocessing.html#flowmap",
+    "title": "6  Preprocessing",
+    "section": "6.4 Flowmap",
+    "text": "6.4 Flowmap\nEl artículo Smith et al. (2024) presenta FLowmap, un método auto-supervisado y diferenciable de SfM (Structure from Motion) que logra precisión a nivel COLMAP para escenas de 360°. Utiliza un objetivo de mínimos cuadrados para comparar el flujo óptico inducido por la profundidad, intrínsecos y poses contra correspondencias obtenidas mediante flujo óptico y seguimiento de puntos.\n\n\n\nFlowMap: High-Quality Camera Poses, Intrinsics, and Depth via Gradient Descent\n\n\nFlowMap permite la síntesis de vistas novedosas foto-realistas y facilita la reconstrucción 3D a través de Splatting Gaussiano. El documento presenta 3 puntos claves:\n\nOptimización y Parámetros de Cámara: FlowMap emplea el descenso de gradiente para optimizar poses de cámara, intrínsecos y profundidad por cada video.\nAplicaciones: El método permite la creación de nubes de puntos densas y alineadas, y se puede utilizar para entrenar escenas de Splatting Gaussiano 3D de alta calidad.\nComparaciones y Resultados: FlowMap supera a métodos previos basados en descenso de gradiente y se compara favorablemente con COLMAP en la tarea de síntesis de vistas novedosas de 360°.\n\nFlowMap es una solución innovadora para la estimación precisa de parámetros de cámara y reconstrucción 3D, demostrando una eficacia comparable a COLMAP en la síntesis de vistas de 360°. Su método diferenciable y auto-supervisado abre nuevas posibilidades para el entrenamiento de redes neuronales en estimación de parámetros de cámara y reconstrucción 3D.\nReferencias: Link del Proyecto, Paper, Code, Datasets and Initialization\n\n\n\n\nFu, Yang, Sifei Liu, Amey Kulkarni, Jan Kautz, Alexei A. Efros, and Xiaolong Wang. 2023. “COLMAP-Free 3D Gaussian Splatting.” https://arxiv.org/abs/2312.07504.\n\n\nSchönberger, Johannes Lutz, and Jan-Michael Frahm. 2016. “Structure-from-Motion Revisited.” In Conference on Computer Vision and Pattern Recognition (CVPR).\n\n\nSchönberger, Johannes Lutz, Enliang Zheng, Marc Pollefeys, and Jan-Michael Frahm. 2016. “Pixelwise View Selection for Unstructured Multi-View Stereo.” In European Conference on Computer Vision (ECCV).\n\n\nSmith, Cameron, David Charatan, Ayush Tewari, and Vincent Sitzmann. 2024. “FlowMap: High-Quality Camera Poses, Intrinsics, and Depth via Gradient Descent.” In arXiv.\n\n\nWang, Jianyuan, Nikita Karaev, Christian Rupprecht, and David Novotny. 2023. “VGGSfM: Visual Geometry Grounded Deep Structure from Motion.” In.",
+    "crumbs": [
+      "State of Art",
+      "<span class='chapter-number'>6</span>  <span class='chapter-title'>Preprocessing</span>"
+    ]
   },
   {
-    "objectID": "3d_gaussian_splatting.html#explanation",
-    "href": "3d_gaussian_splatting.html#explanation",
-    "title": "5  Gasussian Splatting 3D",
-    "section": "5.2 Explanation",
-    "text": "5.2 Explanation\n3D Gaussian Splatting. David Cochard"
+    "objectID": "3d_models.html",
+    "href": "3d_models.html",
+    "title": "7  3D Models",
+    "section": "",
+    "text": "https://ubc-vision.github.io/nf-soft-mining/\nhttps://city-super.github.io/scaffold-gs/\nSMERF : Streamable Memory Efficient Radiance Fields for Real-Time Large-Scene Exploration\nDeblurring 3D Gaussian Splatting\nhttps://yihua7.github.io/SC-GS-web/",
+    "crumbs": [
+      "State of Art",
+      "<span class='chapter-number'>7</span>  <span class='chapter-title'>3D Models</span>"
+    ]
   },
   {
-    "objectID": "3d_gaussian_splatting.html#experimentation",
-    "href": "3d_gaussian_splatting.html#experimentation",
-    "title": "5  Gasussian Splatting 3D",
-    "section": "5.3 Experimentation",
-    "text": "5.3 Experimentation\nGithub gaussian-splatting"
+    "objectID": "4d_models.html",
+    "href": "4d_models.html",
+    "title": "8  4D Models",
+    "section": "",
+    "text": "4K4D\nhttps://github.com/zju3dv/EasyVolcap\nhttps://nowheretrix.github.io/HiFi4G/\n4DiM: Controlling Space and Time with Diffusion Models\n\nRepresenting and rendering dynamic scenes has been an important but challenging task. Especially, to accurately model complex motions, high efficiency is usually hard to maintain. We introduce the 4D Gaussian Splatting (4D-GS) to achieve real-time dynamic scene rendering while also enjoying high training and storage efficiency. An efficient deformation field is constructed to model both Gaussian motions and shape deformations. Different adjacent Gaussians are connected via a HexPlane to produce more accurate position and shape deformations. Our 4D-GS method achieves real-time rendering under high resolutions, 70 FPS at a 800*800 resolution on an RTX 3090 GPU, while maintaining comparable or higher quality than previous state-of-the-art methods\n\nWeb Page\n\nPaper: 4D Gaussian Splatting\n\n4K4D: Real-Time 4D View Synthesis at 4K Resolution\n\nGithub 4DGaussians",
+    "crumbs": [
+      "State of Art",
+      "<span class='chapter-number'>8</span>  <span class='chapter-title'>4D Models</span>"
+    ]
   },
   {
-    "objectID": "3d_gaussian_splatting.html#postprocess",
-    "href": "3d_gaussian_splatting.html#postprocess",
-    "title": "5  Gasussian Splatting 3D",
-    "section": "5.4 Postprocess",
-    "text": "5.4 Postprocess\nRenderizado Volumétrico -&gt; Malla\n\n5.4.1 Unity"
+    "objectID": "renders.html",
+    "href": "renders.html",
+    "title": "9  Renders",
+    "section": "",
+    "text": "https://radiancefields.com/gauzilla-rust-3d-gaussian-splatting-renderer\nhttps://github.com/huggingface/gsplat.js",
+    "crumbs": [
+      "State of Art",
+      "<span class='chapter-number'>9</span>  <span class='chapter-title'>Renders</span>"
+    ]
   },
   {
-    "objectID": "4d_gaussian_splatting.html#abstract",
-    "href": "4d_gaussian_splatting.html#abstract",
-    "title": "6  Gasussian Splatting 4D",
-    "section": "6.1 Abstract",
-    "text": "6.1 Abstract\nRepresenting and rendering dynamic scenes has been an important but challenging task. Especially, to accurately model complex motions, high efficiency is usually hard to maintain. We introduce the 4D Gaussian Splatting (4D-GS) to achieve real-time dynamic scene rendering while also enjoying high training and storage efficiency. An efficient deformation field is constructed to model both Gaussian motions and shape deformations. Different adjacent Gaussians are connected via a HexPlane to produce more accurate position and shape deformations. Our 4D-GS method achieves real-time rendering under high resolutions, 70 FPS at a 800*800 resolution on an RTX 3090 GPU, while maintaining comparable or higher quality than previous state-of-the-art methods"
+    "objectID": "demo.html",
+    "href": "demo.html",
+    "title": "10  Demo Slay",
+    "section": "",
+    "text": "10.1 Objetivos\nGeneral:\nEspecíficos:",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Demo Slay</span>"
+    ]
   },
   {
-    "objectID": "4d_gaussian_splatting.html#explanation",
-    "href": "4d_gaussian_splatting.html#explanation",
-    "title": "6  Gasussian Splatting 4D",
-    "section": "6.2 Explanation",
-    "text": "6.2 Explanation\nWeb Page\n\nPaper: 4D Gaussian Splatting"
+    "objectID": "demo.html#objetivos",
+    "href": "demo.html#objetivos",
+    "title": "10  Demo Slay",
+    "section": "",
+    "text": "Crear un demo Propio de Modelo 4D\n\n\n\nUtilizar imágenes de un video propio\nDesplegar el modelo creado en un navegador web y/o MetaQuest",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Demo Slay</span>"
+    ]
   },
   {
-    "objectID": "4d_gaussian_splatting.html#experimentation",
-    "href": "4d_gaussian_splatting.html#experimentation",
-    "title": "6  Gasussian Splatting 4D",
-    "section": "6.3 Experimentation",
-    "text": "6.3 Experimentation\n\n6.3.1 Code\nGithub 4DGaussians\n\n\n6.3.2 Postprocess\nRenderización volumétrica a malla Cube Maching\nno"
+    "objectID": "demo.html#antecedentes-y-referencias",
+    "href": "demo.html#antecedentes-y-referencias",
+    "title": "10  Demo Slay",
+    "section": "10.2 Antecedentes y Referencias",
+    "text": "10.2 Antecedentes y Referencias\n\nSpacetime Gaussian Feature Splatting for Real-Time Dynamic View Synthesis",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Demo Slay</span>"
+    ]
   },
   {
-    "objectID": "4d_gaussian_splatting.html#references",
-    "href": "4d_gaussian_splatting.html#references",
-    "title": "6  Gasussian Splatting 4D",
-    "section": "6.4 References",
-    "text": "6.4 References"
+    "objectID": "demo.html#desarrollo",
+    "href": "demo.html#desarrollo",
+    "title": "10  Demo Slay",
+    "section": "10.3 Desarrollo",
+    "text": "10.3 Desarrollo\n\nCaptura de Imágenes\n\n\nPretratamiento de Imágenes\nVideos a Imágenes:\nVideos a Poses\n\n\nEntrenamiento Modelo\n3D Model\nUsará un proyecto en Google Colab para entrenar el modelo\n\n\n\n\nRendererizado Modelo",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Demo Slay</span>"
+    ]
+  },
+  {
+    "objectID": "demo.html#despliegue",
+    "href": "demo.html#despliegue",
+    "title": "10  Demo Slay",
+    "section": "10.4 Despliegue",
+    "text": "10.4 Despliegue\n- Apple Visión\n- Meta Quest\n- Browser",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Demo Slay</span>"
+    ]
+  },
+  {
+    "objectID": "demo.html#referencias-o-proyectos-similares",
+    "href": "demo.html#referencias-o-proyectos-similares",
+    "title": "10  Demo Slay",
+    "section": "10.5 Referencias o Proyectos similares",
+    "text": "10.5 Referencias o Proyectos similares\n\nhttps://github.com/hustvl/4DGaussians\n4K4D\nhttps://github.com/zju3dv/EasyVolcap\nhttps://zielon.github.io/d3ga/",
+    "crumbs": [
+      "<span class='chapter-number'>10</span>  <span class='chapter-title'>Demo Slay</span>"
+    ]
+  },
+  {
+    "objectID": "o_projects.html",
+    "href": "o_projects.html",
+    "title": "16  Related Projects",
+    "section": "",
+    "text": "https://github.com/chenyingshu/advances_3d_neural_stylization?tab=readme-ov-file\nhttps://github.com/MrNeRF/awesome-3D-gaussian-splatting\nhttps://github.com/spla-tam/splatam\nhttps://creiser.github.io/merf/\nhttps://github.com/lfranke/trips\nhttps://vastgaussian.github.io/\nhttps://github.com/kangpeilun/VastGaussian",
+    "crumbs": [
+      "<span class='chapter-number'>16</span>  <span class='chapter-title'>Related Projects</span>"
+    ]
   },
   {
     "objectID": "references.html",
     "href": "references.html",
     "title": "Referencias Bibliográficas",
     "section": "",
-    "text": "Mildenhall, Ben, Pratul P. Srinivasan, Matthew Tancik, Jonathan T.\nBarron, Ravi Ramamoorthi, and Ren Ng. 2020. “NeRF: Representing\nScenes as Neural Radiance Fields for View Synthesis.” In\nECCV.\n\n\nSchönberger, Johannes Lutz, and Jan-Michael Frahm. 2016.\n“Structure-from-Motion Revisited.” In Conference on\nComputer Vision and Pattern Recognition (CVPR).\n\n\nSchönberger, Johannes Lutz, Enliang Zheng, Marc Pollefeys, and\nJan-Michael Frahm. 2016. “Pixelwise View Selection for\nUnstructured Multi-View Stereo.” In European Conference on\nComputer Vision (ECCV)."
+    "text": "Fu, Yang, Sifei Liu, Amey Kulkarni, Jan Kautz, Alexei A. Efros, and\nXiaolong Wang. 2023. “COLMAP-Free 3D Gaussian Splatting.”\nhttps://arxiv.org/abs/2312.07504.\n\n\nKerbl, Bernhard, Georgios Kopanas, Thomas Leimkühler, and George\nDrettakis. 2023. “3D Gaussian Splatting for Real-Time Radiance\nField Rendering.” ACM Transactions on Graphics 42 (4).\nhttps://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/.\n\n\nMildenhall, Ben, Pratul P. Srinivasan, Matthew Tancik, Jonathan T.\nBarron, Ravi Ramamoorthi, and Ren Ng. 2020. “NeRF: Representing\nScenes as Neural Radiance Fields for View Synthesis.” In\nECCV.\n\n\nMüller, Thomas, Alex Evans, Christoph Schied, and Alexander Keller.\n2022. “Instant Neural Graphics Primitives with a Multiresolution\nHash Encoding.” ACM Trans. Graph. 41 (4): 102:1–15. https://doi.org/10.1145/3528223.3530127.\n\n\nSchönberger, Johannes Lutz, and Jan-Michael Frahm. 2016.\n“Structure-from-Motion Revisited.” In Conference on\nComputer Vision and Pattern Recognition (CVPR).\n\n\nSchönberger, Johannes Lutz, Enliang Zheng, Marc Pollefeys, and\nJan-Michael Frahm. 2016. “Pixelwise View Selection for\nUnstructured Multi-View Stereo.” In European Conference on\nComputer Vision (ECCV).\n\n\nSmith, Cameron, David Charatan, Ayush Tewari, and Vincent Sitzmann.\n2024. “FlowMap: High-Quality Camera Poses, Intrinsics, and Depth\nvia Gradient Descent.” In arXiv.\n\n\nWang, Jianyuan, Nikita Karaev, Christian Rupprecht, and David Novotny.\n2023. “VGGSfM: Visual Geometry Grounded Deep Structure from\nMotion.” In.",
+    "crumbs": [
+      "Referencias Bibliográficas"
+    ]
   },
   {
-    "objectID": "ref_digital.html#instant-nerf",
-    "href": "ref_digital.html#instant-nerf",
+    "objectID": "ref_digital.html",
+    "href": "ref_digital.html",
     "title": "Referencias Digitales",
-    "section": "Instant NeRF",
-    "text": "Instant NeRF\nInstant Neural Graphics Primitives with a Multiresolution Hash Encoding\nGetting Started with NVIDIA Instant NeRFs\nNVIDIA Research Turns 2D Photos Into 3D Scenes in the Blink of an AI"
+    "section": "",
+    "text": "Instant NeRF\nInstant Neural Graphics Primitives with a Multiresolution Hash Encoding\nGetting Started with NVIDIA Instant NeRFs\nNVIDIA Research Turns 2D Photos Into 3D Scenes in the Blink of an AI",
+    "crumbs": [
+      "Referencias Digitales"
+    ]
   },
   {
     "objectID": "ref_digital.html#paper-whit-code",
     "href": "ref_digital.html#paper-whit-code",
     "title": "Referencias Digitales",
     "section": "Paper whit Code",
-    "text": "Paper whit Code\nNeRF Search\nGaussian Splatting Search"
+    "text": "Paper whit Code\nNeRF Search\nGaussian Splatting Search",
+    "crumbs": [
+      "Referencias Digitales"
+    ]
   },
   {
     "objectID": "ref_digital.html#youtube",
     "href": "ref_digital.html#youtube",
     "title": "Referencias Digitales",
     "section": "Youtube",
-    "text": "Youtube\n\nDot CSV - Canal Youtube\n\n\n\n\n\n\n1. ¿Es NeRF el Futuro de los Gráficos en Tiempo Real?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2. ¡Me he CAPTURADO en 3D… ¡DENTRO de una Red Neuronal!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3. ¡Me he CAPTURADO EN 3D con Inteligencia Artificial …en SEGUNDOS!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4. ¡Esta TECNOLOGÍA será la REVOLUCIÓN de los Gráficos 3D!\n\n\n\n\n\n\n\n\n\n\n\nBad Decisions Studio- Canal Youtube\n\n\n\n\n\n\n1. What is 3D Gaussian Splatting?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2. 3D Gaussian Splatting in UNREAL ENGINE 5 is INSANE!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3. 3D Gaussian Splatting in VR (Virtual Reality)"
+    "text": "Youtube\n\nDot CSV - Canal Youtube\n\n\n\n\n\n\n1. ¿Es NeRF el Futuro de los Gráficos en Tiempo Real?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2. ¡Me he CAPTURADO en 3D… ¡DENTRO de una Red Neuronal!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3. ¡Me he CAPTURADO EN 3D con Inteligencia Artificial …en SEGUNDOS!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n4. ¡Esta TECNOLOGÍA será la REVOLUCIÓN de los Gráficos 3D!\n\n\n\n\n\n\n\n\n\n\n\nBad Decisions Studio- Canal Youtube\n\n\n\n\n\n\n1. What is 3D Gaussian Splatting?\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n2. 3D Gaussian Splatting in UNREAL ENGINE 5 is INSANE!\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n3. 3D Gaussian Splatting in VR (Virtual Reality)",
+    "crumbs": [
+      "Referencias Digitales"
+    ]
   },
   {
     "objectID": "ref_digital.html#independs-experiments",
     "href": "ref_digital.html#independs-experiments",
     "title": "Referencias Digitales",
     "section": "Independs Experiments",
-    "text": "Independs Experiments\n\nTaichi-Lang\nTaichi NeRF (Part 1): Develop and Deploy Instant NGP without writing CUDA\n\n\nJittor: JNeRF\ngithub JNeRF"
+    "text": "Independs Experiments\n\nTaichi-Lang\nTaichi NeRF (Part 1): Develop and Deploy Instant NGP without writing CUDA\n\n\nJittor: JNeRF\ngithub JNeRF",
+    "crumbs": [
+      "Referencias Digitales"
+    ]
   },
   {
     "objectID": "concepts.html",
     "href": "concepts.html",
     "title": "Appendix A — Conceptos",
     "section": "",
-    "text": "NeRF:\n\nNeRF (Neural Radiance Field) Un campo neural de radiancia es una red simple totalmente conectada (los pesos son ~5MB) entrenada para reproducir vistas de entrada de una sola escena utilizando una pérdida de renderizado. La red mapea directamente desde la ubicación espacial y la dirección de visión (entrada 5D) al color y la opacidad (salida 4D), actuando como el “volumen” para que podamos utilizar el renderizado de volumen para renderizar de forma diferenciada nuevas vistas.\n\nCOLMAP:\n\nCOLMAP es un programa de estructura a partir del movimiento (SfM) y estereoscopía multivista (MVS) con una interfaz gráfica y de línea de comandos. Ofrece una amplia gama de funciones para la reconstrucción de colecciones de imágenes ordenadas y desordenadas. El software está licenciado bajo la nueva licencia BSD. Creditos: Schönberger and Frahm (2016), Schönberger et al. (2016)\n\nFotogrametría:\n\nEs….\n\nInstant NeRF:\n\nC….\n\nCUDA:\n\nCube Maching…\n\nCube Maching:\n\n…\n\n\n\n\n\n\nSchönberger, Johannes Lutz, and Jan-Michael Frahm. 2016. “Structure-from-Motion Revisited.” In Conference on Computer Vision and Pattern Recognition (CVPR).\n\n\nSchönberger, Johannes Lutz, Enliang Zheng, Marc Pollefeys, and Jan-Michael Frahm. 2016. “Pixelwise View Selection for Unstructured Multi-View Stereo.” In European Conference on Computer Vision (ECCV)."
+    "text": "NeRF:\n\nNeRF (Neural Radiance Field) Un campo neural de radiancia es una red simple totalmente conectada (los pesos son ~5MB) entrenada para reproducir vistas de entrada de una sola escena utilizando una pérdida de renderizado. La red mapea directamente desde la ubicación espacial y la dirección de visión (entrada 5D) al color y la opacidad (salida 4D), actuando como el “volumen” para que podamos utilizar el renderizado de volumen para renderizar de forma diferenciada nuevas vistas.\n\nCOLMAP:\n\nCOLMAP es un programa de estructura a partir del movimiento (SfM) y estereoscopía multivista (MVS) con una interfaz gráfica y de línea de comandos. Ofrece una amplia gama de funciones para la reconstrucción de colecciones de imágenes ordenadas y desordenadas. El software está licenciado bajo la nueva licencia BSD. Creditos: Schönberger and Frahm (2016), Schönberger et al. (2016)\n\nFotogrametría:\n\nEs….\n\nInstant NeRF:\n\nC….\n\nCUDA:\n\nCube Maching…\n\nCube Maching:\n\n…\n\n\n\n\n\n\nSchönberger, Johannes Lutz, and Jan-Michael Frahm. 2016. “Structure-from-Motion Revisited.” In Conference on Computer Vision and Pattern Recognition (CVPR).\n\n\nSchönberger, Johannes Lutz, Enliang Zheng, Marc Pollefeys, and Jan-Michael Frahm. 2016. “Pixelwise View Selection for Unstructured Multi-View Stereo.” In European Conference on Computer Vision (ECCV).",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>A</span>  <span class='chapter-title'>Conceptos</span>"
+    ]
   },
   {
-    "objectID": "contacts.html#var-evergine.name",
-    "href": "contacts.html#var-evergine.name",
+    "objectID": "contacts.html",
+    "href": "contacts.html",
     "title": "Appendix B — Directorio de Contactos",
-    "section": "B.1 Evergine",
-    "text": "B.1 Evergine\nPage Official\nYoutube Channel\nLinkedIn Page\nGithub Repository"
+    "section": "",
+    "text": "B.1 Evergine\nPage Official\nYoutube Channel\nLinkedIn Page\nGithub Repository",
+    "crumbs": [
+      "Appendices",
+      "<span class='chapter-number'>B</span>  <span class='chapter-title'>Directorio de Contactos</span>"
+    ]
   }
 ]

@@ -2,12 +2,12 @@
 <html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
 
 <meta charset="utf-8">
-<meta name="generator" content="quarto-1.3.361">
+<meta name="generator" content="quarto-1.4.554">
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Slay Book - 4&nbsp; Instant NGP</title>
+<title>Slay Book - 3&nbsp; Instant NGP</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -24,6 +24,7 @@ ul.task-list li input[type="checkbox"] {
 div.csl-bib-body { }
 div.csl-entry {
   clear: both;
+  margin-bottom: 0em;
 }
 .hanging-indent div.csl-entry {
   margin-left:2em;
@@ -49,7 +50,7 @@ div.csl-indent {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./3d_gaussian_splatting.html" rel="next">
+<link href="./gaussian_splatting.html" rel="next">
 <link href="./nerf.html" rel="prev">
 <link href="./images/favicon.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
@@ -67,7 +68,13 @@ div.csl-indent {
   "collapse-after": 3,
   "panel-placement": "start",
   "type": "textbox",
-  "limit": 20,
+  "limit": 50,
+  "keyboard-shortcut": [
+    "f",
+    "/",
+    "s"
+  ],
+  "show-item-context": false,
   "language": {
     "search-no-results-text": "No results",
     "search-matching-documents-text": "matching documents",
@@ -76,44 +83,29 @@ div.csl-indent {
     "search-more-match-text": "more match in this document",
     "search-more-matches-text": "more matches in this document",
     "search-clear-button-title": "Clear",
+    "search-text-placeholder": "",
     "search-detached-cancel-button-title": "Cancel",
     "search-submit-button-title": "Submit",
     "search-label": "Search"
   }
 }</script>
 
-  <script>window.backupDefine = window.define; window.define = undefined;</script><script src="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.js"></script>
-  <script>document.addEventListener("DOMContentLoaded", function () {
- var mathElements = document.getElementsByClassName("math");
- var macros = [];
- for (var i = 0; i < mathElements.length; i++) {
-  var texText = mathElements[i].firstChild;
-  if (mathElements[i].tagName == "SPAN") {
-   katex.render(texText.data, mathElements[i], {
-    displayMode: mathElements[i].classList.contains('display'),
-    throwOnError: false,
-    macros: macros,
-    fleqn: false
-   });
-}}});
-  </script>
-  <script>window.define = window.backupDefine; window.backupDefine = undefined;</script><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/katex@0.15.1/dist/katex.min.css">
 
 <link rel="stylesheet" href="styles/style.css">
 </head>
 
-<body class="nav-sidebar floating">
+<body class="nav-sidebar floating slimcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
   <nav class="quarto-secondary-nav">
     <div class="container-fluid d-flex">
-      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-      <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./instant_ngp.html"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Instant NGP</span></a></li></ol></nav>
-      <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
-      </a>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./history.html">Introducción a NeRF</a></li><li class="breadcrumb-item"><a href="./instant_ngp.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Instant NGP</span></a></li></ol></nav>
+        <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
         <i class="bi bi-search"></i>
       </button>
@@ -123,7 +115,7 @@ div.csl-indent {
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article">
 <!-- sidebar -->
-  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal sidebar-navigation floating overflow-auto">
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header sidebar-header-stacked">
       <a href="./index.html" class="sidebar-logo-link">
       <img src="./images/logo.svg" alt="" class="sidebar-logo py-0 d-lg-inline d-none">
@@ -151,34 +143,127 @@ div.csl-indent {
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Slay Project</span></span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./history.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Introducción a NeRF</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./nerf.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">NeRF</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">NeRF</span></span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./instant_ngp.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Instant NGP</span></span></a>
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Instant NGP</span></span></a>
   </div>
 </li>
-        <li class="sidebar-item">
+          <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./3d_gaussian_splatting.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Gasussian Splatting 3D</span></span></a>
+  <a href="./gaussian_splatting.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Gaussian Splatting</span></span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./spotlesssplat.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Spot Less Splat</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="./sota.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">State of Art</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./preprocessing.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Preprocessing</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./3d_models.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">3D Models</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./4d_models.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">4D Models</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./renders.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Renders</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./4d_gaussian_splatting.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Gasussian Splatting 4D</span></span></a>
+  <a href="./demo.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Demo Slay</span></span></a>
+  </div>
+</li>
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true">
+ <span class="menu-text">Ecosystem</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./apple.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Apple</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./nvidia.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Nvidia</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./meta.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Meta</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./apps.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Apps 3D</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./companies.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Related Companies</span></span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+        <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./o_projects.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Related Projects</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -195,13 +280,13 @@ div.csl-indent {
 </li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true">
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true">
  <span class="menu-text">Appendices</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./concepts.html" class="sidebar-item-text sidebar-link">
@@ -219,30 +304,18 @@ div.csl-indent {
     </ul>
     </div>
 </nav>
-<div id="quarto-sidebar-glass" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar,#quarto-sidebar-glass"></div>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of contents</h2>
-   
-  <ul>
-  <li><a href="#introducción" id="toc-introducción" class="nav-link active" data-scroll-target="#introducción"><span class="header-section-number">4.1</span> Introducción</a></li>
-  <li><a href="#part-i-what-is-a-neural-radiance-field-nerf" id="toc-part-i-what-is-a-neural-radiance-field-nerf" class="nav-link" data-scroll-target="#part-i-what-is-a-neural-radiance-field-nerf"><span class="header-section-number">4.2</span> Part I: What is a Neural Radiance Field (NeRF)</a>
-  <ul class="collapse">
-  <li><a href="#volume-rendering" id="toc-volume-rendering" class="nav-link" data-scroll-target="#volume-rendering"><span class="header-section-number">4.2.1</span> Volume Rendering</a></li>
-  </ul></li>
-  <li><a href="#entrenaiento-de-nerf" id="toc-entrenaiento-de-nerf" class="nav-link" data-scroll-target="#entrenaiento-de-nerf"><span class="header-section-number">4.3</span> Entrenaiento de NeRF</a></li>
-  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias"><span class="header-section-number">4.4</span> Referencias</a></li>
-  </ul>
-</nav>
+        
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./history.html">Introducción a NeRF</a></li><li class="breadcrumb-item"><a href="./instant_ngp.html"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Instant NGP</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Instant NGP</span></h1>
-<p class="subtitle lead">Develop and Deploy Instant NGP without writing CUDA</p>
+<h1 class="title"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Instant NGP</span></h1>
+<p class="subtitle lead">Instant Neural Graphics Primitives</p>
 </div>
 
 
@@ -255,115 +328,38 @@ div.csl-indent {
   </div>
   
 
+
 </header>
 
-<section id="introducción" class="level2" data-number="4.1">
-<h2 data-number="4.1" class="anchored" data-anchor-id="introducción"><span class="header-section-number">4.1</span> Introducción</h2>
-<p>Imagina esto: cuando hojea un álbum de fotos y ve imágenes de viajes familiares pasados, ¿desea volver a visitar esos lugares y revivir esos cálidos momentos? Cuando navega por un museo en línea, ¿desea ajustar libremente su perspectiva, observar de cerca los detalles de los objetos expuestos y disfrutar de una interacción plena con las reliquias culturales? Cuando los médicos se enfrentan a pacientes, ¿pueden mejorar significativamente la precisión y la eficacia del diagnóstico sintetizando una perspectiva tridimensional de la zona afectada a partir de imágenes y proporcionando estimaciones del tamaño y el volumen de la lesión?</p>
-<p>La tecnología <a href="https://www.matthewtancik.com/nerf">NeRF</a> (Neural Radiance Fields) es la clave para hacer esto realidad. Puede reconstruir la representación tridimensional de una escena a partir de imágenes captadas desde múltiples ángulos y generar imágenes de la escena desde cualquier punto de vista y posición (nueva síntesis de puntos de vista).</p>
-<p>El siguiente vídeo muestra cómo se utiliza la tecnología NeRF para lograr la itinerancia 3D capturando algunas imágenes estáticas de las oficinas de Taichi con un teléfono móvil.</p>
-<p>En los últimos dos años, la tecnología NeRF se ha convertido en un campo candente de la visión por ordenador. Desde el revolucionario trabajo de <span class="citation" data-cites="mildenhall2020nerf">Mildenhall et al. (<a href="references.html#ref-mildenhall2020nerf" role="doc-biblioref">2020</a>)</span>, <a href="https://arxiv.org/abs/2003.08934">NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis</a>, el campo de los NeRF ha generado muchos estudios posteriores, especialmente el reciente trabajo mejorado <a href="https://nvlabs.github.io/instant-ngp/">Instant NGP</a>, que fue incluido en la lista de los <a href="https://time.com/collection/best-inventions-2022/6225489/nvidia-instant-nerf/">mejores inventos de 2022 de la revista Time</a>.</p>
-<p>En comparación con investigaciones anteriores, los avances significativos logrados por los mencionados trabajos NeRF e Instant NGP son:</p>
-<p>NeRF puede obtener una representación de alta precisión de la escena, y las imágenes renderizadas desde nuevos ángulos son muy realistas.</p>
-<p>Basándose en el trabajo de NeRF, Instant NGP acorta significativamente el tiempo de entrenamiento y renderizado, reduciendo el tiempo de entrenamiento a menos de un minuto, y haciendo que el renderizado en tiempo real sea fácilmente alcanzable. Estas mejoras hacen que la tecnología de NeRF sea realmente factible de aplicar.</p>
-<p>No solo los investigadores en el campo del aprendizaje profundo, sino también los profesionales de muchas otras industrias están siguiendo de cerca los avances de NeRF, pensando en las posibilidades de aplicar NeRF en sus campos.</p>
-<p>El objetivo principal de este artículo es doble:</p>
-<ol type="1">
-<li><p>Queremos presentar cómo Taichi y PyTorch pueden combinarse para crear un flujo de trabajo de desarrollo Instant NGP totalmente basado en Python. Sin una sola línea de código CUDA, Taichi calculará automáticamente las derivadas de tu núcleo y conseguirá un rendimiento similar al de CUDA. Esto te permite dedicar más tiempo a las iteraciones de ideas de investigación que a la tediosa programación CUDA y al ajuste del rendimiento.</p></li>
-<li><p>Los dispositivos móviles serán un escenario esencial para la implementación de NeRF en el futuro. Introducimos el uso del marco Taichi AOT (compilación anticipada), que puede desplegar el modelo NeRF entrenado en dispositivos móviles sin preocuparse por la compatibilidad de plataformas. La siguiente animación muestra nuestros esfuerzos utilizando el marco AOT de Taichi para portar el modelo Lego del papel <a href="https://nvlabs.github.io/instant-ngp/">Instant NGP</a> a un iPad para la inferencia y renderización en tiempo real:</p></li>
-</ol>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="videos/nerf-ipad.gif" class="img-fluid figure-img" width="300"></p>
-</figure>
-</div>
-<p>Primero repasaremos brevemente los principios de NeRF y las mejoras de Instant NGP, y después presentaremos la combinación de Taichi e Instant NGP.</p>
-</section>
-<section id="part-i-what-is-a-neural-radiance-field-nerf" class="level2" data-number="4.2">
-<h2 data-number="4.2" class="anchored" data-anchor-id="part-i-what-is-a-neural-radiance-field-nerf"><span class="header-section-number">4.2</span> Part I: What is a Neural Radiance Field (NeRF)</h2>
-<p>En términos sencillos, un campo de radiancia neuronal es la codificación de toda una escena 3D en los parámetros de una red neuronal. Para representar una escena desde cualquier punto de vista nuevo, la red neuronal tiene que aprender el color RGB y la densidad de volumen <span class="math inline">\sigma</span> (es decir, si el punto está “ocupado” o no) de cada punto del espacio. La densidad de volumen en un punto es independiente del punto de vista, pero el color cambia con el punto de vista (por ejemplo, el objeto visto desde un ángulo diferente cambia), por lo que la red neuronal en realidad necesita aprender el color (r, g, b) y la densidad de volumen <span class="math inline">\sigma</span> de un punto (<span class="math inline">x, y, z</span>) bajo diferentes ángulos de cámara (<span class="math inline">\theta, \phi</span>) (es decir, latitud y longitud).</p>
-<p>Por lo tanto, la entrada al campo de radiancia neuronal es un vector de cinco dimensiones (<span class="math inline">x, y, z, \theta, \phi</span>), y la salida es un vector de cuatro dimensiones (<span class="math inline">r, g, b, \sigma</span>):</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/pipeline_website-03.svg" class="img-fluid figure-img" width="400"></p>
-</figure>
-</div>
-<p>Asumiendo que tenemos tal campo de radiancia neural, enviando los correspondientes <span class="math inline">x, y, z, \theta, \phi</span>) de cada punto en el espacio más allá en el renderizado de volumen resultará en una imagen 2D vista desde el punto de vista actual (<span class="math inline">\theta, \phi</span>).</p>
-<blockquote class="blockquote">
-<p>El concepto de densidad de volumen (volume rendering) se utiliza a menudo en la computación gráfica para representar medios como nubes y humo. Representa la probabilidad de que un punto bloquee un rayo de luz cuando lo atraviesa. La densidad de volumen mide la contribución de un punto al color final del rayo.</p>
-</blockquote>
-<section id="volume-rendering" class="level3" data-number="4.2.1">
-<h3 data-number="4.2.1" class="anchored" data-anchor-id="volume-rendering"><span class="header-section-number">4.2.1</span> Volume Rendering</h3>
-<p>El paso central de NeRF es un proceso denominado renderizado de volumen. El renderizado de volumen puede “aplanar” el campo neuronal en una imagen 2D, que luego se comparará con una imagen de referencia para generar pérdidas. Este proceso es diferenciable, por lo que puede utilizarse para entrenar la red.</p>
-<p>Antes de introducir el renderizado de volumen, entendamos primero los principios básicos de la imagen de cámara. En la computación gráfica, para ahorrar recursos computacionales, se supone que el color de un punto de la escena tras ser alcanzado por un rayo emitido desde la cámara es el color del píxel en la intersección del rayo y la pantalla:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="videos/shadertoy.gif" class="img-fluid figure-img" width="500"></p>
-</figure>
-</div>
-<p>Sin embargo, al renderizar medios atmosféricos similares al humo, los rayos atraviesan el medio en lugar de detenerse únicamente en su superficie. Además, durante la propagación de los rayos, una cierta proporción de éstos será absorbida por el medio (sin tener en cuenta la dispersión y la autoemisión). La parte del medio que absorbe los rayos contribuye al color final de los rayos. Cuanto mayor sea la densidad de volumen, más rayos serán absorbidos y más intenso será el color de esta parte del medio. Por tanto, el color final de los rayos es la integral de los colores de los puntos a lo largo de la trayectoria.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/volume_ray.png" class="img-fluid figure-img" width="500"></p>
-</figure>
-</div>
-<p>Suponiendo que la cámara está en <span class="math inline">o</span> y la dirección del rayo es <span class="math inline">d</span>, la ecuación del rayo es <span class="math inline">r(t)=o+t*d</span>, y su color de píxel predicho <span class="math inline">c(r)</span> es:</p>
-<p><span class="math display">C(r)=\int_{t_n}^{t_f}T(t)\sigma(t)c(r(t), d), dt</span> En la fórmula, <span class="math inline">T(t)</span> representa la proporción de luz transmitida al punto <span class="math inline">t</span>, y <span class="math inline">\sigma(t)dt</span> representa la proporción de luz bloqueada por una pequeña vecindad cercana al punto <span class="math inline">t</span>. El producto de ambos es la proporción de luz que llega a <span class="math inline">t</span> y es bloqueada en <span class="math inline">t</span>, multiplicada por el color <span class="math inline">c(r(t), d)</span> de ese punto, que es la contribución de este punto al color final del rayo. El intervalo integral <span class="math inline">[t_n, t_f]</span> representa el punto de intersección más cercano <span class="math inline">t_{near}</span> y el punto de intersección más lejano <span class="math inline">t_{far}</span> del rayo con el medio.</p>
-<p>En los cálculos reales, necesitamos utilizar sumas discretas para aproximar el valor de la integral. Es decir, muestreamos ciertos puntos discretos a lo largo del rayo y ponderamos sus colores sumándolos. No vamos a entrar en detalles sobre este proceso de discretización, pero puedes consultar explicaciones como la del enlace de la imagen anterior.</p>
-</section>
-</section>
-<section id="entrenaiento-de-nerf" class="level2" data-number="4.3">
-<h2 data-number="4.3" class="anchored" data-anchor-id="entrenaiento-de-nerf"><span class="header-section-number">4.3</span> Entrenaiento de NeRF</h2>
-<p>Una vez conocidos los campos neuronales de radiancia y el renderizado de volúmenes, veamos más en detalle el proceso de entrenamiento de NeRF. Todo el proceso se divide en cinco pasos, como se muestra en la siguiente figura:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
+
+<p>El artículo de <a href="https://nvlabs.github.io/instant-ngp/">Instant Neural Graphics Primitives</a> de NVIDIA Research describe un método innovador para entrenar primitivas gráficas neuronales de manera casi instantánea utilizando una codificación de hash de multiresolución. Este enfoque permite realizar entrenamientos rápidos y eficientes en GPU para tareas como imágenes gigapíxel, campos de radiancia neural (NeRF), funciones de distancia firmada (SDF) y caché de radiancia neural <span class="citation" data-cites="mueller2022instant">(<a href="references.html#ref-mueller2022instant" role="doc-biblioref">Müller et al. 2022</a>)</span>.</p>
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
 <p><img src="images/nerf_steps.png" class="img-fluid figure-img" width="800"></p>
+<figcaption class="margin-caption">Método</figcaption>
 </figure>
 </div>
-<ol type="1">
-<li><dl>
-<dt><strong>Camera parameters</strong>:</dt>
-<dd>
-Tras preparar un conjunto de imágenes 2D capturadas, el primer paso es calcular los parámetros de pose de la cámara para cada imagen. Para ello se pueden utilizar herramientas como <a href="https://colmap.github.io">COLMAP</a>. COLMAP compara los puntos comunes de la escena que aparecen en diferentes imágenes para calcular la pose de la cámara. Además, suponemos que toda la escena se encuentra dentro de una caja cúbica con un rango de <span class="math inline">[-1,1]^3</span>.
-</dd>
-</dl></li>
-<li><dl>
-<dt><strong>3D point sampling</strong>:</dt>
-<dd>
-Para una imagen real, se emite un rayo desde la cámara, que atraviesa la imagen y entra en la escena. El valor del píxel <span class="math inline">I(p)</span> del punto de intersección <span class="math inline">p</span> entre el rayo y la imagen es el color de referencia. Tomamos muestras discretas de varios puntos a lo largo de este rayo. Las coordenadas espaciales (<span class="math inline">x, y, z</span>) de estos puntos de muestra y la pose de la cámara (<span class="math inline">\theta, \phi</span>) calculada en el primer paso se combinan como entrada de la red neuronal.
-</dd>
-</dl></li>
-<li><dl>
-<dt><strong>NeRF model</strong>:</dt>
-<dd>
-Predecir el color y la densidad de cada punto de muestra en el rayo a través de la red neuronal.
-</dd>
-</dl></li>
-<li><dl>
-<dt><strong>Rendering</strong>:</dt>
-<dd>
-Mediante el renderizado de volúmenes, podemos utilizar el color y la densidad de los puntos de muestra obtenidos por la red neuronal en el paso anterior para calcular la suma discreta, aproximando el valor del píxel <span class="math inline">\hat{I}(p)</span> correspondiente al rayo.
-</dd>
-</dl></li>
-<li><dl>
-<dt><strong>Photometric loss</strong>:</dt>
-<dd>
-Comparando <span class="math inline">\hat{I}(p)</span> con el verdadero valor de color <span class="math inline">I(p)</span> del rayo y calculando el error y el gradiente, se puede entrenar la red neuronal.
-</dd>
-</dl></li>
-</ol>
-</section>
-<section id="referencias" class="level2" data-number="4.4">
-<h2 data-number="4.4" class="anchored" data-anchor-id="referencias"><span class="header-section-number">4.4</span> Referencias</h2>
-<p><a href="https://docs.taichi-lang.org/blog/taichi-instant-ngp">Develop and Deploy Instant NGP without writing CUDA</a></p>
+<p>El documento presenta una solución para reducir el costo computacional del entrenamiento de redes neuronales gráficas mediante el uso de una estructura de hash multiresolución. Esta estructura permite a la red desambiguar colisiones de hash, optimizando el rendimiento y calidad sin necesidad de redes grandes. Utilizando CUDA y minimizando el desperdicio de ancho de banda y operaciones, el método logra entrenamientos rápidos y renders eficientes. Se muestran resultados en diversas aplicaciones: desde imágenes de gigapíxeles hasta campos de radiancia y funciones de distancia firmada, destacando la velocidad y calidad alcanzada.</p>
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><video src="https://nvlabs.github.io/instant-ngp/assets/robot.mp4" class="img-fluid" controls=""><a href="https://nvlabs.github.io/instant-ngp/assets/robot.mp4">Video</a></video></p>
+<figcaption class="margin-caption">Training Progress</figcaption>
+</figure>
+</div>
+<p>NVIDIA presenta una técnica avanzada para el entrenamiento rápido de primitivas gráficas neuronales, reduciendo el costo computacional con una codificación de hash multiresolución. Esto permite aplicaciones eficientes y de alta calidad en diversas áreas gráficas, optimizando recursos y tiempo.</p>
+<!-- ## Autores: -->
+<!-- -   [Thomas Müller](https://research.nvidia.com/person/thomas-muller) -->
+<!-- -   [Alex Evans](https://research.nvidia.com/person/alex-evans) -->
+<!-- -   [Christoph Schied](https://research.nvidia.com/person/christoph-schied) -->
+<!-- -   [Alexander Keller](https://research.nvidia.com/person/alexander-keller) -->
+<p><strong>Referencias:</strong> <a href="https://nvlabs.github.io/instant-ngp/">Página principal</a>, <a href="https://arxiv.org/abs/2201.05989">Paper</a>, <a href="https://nvlabs.github.io/instant-ngp/assets/ngp.mp4">Video</a>, <a href="https://nvlabs.github.io/instant-ngp/assets/ngp_presentation.pdf">Presentation</a>, <a href="https://s2022.siggraph.org/presentation/?id=rtl_141&amp;sess=sess260">Real-Time Live</a>, <a href="https://github.com/nvlabs/instant-ngp">Code</a></p>
 
 
-<div id="refs" class="references csl-bib-body hanging-indent" role="list" style="display: none">
-<div id="ref-mildenhall2020nerf" class="csl-entry" role="listitem">
-Mildenhall, Ben, Pratul P. Srinivasan, Matthew Tancik, Jonathan T. Barron, Ravi Ramamoorthi, and Ren Ng. 2020. <span>“NeRF: Representing Scenes as Neural Radiance Fields for View Synthesis.”</span> In <em>ECCV</em>.
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-mueller2022instant" class="csl-entry" role="listitem">
+Müller, Thomas, Alex Evans, Christoph Schied, and Alexander Keller. 2022. <span>“Instant Neural Graphics Primitives with a Multiresolution Hash Encoding.”</span> <em>ACM Trans. Graph.</em> 41 (4): 102:1–15. <a href="https://doi.org/10.1145/3528223.3530127">https://doi.org/10.1145/3528223.3530127</a>.
 </div>
 </div>
-</section>
 
 </main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
@@ -445,10 +441,27 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     // clear code selection
     e.clearSelection();
   });
-  function tippyHover(el, contentFn) {
+    var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
+    var mailtoRegex = new RegExp(/^mailto:/);
+      var filterRegex = new RegExp('/' + window.location.host + '/');
+    var isInternal = (href) => {
+        return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
+    }
+    // Inspect non-navigation links and adorn them if external
+ 	var links = window.document.querySelectorAll('a[href]:not(.nav-link):not(.navbar-brand):not(.toc-action):not(.sidebar-link):not(.sidebar-item-toggle):not(.pagination-link):not(.no-external):not([aria-hidden]):not(.dropdown-item):not(.quarto-navigation-tool)');
+    for (var i=0; i<links.length; i++) {
+      const link = links[i];
+      if (!isInternal(link.href)) {
+        // undo the damage that might have been done by quarto-nav.js in the case of
+        // links that we want to consider external
+        if (link.dataset.originalHref !== undefined) {
+          link.href = link.dataset.originalHref;
+        }
+      }
+    }
+  function tippyHover(el, contentFn, onTriggerFn, onUntriggerFn) {
     const config = {
       allowHTML: true,
-      content: contentFn,
       maxWidth: 500,
       delay: 100,
       arrow: false,
@@ -458,8 +471,17 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       interactive: true,
       interactiveBorder: 10,
       theme: 'quarto',
-      placement: 'bottom-start'
+      placement: 'bottom-start',
     };
+    if (contentFn) {
+      config.content = contentFn;
+    }
+    if (onTriggerFn) {
+      config.onTrigger = onTriggerFn;
+    }
+    if (onUntriggerFn) {
+      config.onUntrigger = onUntriggerFn;
+    }
     window.tippy(el, config); 
   }
   const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
@@ -471,7 +493,130 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
       try { href = new URL(href).hash; } catch {}
       const id = href.replace(/^#\/?/, "");
       const note = window.document.getElementById(id);
-      return note.innerHTML;
+      if (note) {
+        return note.innerHTML;
+      } else {
+        return "";
+      }
+    });
+  }
+  const xrefs = window.document.querySelectorAll('a.quarto-xref');
+  const processXRef = (id, note) => {
+    // Strip column container classes
+    const stripColumnClz = (el) => {
+      el.classList.remove("page-full", "page-columns");
+      if (el.children) {
+        for (const child of el.children) {
+          stripColumnClz(child);
+        }
+      }
+    }
+    stripColumnClz(note)
+    if (id === null || id.startsWith('sec-')) {
+      // Special case sections, only their first couple elements
+      const container = document.createElement("div");
+      if (note.children && note.children.length > 2) {
+        container.appendChild(note.children[0].cloneNode(true));
+        for (let i = 1; i < note.children.length; i++) {
+          const child = note.children[i];
+          if (child.tagName === "P" && child.innerText === "") {
+            continue;
+          } else {
+            container.appendChild(child.cloneNode(true));
+            break;
+          }
+        }
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(container);
+        }
+        return container.innerHTML
+      } else {
+        if (window.Quarto?.typesetMath) {
+          window.Quarto.typesetMath(note);
+        }
+        return note.innerHTML;
+      }
+    } else {
+      // Remove any anchor links if they are present
+      const anchorLink = note.querySelector('a.anchorjs-link');
+      if (anchorLink) {
+        anchorLink.remove();
+      }
+      if (window.Quarto?.typesetMath) {
+        window.Quarto.typesetMath(note);
+      }
+      // TODO in 1.5, we should make sure this works without a callout special case
+      if (note.classList.contains("callout")) {
+        return note.outerHTML;
+      } else {
+        return note.innerHTML;
+      }
+    }
+  }
+  for (var i=0; i<xrefs.length; i++) {
+    const xref = xrefs[i];
+    tippyHover(xref, undefined, function(instance) {
+      instance.disable();
+      let url = xref.getAttribute('href');
+      let hash = undefined; 
+      if (url.startsWith('#')) {
+        hash = url;
+      } else {
+        try { hash = new URL(url).hash; } catch {}
+      }
+      if (hash) {
+        const id = hash.replace(/^#\/?/, "");
+        const note = window.document.getElementById(id);
+        if (note !== null) {
+          try {
+            const html = processXRef(id, note.cloneNode(true));
+            instance.setContent(html);
+          } finally {
+            instance.enable();
+            instance.show();
+          }
+        } else {
+          // See if we can fetch this
+          fetch(url.split('#')[0])
+          .then(res => res.text())
+          .then(html => {
+            const parser = new DOMParser();
+            const htmlDoc = parser.parseFromString(html, "text/html");
+            const note = htmlDoc.getElementById(id);
+            if (note !== null) {
+              const html = processXRef(id, note);
+              instance.setContent(html);
+            } 
+          }).finally(() => {
+            instance.enable();
+            instance.show();
+          });
+        }
+      } else {
+        // See if we can fetch a full url (with no hash to target)
+        // This is a special case and we should probably do some content thinning / targeting
+        fetch(url)
+        .then(res => res.text())
+        .then(html => {
+          const parser = new DOMParser();
+          const htmlDoc = parser.parseFromString(html, "text/html");
+          const note = htmlDoc.querySelector('main.content');
+          if (note !== null) {
+            // This should only happen for chapter cross references
+            // (since there is no id in the URL)
+            // remove the first header
+            if (note.children.length > 0 && note.children[0].tagName === "HEADER") {
+              note.children[0].remove();
+            }
+            const html = processXRef(null, note);
+            instance.setContent(html);
+          } 
+        }).finally(() => {
+          instance.enable();
+          instance.show();
+        });
+      }
+    }, function(instance) {
     });
   }
       let selectedAnnoteEl;
@@ -515,6 +660,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
             }
             div.style.top = top - 2 + "px";
             div.style.height = height + 4 + "px";
+            div.style.left = 0;
             let gutterDiv = window.document.getElementById("code-annotation-line-highlight-gutter");
             if (gutterDiv === null) {
               gutterDiv = window.document.createElement("div");
@@ -540,6 +686,32 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
         });
         selectedAnnoteEl = undefined;
       };
+        // Handle positioning of the toggle
+    window.addEventListener(
+      "resize",
+      throttle(() => {
+        elRect = undefined;
+        if (selectedAnnoteEl) {
+          selectCodeLines(selectedAnnoteEl);
+        }
+      }, 10)
+    );
+    function throttle(fn, ms) {
+    let throttle = false;
+    let timer;
+      return (...args) => {
+        if(!throttle) { // first call gets through
+            fn.apply(this, args);
+            throttle = true;
+        } else { // all the others get throttled
+            if(timer) clearTimeout(timer); // cancel #2
+            timer = setTimeout(() => {
+              fn.apply(this, args);
+              timer = throttle = false;
+            }, ms);
+        }
+      };
+    }
       // Attach click handler to the DT
       const annoteDls = window.document.querySelectorAll('dt[data-target-cell]');
       for (const annoteDlNode of annoteDls) {
@@ -601,20 +773,22 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./nerf.html" class="pagination-link">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">NeRF</span></span>
+      <a href="./nerf.html" class="pagination-link" aria-label="NeRF">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">NeRF</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./3d_gaussian_splatting.html" class="pagination-link">
-        <span class="nav-page-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Gasussian Splatting 3D</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./gaussian_splatting.html" class="pagination-link" aria-label="Gaussian Splatting">
+        <span class="nav-page-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Gaussian Splatting</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
 </div> <!-- /content -->
 <footer class="footer">
   <div class="nav-footer">
-    <div class="nav-footer-left">Copyright 2023, <a href="denis.berroeta@gmail.com">Denis Berroeta</a></div>   
+    <div class="nav-footer-left">
+<p>Copyright 2023, <a href="denis.berroeta@gmail.com">Denis Berroeta</a></p>
+</div>   
     <div class="nav-footer-center">
       &nbsp;
     </div>
@@ -623,6 +797,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     </div>
   </div>
 </footer>
+
 
 
 

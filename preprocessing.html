@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Slay Book - 17&nbsp; Gasussian Splatting 3D</title>
+<title>Slay Book - 6&nbsp; Preprocessing</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,7 +20,27 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-</style>
+/* CSS for citations */
+div.csl-bib-body { }
+div.csl-entry {
+  clear: both;
+  margin-bottom: 0em;
+}
+.hanging-indent div.csl-entry {
+  margin-left:2em;
+  text-indent:-2em;
+}
+div.csl-left-margin {
+  min-width:2em;
+  float:left;
+}
+div.csl-right-inline {
+  margin-left:2em;
+  padding-left:1em;
+}
+div.csl-indent {
+  margin-left: 2em;
+}</style>
 
 
 <script src="site_libs/quarto-nav/quarto-nav.js"></script>
@@ -30,8 +50,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./4d_gaussian_splatting.html" rel="next">
-<link href="./instant_ngp.html" rel="prev">
+<link href="./3d_models.html" rel="next">
+<link href="./sota.html" rel="prev">
 <link href="./images/favicon.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -74,7 +94,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles/style.css">
 </head>
 
-<body class="nav-sidebar floating">
+<body class="nav-sidebar floating slimcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -83,7 +103,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./3d_gaussian_splatting.html"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Gasussian Splatting 3D</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./sota.html">State of Art</a></li><li class="breadcrumb-item"><a href="./preprocessing.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Preprocessing</span></a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -123,16 +143,10 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Slay Project</span></span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
-  </div>
-</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
             <a href="./history.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">History</span></a>
+ <span class="menu-text">Introducción a NeRF</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -141,13 +155,25 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./nerf.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">NeRF</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">NeRF</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./instant_ngp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Instant NGP</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./gaussian_splatting.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Gaussian Splatting</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./spotlesssplat.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Spot Less Splat</span></span></a>
   </div>
 </li>
       </ul>
@@ -163,26 +189,26 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="./preprocessing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Preprocessing</span></span></a>
+  <a href="./preprocessing.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Preprocessing</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./3d_models.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">3D Models</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">3D Models</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./4d_models.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">4D Models</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">4D Models</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./renders.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Renders</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Renders</span></span></a>
   </div>
 </li>
       </ul>
@@ -190,7 +216,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./demo.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Demo Slay</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Demo Slay</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -205,31 +231,31 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./apple.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Apple</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Apple</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./nvidia.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Nvidia</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Nvidia</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./meta.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Meta</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Meta</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./apps.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Apps 3D</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Apps 3D</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./companies.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Related Companies</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Related Companies</span></span></a>
   </div>
 </li>
       </ul>
@@ -237,25 +263,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./o_projects.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Related Projects</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./instant_ngp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Instant NGP</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./3d_gaussian_splatting.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Gasussian Splatting 3D</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./4d_gaussian_splatting.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Gasussian Splatting 4D</span></span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Related Projects</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -303,23 +311,19 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#abstract-web" id="toc-abstract-web" class="nav-link active" data-scroll-target="#abstract-web"><span class="header-section-number">17.1</span> Abstract (web)</a></li>
-  <li><a href="#explanation" id="toc-explanation" class="nav-link" data-scroll-target="#explanation"><span class="header-section-number">17.2</span> Explanation</a></li>
-  <li><a href="#experimentation" id="toc-experimentation" class="nav-link" data-scroll-target="#experimentation"><span class="header-section-number">17.3</span> Experimentation</a></li>
-  <li><a href="#postprocess" id="toc-postprocess" class="nav-link" data-scroll-target="#postprocess"><span class="header-section-number">17.4</span> Postprocess</a>
-  <ul class="collapse">
-  <li><a href="#unity" id="toc-unity" class="nav-link" data-scroll-target="#unity"><span class="header-section-number">17.4.1</span> Unity</a></li>
-  </ul></li>
+  <li><a href="#colmap" id="toc-colmap" class="nav-link active" data-scroll-target="#colmap"><span class="header-section-number">6.1</span> COLMAP</a></li>
+  <li><a href="#colmap-free-3d-gaussian-splatting" id="toc-colmap-free-3d-gaussian-splatting" class="nav-link" data-scroll-target="#colmap-free-3d-gaussian-splatting"><span class="header-section-number">6.2</span> COLMAP-Free 3D Gaussian Splatting</a></li>
+  <li><a href="#vggsfm" id="toc-vggsfm" class="nav-link" data-scroll-target="#vggsfm"><span class="header-section-number">6.3</span> VGGSfM</a></li>
+  <li><a href="#flowmap" id="toc-flowmap" class="nav-link" data-scroll-target="#flowmap"><span class="header-section-number">6.4</span> Flowmap</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./sota.html">State of Art</a></li><li class="breadcrumb-item"><a href="./preprocessing.html"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Preprocessing</span></a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Gasussian Splatting 3D</span></h1>
-<p class="subtitle lead">for Real-Time Radiance Field Rendering</p>
+<h1 class="title"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Preprocessing</span></h1>
 </div>
 
 
@@ -336,34 +340,90 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="abstract-web" class="level2" data-number="17.1">
-<h2 data-number="17.1" class="anchored" data-anchor-id="abstract-web"><span class="header-section-number">17.1</span> Abstract <a href="https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/">(web)</a></h2>
-<p>Radiance Field methods have recently revolutionized novel-view synthesis of scenes captured with multiple photos or videos. However, achieving high visual quality still requires neural networks that are costly to train and render, while recent faster methods inevitably trade off speed for quality. For unbounded and complete scenes (rather than isolated objects) and 1080p resolution rendering, no current method can achieve real-time display rates.</p>
-<p>We introduce three key elements that allow us to achieve state-of-the-art visual quality while maintaining competitive training times and importantly allow high-quality real-time (≥ 100 fps) novel-view synthesis at 1080p resolution.</p>
+<section id="colmap" class="level2 page-columns page-full" data-number="6.1">
+<h2 data-number="6.1" class="anchored" data-anchor-id="colmap"><span class="header-section-number">6.1</span> COLMAP</h2>
+<p><a href="https://colmap.github.io/index.html">COLMAP</a> es un software de rpoposito general que spermite crear Structure-from-Motion (SfM) y Multi-View Stereo (MVS) con una interfaz gráfica y de línea de comandos. Ofrece una amplia gama de funciones para la reconstrucción de colecciones de imágenes ordenadas y desordenadas <span class="citation" data-cites="schoenberger2016sfm">(<a href="references.html#ref-schoenberger2016sfm" role="doc-biblioref">Schönberger and Frahm 2016</a>)</span> <span class="citation" data-cites="schoenberger2016mvs">(<a href="references.html#ref-schoenberger2016mvs" role="doc-biblioref">Schönberger et al. 2016</a>)</span>. Para el caso de tecnologías Syntectic Views Novel es el software más utilizado para obtener las poses de la cámara que los modelos como NERF y Gaussian Splatting utilizan normalmente.</p>
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="images/colmap.png" class="img-fluid figure-img" width="500"></p>
+<figcaption class="margin-caption">Modelo disperso del centro de Roma a partir de 21.000 fotos producidas por el proceso SfM de COLMAP.</figcaption>
+</figure>
+</div>
+<p>Referencias: <a href="https://colmap.github.io/index.html#id1">Project COLMAP</a>, <a href="https://colmap.github.io/tutorial.html">Tutorial</a></p>
+</section>
+<section id="colmap-free-3d-gaussian-splatting" class="level2 page-columns page-full" data-number="6.2">
+<h2 data-number="6.2" class="anchored" data-anchor-id="colmap-free-3d-gaussian-splatting"><span class="header-section-number">6.2</span> COLMAP-Free 3D Gaussian Splatting</h2>
+<p>El artículo <span class="citation" data-cites="fu2023colmapfree">Fu et al. (<a href="references.html#ref-fu2023colmapfree" role="doc-biblioref">2023</a>)</span> presenta un enfoque innovador llamado <a href="https://oasisyang.github.io/colmap-free-3dgs/">COLMAP-Free 3D Gaussian Splatting</a> que permite la síntesis de vistas novedosas foto-realistas y la reconstrucción de escenas 3D sin necesidad de preprocesar poses de cámara con COLMAP. Este método mejora significativamente la estimación de poses de cámara y la síntesis de vistas bajo grandes cambios de movimiento al utilizar representaciones explícitas y la continuidad del video de entrada. El método presenta 3 puntos claves:</p>
+<ul>
+<li><p><strong>Síntesis de Vistas Nuevas</strong>: El método ajusta una curva Bezier a las poses de cámara estimadas, permitiendo la síntesis de imágenes desde puntos de vista de prueba.</p></li>
+<li><p><strong>Estimación de Poses de Cámara</strong>: Se visualizan las trayectorias estimadas contra las trayectorias de referencia para evaluar la precisión del método.</p></li>
+<li><p><strong>Reconstrucción de Escenas 3D desde Videos Sora</strong> La técnica se aplica a videos generados por Sora, un modelo generativo de texto a video, demostrando la capacidad de generar datos 3D infinitos a partir de pocas líneas de texto.</p></li>
+</ul>
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="images/free_colmap.png" class="img-fluid figure-img" width="500"></p>
+<figcaption class="margin-caption">COLMAP-Free 3D Gaussian Splatting</figcaption>
+</figure>
+</div>
+<p>El enfoque COLMAP-Free 3D Gaussian Splatting permite la síntesis de vistas y la reconstrucción de escenas 3D sin la necesidad de preprocesamiento de poses de cámara, mostrando mejoras significativas en comparación con métodos anteriores. https://oasisyang.github.io/colmap-free-3dgs/</p>
+<p>Referencias: <a href="https://oasisyang.github.io/colmap-free-3dgs/">Link del Proyecto</a>, <a href="https://arxiv.org/abs/2312.07504">arXiv</a>, <a href="https://www.youtube.com/watch?v=I2bUQEL0Syk">Video</a>, <a href="https://drive.google.com/file/d/1tGhQNO7drTdzM2z5lKjt_Zy7ZyJHzKlx/view">Slides</a>, <a href="https://github.com/NVlabs/gaussian-splatting">Code</a>.</p>
+</section>
+<section id="vggsfm" class="level2 page-columns page-full" data-number="6.3">
+<h2 data-number="6.3" class="anchored" data-anchor-id="vggsfm"><span class="header-section-number">6.3</span> VGGSfM</h2>
+<p><strong>Visual Geometry Grounded Deep Structure From Motion</strong></p>
+<p><a href="https://vggsfm.github.io/">VGGSfM</a> es un pipeline de Structure from Motion (SfM) completamente diferenciable que permite la reconstrucción de poses de cámara y estructuras 3D a partir de imágenes 2D <span class="citation" data-cites="wang2023vggsfm">(<a href="references.html#ref-wang2023vggsfm" role="doc-biblioref">Wang et al. 2023</a>)</span>. Utiliza técnicas avanzadas de seguimiento de puntos y un ajuste de conjunto diferenciable, logrando resultados de última generación en conjuntos de datos como CO3D, IMC Phototourism y ETH3D. VGGSfM utiliza un proceso en tres etapas:</p>
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="images/vggSfM.png" class="img-fluid figure-img" width="500"></p>
+<figcaption class="margin-caption">VGGSfM: Visual Geometry Grounded Deep Structure From Motion.</figcaption>
+</figure>
+</div>
 <ol type="1">
-<li><p>First, starting from sparse points produced during camera calibration, we represent the scene with 3D Gaussians that preserve desirable properties of continuous volumetric radiance fields for scene optimization while avoiding unnecessary computation in empty space;</p></li>
-<li><p>Second, we perform interleaved optimization/density control of the 3D Gaussians, notably optimizing anisotropic covariance to achieve an accurate representation of the scene;</p></li>
-<li><p>Third, we develop a fast visibility-aware rendering algorithm that supports anisotropic splatting and both accelerates training and allows realtime rendering. We demonstrate state-of-the-art visual quality and real-time rendering on several established datasets.</p></li>
+<li><p><strong>Extracción de Tracks 2D</strong>: Se extraen puntos de seguimiento 2D a partir de las imágenes de entrada utilizando una red neuronal profunda entrenada para esta tarea específica.</p></li>
+<li><p><strong>Reconstrucción de Cámaras</strong>: Utiliza los tracks 2D para reconstruir las poses de las cámaras. La reconstrucción de la cámara se realiza mediante una optimización iterativa que minimiza el error de reproyección entre los puntos 2D y sus correspondientes en el espacio 3D.</p></li>
+<li><p><strong>Optimización 3D Diferenciable</strong>: La reconstrucción 3D se optimiza utilizando una capa de ajuste de conjunto diferenciable que permite la retropropagación del error a través de todas las etapas del pipeline. Esto asegura una integración de extremo a extremo que mejora la precisión y robustez del modelo.</p></li>
 </ol>
+<p>Cuando un método es “<em>diferenciable</em>”, significa que todas las operaciones y funciones utilizadas dentro del algoritmo permiten el cálculo de sus derivadas. Esto es crucial en el entrenamiento de modelos de aprendizaje profundo, donde se usa el descenso de gradiente para minimizar errores. En el contexto de VGGSfM, la diferenciabilidad permite que el error se retropropague a través del pipeline completo (desde la extracción de puntos hasta la optimización 3D), mejorando así la precisión de la reconstrucción de las poses de cámara y la estructura 3D mediante ajustes iterativos eficientes.</p>
+<p>VGGSfM se ha aplicado a fotos en entornos no controlados, mostrando nubes de puntos densas y cámaras estimadas con alta precisión. Las visualizaciones cualitativas demuestran la capacidad del método para proporcionar reconstrucciones detalladas de cámaras y nubes de puntos en varios conjuntos de datos. En comparación con otros métodos, VGGSfM ha mostrado mejoras significativas en términos de precisión y consistencia, superando incluso a métodos tradicionales como COLMAP en algunos casos.</p>
+<p>VGGSfM es un enfoque innovador en SfM, completamente diferenciable y capaz de reconstruir estructuras 3D y poses de cámara con alta precisión. Su integración de extremo a extremo y la utilización de técnicas avanzadas de seguimiento y optimización lo convierten en una herramienta poderosa para la reconstrucción 3D a partir de imágenes 2D, demostrando resultados superiores en múltiples conjuntos de datos.</p>
+<p>Referencias: <a href="https://vggsfm.github.io/">Link del Proyecto</a>, <a href="https://arxiv.org/abs/2312.07504">Paper</a>, <a href="https://github.com/NVlabs/gaussian-splatting">Code</a>, <a href="https://huggingface.co/">Demo</a></p>
 </section>
-<section id="explanation" class="level2" data-number="17.2">
-<h2 data-number="17.2" class="anchored" data-anchor-id="explanation"><span class="header-section-number">17.2</span> Explanation</h2>
-<p><a href="https://medium.com/axinc-ai/3d-gaussian-splatting-real-time-rendering-of-photorealistic-scenes-f7f1a47f060">3D Gaussian Splatting. David Cochard</a></p>
-</section>
-<section id="experimentation" class="level2" data-number="17.3">
-<h2 data-number="17.3" class="anchored" data-anchor-id="experimentation"><span class="header-section-number">17.3</span> Experimentation</h2>
-<p><a href="https://github.com/graphdeco-inria/gaussian-splatting">Github gaussian-splatting</a></p>
-</section>
-<section id="postprocess" class="level2" data-number="17.4">
-<h2 data-number="17.4" class="anchored" data-anchor-id="postprocess"><span class="header-section-number">17.4</span> Postprocess</h2>
-<p>Renderizado Volumétrico -&gt; Malla</p>
-<section id="unity" class="level3" data-number="17.4.1">
-<h3 data-number="17.4.1" class="anchored" data-anchor-id="unity"><span class="header-section-number">17.4.1</span> Unity</h3>
-<p><a href="https://www.youtube.com/watch?v=KaAxGr_xck4"></a></p>
-<p><a href="https://youtu.be/5_GaPYBHqOo"></a></p>
+<section id="flowmap" class="level2 page-columns page-full" data-number="6.4">
+<h2 data-number="6.4" class="anchored" data-anchor-id="flowmap"><span class="header-section-number">6.4</span> Flowmap</h2>
+<p>El artículo <span class="citation" data-cites="smith24flowmap">Smith et al. (<a href="references.html#ref-smith24flowmap" role="doc-biblioref">2024</a>)</span> presenta <a href="https://cameronosmith.github.io/flowmap/">FLowmap</a>, un método auto-supervisado y diferenciable de SfM (Structure from Motion) que logra precisión a nivel COLMAP para escenas de 360°. Utiliza un objetivo de mínimos cuadrados para comparar el flujo óptico inducido por la profundidad, intrínsecos y poses contra correspondencias obtenidas mediante flujo óptico y seguimiento de puntos.</p>
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="images/flowmap.png" class="img-fluid figure-img" width="500"></p>
+<figcaption class="margin-caption">FlowMap: High-Quality Camera Poses, Intrinsics, and Depth via Gradient Descent</figcaption>
+</figure>
+</div>
+<p>FlowMap permite la síntesis de vistas novedosas foto-realistas y facilita la reconstrucción 3D a través de Splatting Gaussiano. El documento presenta 3 puntos claves:</p>
+<ul>
+<li><p>Optimización y Parámetros de Cámara: FlowMap emplea el descenso de gradiente para optimizar poses de cámara, intrínsecos y profundidad por cada video.</p></li>
+<li><p>Aplicaciones: El método permite la creación de nubes de puntos densas y alineadas, y se puede utilizar para entrenar escenas de Splatting Gaussiano 3D de alta calidad.</p></li>
+<li><p>Comparaciones y Resultados: FlowMap supera a métodos previos basados en descenso de gradiente y se compara favorablemente con COLMAP en la tarea de síntesis de vistas novedosas de 360°.</p></li>
+</ul>
+<p>FlowMap es una solución innovadora para la estimación precisa de parámetros de cámara y reconstrucción 3D, demostrando una eficacia comparable a COLMAP en la síntesis de vistas de 360°. Su método diferenciable y auto-supervisado abre nuevas posibilidades para el entrenamiento de redes neuronales en estimación de parámetros de cámara y reconstrucción 3D.</p>
+<p>Referencias: <a href="https://cameronosmith.github.io/flowmap/">Link del Proyecto</a>, <a href="https://arxiv.org/abs/2404.15259">Paper</a>, <a href="https://github.com/dcharatan/flowmap">Code</a>, <a href="https://drive.google.com/drive/folders/1PqByQSfzyLjfdZZDwn6RXIECso7WB9IY?usp=drive_link">Datasets and Initialization</a></p>
 
 
-</section>
+<div id="refs" class="references csl-bib-body hanging-indent" data-entry-spacing="0" role="list" style="display: none">
+<div id="ref-fu2023colmapfree" class="csl-entry" role="listitem">
+Fu, Yang, Sifei Liu, Amey Kulkarni, Jan Kautz, Alexei A. Efros, and Xiaolong Wang. 2023. <span>“COLMAP-Free 3D Gaussian Splatting.”</span> <a href="https://arxiv.org/abs/2312.07504">https://arxiv.org/abs/2312.07504</a>.
+</div>
+<div id="ref-schoenberger2016sfm" class="csl-entry" role="listitem">
+Schönberger, Johannes Lutz, and Jan-Michael Frahm. 2016. <span>“Structure-from-Motion Revisited.”</span> In <em>Conference on Computer Vision and Pattern Recognition (CVPR)</em>.
+</div>
+<div id="ref-schoenberger2016mvs" class="csl-entry" role="listitem">
+Schönberger, Johannes Lutz, Enliang Zheng, Marc Pollefeys, and Jan-Michael Frahm. 2016. <span>“Pixelwise View Selection for Unstructured Multi-View Stereo.”</span> In <em>European Conference on Computer Vision (ECCV)</em>.
+</div>
+<div id="ref-smith24flowmap" class="csl-entry" role="listitem">
+Smith, Cameron, David Charatan, Ayush Tewari, and Vincent Sitzmann. 2024. <span>“FlowMap: High-Quality Camera Poses, Intrinsics, and Depth via Gradient Descent.”</span> In <em>arXiv</em>.
+</div>
+<div id="ref-wang2023vggsfm" class="csl-entry" role="listitem">
+Wang, Jianyuan, Nikita Karaev, Christian Rupprecht, and David Novotny. 2023. <span>“VGGSfM: Visual Geometry Grounded Deep Structure from Motion.”</span> In.
+</div>
+</div>
 </section>
 
 </main> <!-- /main -->
@@ -778,13 +838,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./instant_ngp.html" class="pagination-link" aria-label="Instant NGP">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Instant NGP</span></span>
+      <a href="./sota.html" class="pagination-link" aria-label="State of Art">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text">State of Art</span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./4d_gaussian_splatting.html" class="pagination-link" aria-label="Gasussian Splatting 4D">
-        <span class="nav-page-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Gasussian Splatting 4D</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./3d_models.html" class="pagination-link" aria-label="3D Models">
+        <span class="nav-page-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">3D Models</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>

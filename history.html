@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Slay Book - 17&nbsp; Gasussian Splatting 3D</title>
+<title>Slay Book - Introducción a NeRF</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -30,8 +30,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="site_libs/quarto-search/fuse.min.js"></script>
 <script src="site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="./">
-<link href="./4d_gaussian_splatting.html" rel="next">
-<link href="./instant_ngp.html" rel="prev">
+<link href="./nerf.html" rel="next">
+<link href="./slay_project.html" rel="prev">
 <link href="./images/favicon.png" rel="icon" type="image/png">
 <script src="site_libs/quarto-html/quarto.js"></script>
 <script src="site_libs/quarto-html/popper.min.js"></script>
@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="styles/style.css">
 </head>
 
-<body class="nav-sidebar floating">
+<body class="nav-sidebar floating slimcontent">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -83,7 +83,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./3d_gaussian_splatting.html"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Gasussian Splatting 3D</span></a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="./history.html">Introducción a NeRF</a></li></ol></nav>
         <a class="flex-grow-1" role="button" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
       <button type="button" class="btn quarto-search-button" aria-label="" onclick="window.quartoOpenSearch();">
@@ -123,16 +123,10 @@ ul.task-list li input[type="checkbox"] {
  <span class="menu-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Slay Project</span></span></a>
   </div>
 </li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./intro.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">Introduction</span></span></a>
-  </div>
-</li>
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="./history.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">History</span></a>
+            <a href="./history.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Introducción a NeRF</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -141,13 +135,25 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./nerf.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">NeRF</span></span></a>
+ <span class="menu-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">NeRF</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./instant_ngp.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">3</span>&nbsp; <span class="chapter-title">Instant NGP</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./gaussian_splatting.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text"><span class="chapter-number">4</span>&nbsp; <span class="chapter-title">Gaussian Splatting</span></span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="./spotlesssplat.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Spot Less Splat</span></span></a>
   </div>
 </li>
       </ul>
@@ -164,25 +170,25 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./preprocessing.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">5</span>&nbsp; <span class="chapter-title">Preprocessing</span></span></a>
+ <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">Preprocessing</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./3d_models.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">6</span>&nbsp; <span class="chapter-title">3D Models</span></span></a>
+ <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">3D Models</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./4d_models.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">7</span>&nbsp; <span class="chapter-title">4D Models</span></span></a>
+ <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">4D Models</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./renders.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">8</span>&nbsp; <span class="chapter-title">Renders</span></span></a>
+ <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Renders</span></span></a>
   </div>
 </li>
       </ul>
@@ -190,7 +196,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./demo.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">9</span>&nbsp; <span class="chapter-title">Demo Slay</span></span></a>
+ <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Demo Slay</span></span></a>
   </div>
 </li>
         <li class="sidebar-item sidebar-item-section">
@@ -205,31 +211,31 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./apple.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">10</span>&nbsp; <span class="chapter-title">Apple</span></span></a>
+ <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Apple</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./nvidia.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">11</span>&nbsp; <span class="chapter-title">Nvidia</span></span></a>
+ <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Nvidia</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./meta.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">12</span>&nbsp; <span class="chapter-title">Meta</span></span></a>
+ <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Meta</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./apps.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">13</span>&nbsp; <span class="chapter-title">Apps 3D</span></span></a>
+ <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Apps 3D</span></span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./companies.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">14</span>&nbsp; <span class="chapter-title">Related Companies</span></span></a>
+ <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Related Companies</span></span></a>
   </div>
 </li>
       </ul>
@@ -237,25 +243,7 @@ ul.task-list li input[type="checkbox"] {
         <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="./o_projects.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">15</span>&nbsp; <span class="chapter-title">Related Projects</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./instant_ngp.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Instant NGP</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./3d_gaussian_splatting.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Gasussian Splatting 3D</span></span></a>
-  </div>
-</li>
-        <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="./4d_gaussian_splatting.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Gasussian Splatting 4D</span></span></a>
+ <span class="menu-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Related Projects</span></span></a>
   </div>
 </li>
         <li class="sidebar-item">
@@ -303,23 +291,25 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#abstract-web" id="toc-abstract-web" class="nav-link active" data-scroll-target="#abstract-web"><span class="header-section-number">17.1</span> Abstract (web)</a></li>
-  <li><a href="#explanation" id="toc-explanation" class="nav-link" data-scroll-target="#explanation"><span class="header-section-number">17.2</span> Explanation</a></li>
-  <li><a href="#experimentation" id="toc-experimentation" class="nav-link" data-scroll-target="#experimentation"><span class="header-section-number">17.3</span> Experimentation</a></li>
-  <li><a href="#postprocess" id="toc-postprocess" class="nav-link" data-scroll-target="#postprocess"><span class="header-section-number">17.4</span> Postprocess</a>
+  <li><a href="#introducción-a-los-nerfs" id="toc-introducción-a-los-nerfs" class="nav-link active" data-scroll-target="#introducción-a-los-nerfs">Introducción a los NeRFs:</a>
   <ul class="collapse">
-  <li><a href="#unity" id="toc-unity" class="nav-link" data-scroll-target="#unity"><span class="header-section-number">17.4.1</span> Unity</a></li>
+  <li><a href="#funcionamiento-de-los-nerfs" id="toc-funcionamiento-de-los-nerfs" class="nav-link" data-scroll-target="#funcionamiento-de-los-nerfs">Funcionamiento de los NeRFs</a></li>
+  <li><a href="#aplicaciones-de-los-nerfs" id="toc-aplicaciones-de-los-nerfs" class="nav-link" data-scroll-target="#aplicaciones-de-los-nerfs">Aplicaciones de los NeRFs</a></li>
+  <li><a href="#desafíos-y-soluciones" id="toc-desafíos-y-soluciones" class="nav-link" data-scroll-target="#desafíos-y-soluciones">Desafíos y Soluciones</a></li>
+  <li><a href="#innovaciones-recientes" id="toc-innovaciones-recientes" class="nav-link" data-scroll-target="#innovaciones-recientes">Innovaciones Recientes</a></li>
   </ul></li>
+  <li><a href="#resumen" id="toc-resumen" class="nav-link" data-scroll-target="#resumen">Resumen:</a></li>
+  <li><a href="#referencias" id="toc-referencias" class="nav-link" data-scroll-target="#referencias">Referencias:</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
+<main class="content page-columns page-full" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title"><span class="chapter-number">17</span>&nbsp; <span class="chapter-title">Gasussian Splatting 3D</span></h1>
-<p class="subtitle lead">for Real-Time Radiance Field Rendering</p>
+<h1 class="title">Introducción a NeRF</h1>
+<p class="subtitle lead">Modelos 3D desde 2D</p>
 </div>
 
 
@@ -336,34 +326,63 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="abstract-web" class="level2" data-number="17.1">
-<h2 data-number="17.1" class="anchored" data-anchor-id="abstract-web"><span class="header-section-number">17.1</span> Abstract <a href="https://repo-sam.inria.fr/fungraph/3d-gaussian-splatting/">(web)</a></h2>
-<p>Radiance Field methods have recently revolutionized novel-view synthesis of scenes captured with multiple photos or videos. However, achieving high visual quality still requires neural networks that are costly to train and render, while recent faster methods inevitably trade off speed for quality. For unbounded and complete scenes (rather than isolated objects) and 1080p resolution rendering, no current method can achieve real-time display rates.</p>
-<p>We introduce three key elements that allow us to achieve state-of-the-art visual quality while maintaining competitive training times and importantly allow high-quality real-time (≥ 100 fps) novel-view synthesis at 1080p resolution.</p>
+<p>Los Campos de Radiancia Neural (NeRFs) representan una técnica avanzada en el campo de la visión por computadora y gráficos computacionales. Utilizan redes neuronales para generar modelos 3D realistas a partir de imágenes 2D, ofreciendo nuevas posibilidades en diversas aplicaciones tecnológicas.</p>
+<div class="quarto-figure quarto-figure-center page-columns page-full">
+<figure class="figure page-columns page-full">
+<p><img src="images/timeline.webp" class="img-fluid figure-img"></p>
+<figcaption class="margin-caption">Imagen obtenida de artículo llamado: <a href="https://radiancefields.com/professor-kanazawa-lectures-about-nerfs-at-stanford-hai">Professor Kanazawa Lectures about NeRFs at Stanford HAI</a></figcaption>
+</figure>
+</div>
+<section id="introducción-a-los-nerfs" class="level2">
+<h2 class="anchored" data-anchor-id="introducción-a-los-nerfs">Introducción a los NeRFs:</h2>
+<p>Los NeRFs son una tecnología innovadora que ha revolucionado la manera en que se crean y representan las escenas tridimensionales. A través del uso de redes neuronales profundas, los NeRFs pueden transformar múltiples imágenes 2D de una escena en una representación 3D detallada y precisa.</p>
+<section id="funcionamiento-de-los-nerfs" class="level3">
+<h3 class="anchored" data-anchor-id="funcionamiento-de-los-nerfs">Funcionamiento de los NeRFs</h3>
 <ol type="1">
-<li><p>First, starting from sparse points produced during camera calibration, we represent the scene with 3D Gaussians that preserve desirable properties of continuous volumetric radiance fields for scene optimization while avoiding unnecessary computation in empty space;</p></li>
-<li><p>Second, we perform interleaved optimization/density control of the 3D Gaussians, notably optimizing anisotropic covariance to achieve an accurate representation of the scene;</p></li>
-<li><p>Third, we develop a fast visibility-aware rendering algorithm that supports anisotropic splatting and both accelerates training and allows realtime rendering. We demonstrate state-of-the-art visual quality and real-time rendering on several established datasets.</p></li>
+<li><strong>Captura de Imágenes</strong>: Para empezar, se requieren múltiples imágenes de una escena capturadas desde diferentes ángulos. Estas imágenes sirven como datos de entrada para el modelo.</li>
+<li><strong>Entrenamiento del Modelo</strong>: Una red neuronal se entrena utilizando estas imágenes para aprender a predecir la radiancia (color e intensidad de la luz) y la densidad de cada punto en el espacio tridimensional. Este proceso de aprendizaje permite que el modelo entienda cómo se debe representar cada punto en la escena en 3D.</li>
+<li><strong>Renderizado</strong>: Una vez que el modelo está entrenado, puede generar nuevas vistas de la escena desde ángulos no capturados originalmente, ofreciendo una visualización tridimensional completa.</li>
+</ol>
+<p>El proceso de entrenamiento de los NeRFs implica la minimización de una función de pérdida, que compara las vistas generadas por el modelo con las imágenes reales, permitiendo que el modelo capture detalles finos y texturas realistas.</p>
+</section>
+<section id="aplicaciones-de-los-nerfs" class="level3">
+<h3 class="anchored" data-anchor-id="aplicaciones-de-los-nerfs">Aplicaciones de los NeRFs</h3>
+<ul>
+<li><strong>Realidad Virtual y Aumentada</strong>: Los NeRFs permiten la creación de entornos inmersivos y realistas, mejorando significativamente la experiencia del usuario en aplicaciones de realidad virtual y aumentada.</li>
+<li><strong>Cine y Videojuegos</strong>: Esta tecnología facilita la creación de gráficos de alta calidad, reduciendo el tiempo y los recursos necesarios en comparación con las técnicas tradicionales de modelado 3D.</li>
+<li><strong>Simulaciones Médicas</strong>: Los NeRFs se utilizan para crear modelos detallados del cuerpo humano, mejorando las herramientas de diagnóstico y planificación quirúrgica.</li>
+</ul>
+</section>
+<section id="desafíos-y-soluciones" class="level3">
+<h3 class="anchored" data-anchor-id="desafíos-y-soluciones">Desafíos y Soluciones</h3>
+<ol type="1">
+<li><strong>Volumen de Datos</strong>: El entrenamiento de los NeRFs requiere una gran cantidad de imágenes, lo que puede representar un desafío.
+<ul>
+<li><strong>Solución</strong>: Se están desarrollando técnicas de compresión y optimización de datos para reducir la cantidad de imágenes necesarias.</li>
+</ul></li>
+<li><strong>Computación Intensiva</strong>: El renderizado de los NeRFs es un proceso computacionalmente costoso.
+<ul>
+<li><strong>Solución</strong>: La implementación de algoritmos de optimización y el uso de hardware especializado, como GPUs, están ayudando a mitigar este problema.</li>
+</ul></li>
 </ol>
 </section>
-<section id="explanation" class="level2" data-number="17.2">
-<h2 data-number="17.2" class="anchored" data-anchor-id="explanation"><span class="header-section-number">17.2</span> Explanation</h2>
-<p><a href="https://medium.com/axinc-ai/3d-gaussian-splatting-real-time-rendering-of-photorealistic-scenes-f7f1a47f060">3D Gaussian Splatting. David Cochard</a></p>
+<section id="innovaciones-recientes" class="level3">
+<h3 class="anchored" data-anchor-id="innovaciones-recientes">Innovaciones Recientes</h3>
+<p>Una de las plataformas más recientes y avanzadas para trabajar con NeRFs es nerfstudio, que centraliza la investigación y el desarrollo en este campo. Nerfstudio tiene como objetivo simplificar el uso y aprendizaje de NeRFs, facilitando su implementación en diversos proyectos.</p>
+<p>Una innovación destacada en nerfstudio es la pipeline de Gaussian Splatting, que promete mejorar la calidad y velocidad del renderizado. Además, se están realizando avances en la creación de escenas 4D, que incluyen el tiempo como una dimensión adicional, ofreciendo nuevas posibilidades para la industria del entretenimiento.</p>
 </section>
-<section id="experimentation" class="level2" data-number="17.3">
-<h2 data-number="17.3" class="anchored" data-anchor-id="experimentation"><span class="header-section-number">17.3</span> Experimentation</h2>
-<p><a href="https://github.com/graphdeco-inria/gaussian-splatting">Github gaussian-splatting</a></p>
 </section>
-<section id="postprocess" class="level2" data-number="17.4">
-<h2 data-number="17.4" class="anchored" data-anchor-id="postprocess"><span class="header-section-number">17.4</span> Postprocess</h2>
-<p>Renderizado Volumétrico -&gt; Malla</p>
-<section id="unity" class="level3" data-number="17.4.1">
-<h3 data-number="17.4.1" class="anchored" data-anchor-id="unity"><span class="header-section-number">17.4.1</span> Unity</h3>
-<p><a href="https://www.youtube.com/watch?v=KaAxGr_xck4"></a></p>
-<p><a href="https://youtu.be/5_GaPYBHqOo"></a></p>
+<section id="resumen" class="level2">
+<h2 class="anchored" data-anchor-id="resumen">Resumen:</h2>
+<p>Los Campos de Radiancia Neural (NeRFs) representan una herramienta poderosa en la creación de modelos 3D a partir de imágenes 2D. Su capacidad para generar visualizaciones realistas y detalladas abre nuevas oportunidades en diversas aplicaciones tecnológicas, desde la realidad virtual y aumentada hasta el cine, videojuegos y simulaciones médicas. A pesar de los desafíos técnicos, los continuos avances en la investigación y el desarrollo de NeRFs prometen revolucionar la creación de contenido visual.</p>
+</section>
+<section id="referencias" class="level2">
+<h2 class="anchored" data-anchor-id="referencias">Referencias:</h2>
+<ul>
+<li><a href="https://radiancefields.com/professor-kanazawa-lectures-about-nerfs-at-stanford-hai">Professor Kanazawa Lectures about NeRFs at Stanford HAI</a></li>
+</ul>
 
 
-</section>
 </section>
 
 </main> <!-- /main -->
@@ -778,13 +797,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 </script>
 <nav class="page-navigation">
   <div class="nav-page nav-page-previous">
-      <a href="./instant_ngp.html" class="pagination-link" aria-label="Instant NGP">
-        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">16</span>&nbsp; <span class="chapter-title">Instant NGP</span></span>
+      <a href="./slay_project.html" class="pagination-link" aria-label="Slay Project">
+        <i class="bi bi-arrow-left-short"></i> <span class="nav-page-text"><span class="chapter-number">1</span>&nbsp; <span class="chapter-title">Slay Project</span></span>
       </a>          
   </div>
   <div class="nav-page nav-page-next">
-      <a href="./4d_gaussian_splatting.html" class="pagination-link" aria-label="Gasussian Splatting 4D">
-        <span class="nav-page-text"><span class="chapter-number">18</span>&nbsp; <span class="chapter-title">Gasussian Splatting 4D</span></span> <i class="bi bi-arrow-right-short"></i>
+      <a href="./nerf.html" class="pagination-link" aria-label="NeRF">
+        <span class="nav-page-text"><span class="chapter-number">2</span>&nbsp; <span class="chapter-title">NeRF</span></span> <i class="bi bi-arrow-right-short"></i>
       </a>
   </div>
 </nav>
